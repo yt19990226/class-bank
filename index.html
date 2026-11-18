@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>東門班級存摺 V5.3｜紙本初始班幣匯入</title>
+<title>東門班級存摺 V6｜GitHub 教師學生正式登入</title>
 <style>
 :root{--ink:#33415b;--sub:#778298;--bg:#f6f8fd;--line:#e6eaf1;--white:#fff;--blue:#dfeeff;--pink:#ffebed;--mint:#dff5e9;--yellow:#fff3d3;--purple:#efe9ff;--strong:#556a99;--shadow:0 9px 30px #64748b15}
 *{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,"Noto Sans TC","Microsoft JhengHei",sans-serif;font-size:15px;line-height:1.55}button,input,select,textarea{font:inherit;color:inherit}button{cursor:pointer}button:disabled{cursor:not-allowed;opacity:.45}.app{max-width:1300px;margin:0 auto;padding:20px 24px 50px}.banner{background:linear-gradient(118deg,#e4f1ff,#f1eaff 60%,#fff3e8);border:1px solid #e5e6f0;border-radius:25px;padding:24px 28px;display:flex;justify-content:space-between;align-items:center;gap:20px}.banner h1{margin:3px 0 2px;font-size:30px;letter-spacing:1px}.banner p{margin:0;color:#667389}.eyebrow{font-size:12px;letter-spacing:2px;font-weight:800;color:#7289b6}.mode{display:flex;align-items:center;gap:8px;flex-wrap:wrap}.mode .small{font-size:12px;color:var(--sub)}.pill{border:1px solid #cfd9ed;background:#ffffffb6;border-radius:99px;padding:8px 14px;font-weight:700}.pill.active{background:#596f9d;color:white;border-color:#596f9d}.notice{background:#fff8e7;color:#75603a;border:1px solid #f3e3bf;border-radius:12px;padding:10px 14px;margin:14px 0;font-size:13px}.top{margin-top:15px;display:flex;gap:9px;flex-wrap:wrap}.tab{border:none;border-radius:12px;padding:12px 17px;background:#fff;color:#62718a;font-weight:750;box-shadow:0 2px 9px #5e71900a}.tab.active{background:#5c73a1;color:#fff}.tab:hover:not(.active){background:#e9effb}.grid{display:grid;grid-template-columns:290px minmax(0,1fr);gap:16px;margin-top:16px}.panel{background:white;border:1px solid #e9edf5;border-radius:19px;box-shadow:var(--shadow);padding:20px}.person{display:flex;align-items:center;justify-content:space-between;gap:12px}.person h2,.heading{margin:0;font-size:20px}.person .hint,.muted{font-size:12px;color:var(--sub)}.seatpick{width:100%;padding:11px 12px;border:1px solid #dce3ef;border-radius:11px;margin:13px 0;background:#fff;font-weight:700}.avatarbox{background:linear-gradient(160deg,#e6f5fa,#eff3ff 54%,#ffecf3);border:1px solid #e6ebfa;border-radius:18px;display:flex;justify-content:center;align-items:center;min-height:216px;margin-top:10px;position:relative;overflow:hidden}.avatarbox:after{content:"✦   ✧   ✦";font-size:26px;color:#fff;position:absolute;top:15px;right:15px;opacity:.7}.avatarbox svg{width:166px;height:183px;position:relative;z-index:1;filter:drop-shadow(0 6px 4px #5c69821c)}.namebadge{display:inline-block;background:#fff;color:#77829a;border-radius:99px;padding:4px 11px;font-size:12px;margin-top:11px;font-weight:700}.balanceline{margin-top:17px;display:flex;justify-content:space-between;align-items:end;border-bottom:1px dashed #e3e7f0;padding-bottom:14px}.number{font-size:35px;font-weight:850;letter-spacing:-1px}.unit{font-weight:700;font-size:14px;color:#a58a44}.softnote{font-size:12px;color:#8590a1;margin-top:10px}.statrow{display:flex;gap:10px;flex-wrap:wrap}.stat{background:#f6f8fc;border-radius:13px;padding:10px 13px;flex:1;min-width:100px}.stat label{color:#74819b;font-size:12px;display:block}.stat b{font-size:20px}.sectiontitle{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:15px}.sectiontitle h2{margin:0;font-size:20px}.sectiontitle span{font-size:12px;color:var(--sub)}.twocol{display:grid;grid-template-columns:1fr 1fr;gap:12px}.rewardgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(208px,1fr));gap:12px}.reward{border-radius:15px;border:1px solid #e7eaf1;background:#fff;padding:15px;display:flex;flex-direction:column;justify-content:space-between;gap:12px;min-height:144px}.reward h3{margin:0 0 5px;font-size:15px;line-height:1.4}.reward p{font-size:12px;color:#7c8797;margin:0}.price{font-size:14px;font-weight:800;color:#ad823a}.rewardfoot{display:flex;justify-content:space-between;gap:8px;align-items:center}.btn{border:0;background:#6179aa;color:#fff;padding:10px 14px;border-radius:11px;font-weight:750;white-space:nowrap}.btn:hover:not(:disabled){filter:brightness(.96)}.btn.secondary{background:#edf1fa;color:#5d7194}.btn.mint{background:#dff4e8;color:#3f8064}.btn.red{background:#ffe9e8;color:#a75555}.btn.small{font-size:12px;padding:7px 11px}.btn.ghost{background:#fff;color:#5e7090;border:1px solid #dce4f0}.quick{display:flex;flex-wrap:wrap;gap:8px}.quick .btn{flex:0 0 auto}.subhead{font-weight:800;font-size:14px;margin-bottom:10px}.formrow{display:flex;gap:9px;align-items:center;flex-wrap:wrap}.formrow input,.formrow textarea{border:1px solid #dfe4ed;border-radius:10px;padding:10px 11px;background:#fff}.formrow input[type=number]{width:140px}.formrow input[type=text]{flex:1;min-width:150px}.formrow select,.search{border:1px solid #dfe4ed;border-radius:10px;padding:10px 11px;background:#fff}.search{min-width:230px;width:100%;max-width:370px}.line{height:1px;background:#edf0f5;margin:16px 0}.history{display:flex;flex-direction:column;gap:8px}.historyitem{display:flex;justify-content:space-between;align-items:center;gap:10px;padding:10px 12px;background:#f8f9fc;border:1px solid #eef0f6;border-radius:11px;font-size:13px}.historyitem .small{color:#94a0b1;font-size:11px}.pos{color:#32966e;font-weight:800}.neg{color:#cf6b72;font-weight:800}.shopitem{display:flex;flex-direction:column;gap:10px;border:1px solid #e7eaf3;border-radius:15px;padding:13px;background:white}.shopitem .tryavatar{background:linear-gradient(140deg,#eff6fd,#fff1f5);border-radius:12px;display:flex;justify-content:center;height:142px;align-items:center}.shopitem svg{height:130px;width:122px}.shopgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(169px,1fr));gap:12px}.shopitem h3{margin:0;font-size:14px}.shopitem p{margin:1px 0;color:#718099;font-size:12px}.grouphead{font-weight:850;color:#6c7c98;margin:20px 0 12px}.chip{border-radius:99px;display:inline-block;padding:3px 9px;background:#e6f5ed;color:#5a9277;font-size:11px;font-weight:800}.chip.warn{background:#fff4dc;color:#a78346}.chip.gray{background:#f0f2f6;color:#8290a6}.center{text-align:center}.classbar{height:20px;background:#eef0fa;border-radius:12px;overflow:hidden}.classbar .fill{background:linear-gradient(90deg,#90c8a8,#66b4a0);height:100%;transition:width .3s ease}.hero{font-size:33px;font-weight:900;margin:8px 0}.classnote{color:#8390a3;font-size:13px}.empty{text-align:center;background:#f8f9fc;border-radius:13px;padding:24px;color:#8894a5}.settings textarea{width:100%;min-height:220px;padding:12px 14px;resize:vertical;border:1px solid #e0e6ee;border-radius:12px;line-height:1.7}.settings .row{display:flex;gap:9px;flex-wrap:wrap}.footer{margin-top:18px;font-size:12px;color:#8893a4;text-align:center}.toast{position:fixed;bottom:22px;right:22px;background:#42577d;color:#fff;box-shadow:0 15px 30px #42577d44;border-radius:12px;padding:12px 18px;z-index:9;max-width:90vw;font-weight:700;display:none}.toast.show{display:block}.tagline{background:#f2f7ff;border-radius:11px;padding:10px 13px;font-size:13px;color:#667c9c}.infocard{background:#f7fafc;border-radius:12px;padding:13px;font-size:13px}.right{margin-left:auto}.tally{font-variant-numeric:tabular-nums}.tabsRight{display:flex;flex-wrap:wrap;gap:8px;align-items:center}.check{font-size:12px;color:#8e9bad}.pending{display:flex;align-items:center;justify-content:space-between;gap:10px;border-radius:12px;border:1px solid #e7eaf2;background:#fffaf1;padding:10px 13px;margin-bottom:9px}.pending .action{display:flex;gap:6px}.pending .name{font-size:14px;font-weight:800}.pending small{font-size:12px;color:#8a8fa0}.dividerlabel{border-left:3px solid #abc5f1;padding-left:9px;font-weight:850;margin:6px 0 12px}.intro{font-size:14px;color:#78859c;max-width:630px}.danger{color:#ae5d65}.cardnum{font-size:12px;color:#8794a8} @media(max-width:840px){.app{padding:12px 12px 32px}.banner{padding:19px;flex-direction:column;align-items:flex-start}.banner h1{font-size:24px}.grid{grid-template-columns:1fr}.twocol{grid-template-columns:1fr}.avatarbox{min-height:145px}.avatarbox svg{height:135px;width:140px}.tab{flex:1;min-width:90px;padding:11px 10px;font-size:13px}.rewardgrid{grid-template-columns:repeat(auto-fill,minmax(158px,1fr))}.panel{padding:16px}.search{min-width:0}.shopgrid{grid-template-columns:repeat(2,minmax(0,1fr))}}
@@ -96,7 +96,7 @@ window.DONGMEN_CLOUD_SETUP = {
   <p>學生查看自己的點數和卡包，教師管理全班點數與獎勵。</p>
   <div class="auth-menu"><button type="button" class="active" data-auth-tab="student">🧒 學生登入</button><button type="button" data-auth-tab="teacher">👩‍🏫 教師登入</button></div>
   <form id="authForm">
-   <div id="studentLoginBlock"><label for="loginUsername">學生帳號</label><input id="loginUsername" placeholder="例如 c506s01 或學生電子郵件" autocomplete="username" /></div>
+   <div id="studentLoginBlock"><label for="loginUsername">學生帳號</label><input id="loginUsername" placeholder="例如 c506s01abcde（以老師發放帳號為準）" autocomplete="username" /></div>
    <div id="teacherLoginBlock" hidden><label for="loginEmail">教師電子郵件</label><input id="loginEmail" type="email" placeholder="教師 Firebase 帳號" autocomplete="username" /></div>
    <label for="loginPassword">密碼</label><input id="loginPassword" type="password" autocomplete="current-password" minlength="6" placeholder="請輸入密碼" required />
    <button type="submit" id="loginButton" class="btn">登入個人存摺</button>
@@ -106,11 +106,11 @@ window.DONGMEN_CLOUD_SETUP = {
   <p class="smalltext">正式上線需先完成 Firebase Authentication、Firestore 和安全規則設定。</p>
  </div>
 </div>
-<div class="app" id="appWrap" hidden><header class="banner"><div><span class="eyebrow">CLASS COIN · PASSBOOK v5.5</span><h1>🌷 東門班級存摺</h1><p>保留原本班幣與獎勵卡制度，專心管理點數，不再使用角色換裝。</p></div><div class="mode"><span id="authStatus">尚未登入</span><button class="pill" id="logoutButton" type="button">登出</button></div></header><div id="loginNotice" class="cloudbar">🔐 登入後才可操作。學生只能查看自己的紀錄並申請兌換；點數由教師管理。</div><nav class="top" id="tabs"></nav><main class="grid"><aside id="sidebar"></aside><section id="main"></section></main><footer class="footer">東門班級｜保留原本週薪、累犯扣分、獎勵卡及全班班分；請妥善保管學生登入資料。</footer></div><div id="toast" class="toast" role="status"></div>
+<div class="app" id="appWrap" hidden><header class="banner"><div><span class="eyebrow">CLASS COIN · PASSBOOK v6.0</span><h1>🌷 東門班級存摺</h1><p>保留原本班幣與獎勵卡制度，專心管理點數，不再使用角色換裝。</p></div><div class="mode"><span id="authStatus">尚未登入</span><button class="pill" id="logoutButton" type="button">登出</button></div></header><div id="loginNotice" class="cloudbar">🔐 登入後才可操作。學生只能查看自己的紀錄並申請兌換；點數由教師管理。</div><nav class="top" id="tabs"></nav><main class="grid"><aside id="sidebar"></aside><section id="main"></section></main><footer class="footer">東門班級｜保留原本週薪、累犯扣分、獎勵卡及全班班分；請妥善保管學生登入資料。</footer></div><div id="toast" class="toast" role="status"></div>
 <script>
 
 (()=>{'use strict';
-const KEY='dongmen-coin-avatar-v1';
+const KEY='dongmen-class-bank-demo-v6';
 const REWARDS=[
 ['r1','再睡五分鐘卡',2500,'班導課的上課開始或結束時使用'],['r2','能量補充卡',2500,'向老師兌換小點心'],['r3','點歌大師卡',2500,'午飯時間指定播放音樂'],['r4','請讓我下課卡',3000,'當天訂正延至隔天完成'],['r5','快速通關卡',3000,'午餐或改作業免排隊一天'],['r6','午休自由卡',3000,'午休可安靜自由活動'],['r7','自由穿搭卡',3000,'可依班級規定自由穿搭一次'],['r8','我要看動漫卡',3000,'午飯時間選擇適齡動畫'],['r9','一日特別座位卡',4000,'自行選擇一日座位'],['r10','3C 特權卡',5000,'指定下課時間於老師附近使用平板'],['r11','文具許願卡',5000,'許願一項約 50–100 元文具'],['r12','點數乘骰子倍卡',5000,'須由老師依原規則手動結算'],['r13','遲交特權卡',5000,'一項當日作業隔日繳交'],['r14','犧牲小我、完成大我卡',5000,'兌換加班分 10 分'],['r15','免打掃工作卡',6000,'依班級安排免打掃一天'],['r16','零食吃到飽卡',6000,'下課時間依班規享用零食'],['r17','懲罰但可下課卡',7000,'依老師判斷及班規使用'],['r18','作業減半卡',8000,'一項作業量減半；作文除外'],['r19','我想喝飲料卡',8000,'老師請喝約 50–80 元飲料'],['r20','位置自由選卡',9000,'下次換位時優先選座位'],['r21','分數升級卡',10000,'依老師及學校評量規定審核'],['r22','老師救救我卡',10000,'依評量規範與老師審核'],['r23','作業消失卡',10000,'一項作業免寫；作文除外'],['r24','手機自由卡',15000,'須先符合學校行動載具規範'],['r25','免死金牌卡',20000,'限於符合校規及教師判斷的情況'] ];
 const QUICK=[['+1000','參賽獎金',1000],['+500','全勤獎金',500],['+100','職務加給／公開表揚',100],['+50','加班費／幫忙',50],['−100','一般手動扣分（不累計）',-100]];
@@ -139,7 +139,7 @@ const money=n=>Number(n||0).toLocaleString('zh-TW');
 const stamp=()=>new Date().toISOString();
 const dtime=s=>new Date(s).toLocaleString('zh-TW',{timeZone:'Asia/Taipei',month:'numeric',day:'numeric',hour:'2-digit',minute:'2-digit'});
 const unique=()=>('id-'+Date.now().toString(36)+'-'+Math.random().toString(36).slice(2,8));
-const studentSeed=(i)=>({id:String(i).padStart(2,'0'),name:`${i}號同學`,balance:i===1?6000:i===2?3200:i===3?4500:0,tickets:[]});
+const studentSeed=(i)=>({id:String(i).padStart(2,'0'),name:`${i}號同學`,balance:0,tickets:[]});
 const fresh=()=>({students:Array.from({length:29},(_,i)=>studentSeed(i+1)),tx:[],requests:[],classPoints:0,classHistory:[],classRewards:[],paidWeeks:[],ticketActions:[]});
 function normalize(data){
  if(!data||!Array.isArray(data.students)||!Array.isArray(data.tx))return fresh();
@@ -446,7 +446,7 @@ function applyOpeningPreview(){
  if(changed.length){save();render();notify(`✅ 已設定 ${changed.length} 位學生的紙本起始額`)}
  else{render();notify('輸入金額與原本相同，未重複記點')}
 }
-function settings(){if(mode!=='teacher')return bank();return `<div class="panel settings"><div class="sectiontitle"><div><h2>⚙️ 名單與備份</h2><span>請妥善保護學生資料與帳號，正式資料須使用 Firebase 並遵守校內個資管理規範。</span></div></div><div class="subhead">匯入正式名單</div><p class="intro">每行一位，可輸入「座號,姓名」，例如：1,王小明。也可以每行只輸入姓名，由系統依順序編座號。匯入會<b>清空目前全班點數、兌換及交易紀錄</b>，已建立的學生登入綁定也會失效；請先下載備份。</p><textarea id="namesInput" aria-label="學生名單" placeholder="1,學生甲\n2,學生乙\n3,學生丙"></textarea><div class="row" style="margin-top:12px"><button class="btn" data-action="importNames">匯入名單並重新開始</button><button class="btn secondary" data-action="fillNames">填入目前名單</button></div><div class="line"></div><div class="subhead">班級資料備份</div><p class="intro">下載 JSON 備份後，可在同一個示範版用「還原備份」匯入。正式雲端模式可跨裝置同步；仍建議定期下載備份。單機試用資料則留在此瀏覽器。</p><div class="row"><button class="btn mint" data-action="export">⬇️ 下載全班紀錄備份</button><button class="btn secondary" data-action="restore">📂 還原備份</button><button class="btn red" data-action="reset">重設所有示範資料</button></div><input type="file" id="backupFile" accept=".json,application/json" style="display:none"/><div class="line"></div><div class="tagline">🔐 <b>權限提醒：</b>試用模式沒有正式身份驗證；正式模式必須先設定 Firebase Authentication、Firestore 安全規則與授權教師帳號。</div></div>`}
+function settings(){if(mode!=='teacher')return bank();return `<div class="panel settings"><div class="sectiontitle"><div><h2>⚙️ 名單與備份</h2><span>請妥善保護學生資料與帳號，正式資料須使用 Firebase 並遵守校內個資管理規範。</span></div></div><div class="subhead">🧹 重新開始（可選）</div><p class="intro">若目前只是測試、還沒開始正式輸入紙本班幣，可按下方按鈕清空本班試用點數、卡片、交易紀錄與舊學生綁定。會保留現有座號和姓名、教師 Firebase 帳號與教師授權。舊 Firebase Authentication 學生帳號不會被刪除，但不會再連到新版個人存摺。</p><div class="row" style="margin-bottom:15px"><button class="btn red" data-action="resetCloudClass">清空測試班幣與學生綁定（保留名單）</button></div><div class="line"></div><div class="subhead">匯入正式名單</div><p class="intro">每行一位，可輸入「座號,姓名」，例如：1,王小明。也可以每行只輸入姓名，由系統依順序編座號。匯入會<b>清空目前全班點數、兌換及交易紀錄</b>，已建立的學生登入綁定也會失效；請先下載備份。</p><textarea id="namesInput" aria-label="學生名單" placeholder="1,學生甲\n2,學生乙\n3,學生丙"></textarea><div class="row" style="margin-top:12px"><button class="btn" data-action="importNames">匯入名單並重新開始</button><button class="btn secondary" data-action="fillNames">填入目前名單</button></div><div class="line"></div><div class="subhead">班級資料備份</div><p class="intro">下載 JSON 備份後，可在同一個示範版用「還原備份」匯入。正式雲端模式可跨裝置同步；仍建議定期下載備份。單機試用資料則留在此瀏覽器。</p><div class="row"><button class="btn mint" data-action="export">⬇️ 下載全班紀錄備份</button><button class="btn secondary" data-action="restore">📂 還原備份</button><button class="btn red" data-action="reset">重設所有示範資料</button></div><input type="file" id="backupFile" accept=".json,application/json" style="display:none"/><div class="line"></div><div class="tagline">🔐 <b>權限提醒：</b>試用模式沒有正式身份驗證；正式模式必須先設定 Firebase Authentication、Firestore 安全規則與授權教師帳號。</div></div>`}
 function render(){
  if(!student()){S=fresh();chosen='01';}
  if(mode==='student'&&['settings','overview'].includes(tab))tab='bank';
@@ -459,7 +459,7 @@ function render(){
  if(tab==='rewards'&&rewardSearch)document.querySelectorAll('[data-reward-name]').forEach(el=>el.style.display=el.dataset.rewardName.includes(rewardSearch.toLowerCase())?'':'none');
 }
 function importNames(){if(session==='cloud-teacher'&&S.students.some(s=>s.authUid)&&prompt('重新匯入會撤銷全部現有學生登入帳號，請輸入「確認重建」才可繼續')!=='確認重建')return;const raw=document.querySelector('#namesInput').value.trim();if(!raw)return alert('請先貼上學生名單');const lines=raw.split(/\r?\n/).map(x=>x.trim()).filter(Boolean);if(lines.length>60)return alert('一次最多匯入 60 位學生');const next=[],ids=new Set();for(let i=0;i<lines.length;i++){let input=lines[i].split(/[,，\t]/);let id,name;if(input.length>1&&/^\d+$/.test(input[0].trim())){id=String(Number(input[0].trim())).padStart(2,'0');name=input.slice(1).join(' ').trim()}else{id=String(i+1).padStart(2,'0');name=lines[i]}if(!name||ids.has(id))return alert('請確認每行都有姓名，且座號不能重複。');ids.add(id);const s=studentSeed(Number(id)||i+1);s.id=id;s.name=name.slice(0,40);s.balance=0;next.push(s)}if(!confirm(`要匯入 ${next.length} 位學生嗎？\n這會清空目前所有點數、兌換及班分紀錄。`))return;S={...fresh(),students:next};openingDraft={};openingPreview=null;chosen=next[0].id;save();tab='bank';render();notify('學生名單匯入完成，班幣從 0 開始')}
-function exportBackup(){const blob=new Blob([JSON.stringify({version:5.5,exportedAt:stamp(),data:S},null,2)],{type:'application/json;charset=utf-8'});const url=URL.createObjectURL(blob),a=document.createElement('a');a.href=url;a.download=`東門班幣備份_${new Date().toISOString().slice(0,10)}.json`;document.body.appendChild(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(url),3000);notify('已開始下載備份')}
+function exportBackup(){const blob=new Blob([JSON.stringify({version:6,exportedAt:stamp(),data:S},null,2)],{type:'application/json;charset=utf-8'});const url=URL.createObjectURL(blob),a=document.createElement('a');a.href=url;a.download=`東門班幣備份_${new Date().toISOString().slice(0,10)}.json`;document.body.appendChild(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(url),3000);notify('已開始下載備份')}
 async function restoreBackup(file){try{const raw=JSON.parse(await file.text()),data=raw.data||raw;if(!Array.isArray(data.students)||!Array.isArray(data.tx)||!Array.isArray(data.requests)||typeof data.classPoints!=='number')throw Error('備份格式錯誤');if(!confirm('確定用這份備份覆蓋目前瀏覽器內的所有紀錄嗎？'))return;S=normalize(data);openingDraft={};openingPreview=null;chosen=S.students[0]?.id;save();tab='bank';render();notify('已還原備份')}catch(e){alert('無法還原：'+e.message)}}
 function undoClass(id){const t=S.classHistory.find(x=>x.id===id);if(mode!=='teacher'||!t||t.undone||t.kind==='undo')return;if(S.classPoints-t.amount<0)return notify('已有點數使用紀錄，撤銷這筆會使班分低於零；請先處理後續兌換');if(!confirm(`撤銷全班班分「${t.reason}」${t.amount>0?'+':''}${t.amount} 點？`))return;t.undone=true;S.classPoints-=t.amount;S.classHistory.unshift({id:unique(),amount:-t.amount,reason:'撤銷：'+t.reason,kind:'undo',at:stamp(),refId:t.id});save();render();notify('班分已撤銷')}
 function addClass(amount,reason){amount=Number(amount);if(!Number.isInteger(amount)||!amount)return;const next=S.classPoints+amount;if(next<0){notify('全班班分不能低於 0');return}S.classPoints=next;S.classHistory.unshift({id:unique(),amount,reason,at:stamp()});save();render();notify(`全班班分 ${amount>0?'+':''}${amount}`)}
@@ -494,22 +494,22 @@ function accountPanel(){
  const note=accountNotice?.studentId===s.id?accountNotice:null;
  return `<div class="teacher-tools"><div class="sectiontitle"><div><h2>🔐 學生帳號管理</h2><span>學生只能看自己的存摺，教師才能改班幣、週薪與卡片狀態</span></div></div>
  <div class="account-grid"><div><b>${svgEscape(s.id)}｜${svgEscape(s.name)}</b><div class="muted">${s.authUid?`目前帳號：${svgEscape(s.loginName||'已建立')}`:'尚未建立學生登入帳號'}</div></div>
- <button class="btn" data-action="createAccount" ${!isCloud?'disabled':''}>${s.authUid?'重新建立登入帳號（舊帳號失效）':'建立此學生帳號'}</button></div>
+ <button class="btn" data-action="createAccount" ${!isCloud||!!s.authUid?'disabled':''}>${s.authUid?'已綁定（可使用下方修復功能）':'建立此學生帳號'}</button></div>
  <div class="quick" style="margin-top:11px"><button class="btn secondary" data-action="createAllAccounts" ${!isCloud?'disabled':''}>一鍵建立所有尚未有帳號的學生</button><button class="btn mint" data-action="downloadCredentials" ${!generatedAccounts.length?'disabled':''}>下載本次帳號密碼表（${generatedAccounts.length} 筆）</button></div>
  <div id="accountFeedback" class="account-feedback ${note?.kind==='error'?'account-error':'account-success'}" ${note?'':'hidden'} role="alert">${note?svgEscape(note.message):''}</div>
- <p class="softnote">若顯示「帳號已存在」，請不要重複建立；到 Firebase → Authentication → Users 找到這位學生，複製 UID，用下方「綁定既有帳號」連結原有存摺。已輸入的班幣不用重設。</p>
+ <p class="softnote">新建帳號會自動產生不重複的學生登入名稱與 12 位密碼，建立後立即同步個人存摺；若 Firebase 註冊失敗，會顯示真正的錯誤原因，已設定的餘額不會清空。</p>${pendingAccountRecovery?.studentId===s.id?`<div class="opening-alert"><b>這個帳號在 Firebase 已建立，但還沒完成綁定。</b><div class="quick" style="margin-top:8px"><button class="btn mint" data-action="finishPendingBinding">完成剛建立的存摺綁定</button></div></div>`:''}
  <div class="line"></div>
  <div class="subhead">🩺 登入成功卻顯示「尚未綁定存摺」？</div>
  <p class="intro">姓名及初始班幣已設定不代表帳號已綁定。若這位學生在「全班總覽」顯示已有帳號，先點「修復存摺綁定」；不會更動現有班幣。若學生帳號是先在 Firebase Authentication 手動建立，請用下面的 UID 綁定，<b>不要重新匯入名單</b>。</p>
  <div class="quick"><button class="btn mint" data-action="repairStudentBinding" ${!isCloud||!s.authUid?'disabled':''}>🔄 修復此學生存摺綁定</button></div>
  <div class="formrow" style="margin-top:13px">
    <input type="text" id="existingStudentUid" autocomplete="off" spellcheck="false" placeholder="Firebase Authentication 的學生 UID" value="${svgEscape(pendingAccountRecovery?.studentId===s.id?pendingAccountRecovery.uid: '')}" style="flex:2;min-width:180px" aria-label="學生的 Firebase UID" />
-   <input type="text" id="existingStudentLogin" autocomplete="off" spellcheck="false" placeholder="帳號，如 c506s01 或電子郵件" value="${svgEscape(s.loginName||`c506s${s.id}`)}" style="flex:1;min-width:130px" aria-label="學生登入帳號" />
+   <input type="text" id="existingStudentLogin" autocomplete="off" spellcheck="false" placeholder="帳號，如 c506s01abcde 或電子郵件" value="${svgEscape(s.loginName||`c506s${s.id}`)}" style="flex:1;min-width:130px" aria-label="學生登入帳號" />
    <button type="button" class="btn secondary" data-action="bindExistingStudent" ${!isCloud?'disabled':''}>🔗 綁定既有帳號</button>
  </div>
- <p class="softnote">UID 請到 Firebase → Authentication → Users 複製相應學生的 User UID。若使用系統產生的帳號，填入 @ 前的文字（例如 c506s01）；若是在 Firebase 手動建立的電子郵件帳號，請填入完整電子郵件。UID 不是密碼，請不要在此輸入學生密碼。此功能只建立對應關係，不會建立或重設 Authentication 密碼。</p>
+ <p class="softnote">UID 請到 Firebase → Authentication → Users 複製相應學生的 User UID。若使用系統產生的帳號，填入 @ 前的文字（例如 c506s01abcde）；若是在 Firebase 手動建立的電子郵件帳號，請填入完整電子郵件。UID 不是密碼，請不要在此輸入學生密碼。此功能只建立對應關係，不會建立或重設 Authentication 密碼。</p>
  ${generatedAccounts.length?`<div class="accountline" style="margin-top:13px"><b>本次新增帳號（請立刻下載並妥善保管）</b><div style="margin-top:6px">${generatedAccounts.slice(-4).map(a=>`${svgEscape(a.studentName)}：${svgEscape(a.username)}｜密碼 ${svgEscape(a.password)}`).join('<div></div>')}</div></div>`:''}
- <p class="softnote">學生帳號由 Firebase Authentication 建立。密碼只顯示於本次操作，不會寫入 Firestore。重發帳號時舊登入資料會失效；需另由 Firebase 控制台清除舊 Authentication 帳戶。</p>
+ <p class="softnote">密碼只在建立當次顯示，請立即下載帳密 CSV 並安全保存，勿上傳 GitHub。舊 Firebase Authentication 使用者不會因為更新網站而自動刪除。</p>
  ${!isCloud?'<p class="notice">目前無法建立帳號：請確認已正式登入教師帳號，且 Firebase 全班資料已完成載入。</p>':''}</div>`;
 }
 function requestPanel(kind){
@@ -574,33 +574,28 @@ function accountCsv(){
  a.href=url;a.download='東門學生帳號密碼_請妥善保管.csv';a.click();setTimeout(()=>URL.revokeObjectURL(url),2000);
 }
 async function createAccountFor(s){
- if(session!=='cloud-teacher')throw Error('請先以正式教師帳號登入 Firebase');
- if(!cloudDataReady)throw Error('班級資料尚未從雲端載入完成；請勿在資料同步前建立帳號');
- // Only the teacher's selected student is modified. Keep original passbook balance/transactions.
- const before={authUid:s.authUid||null,loginName:s.loginName||null,accountSeq:Number(s.accountSeq||0)};
+ if(session!=='cloud-teacher'||!cloudDataReady)throw Error('教師後台資料尚未載入完成');
+ const studentId=s.id;
+ if(S.students.find(x=>x.id===studentId)?.authUid)throw Error('學生已有帳號，請使用修復綁定');
+ // One Firebase Auth signup on a separate auth instance; no teacher sign-out.
  let a;
- try { a=await window.DongmenCloud.createStudentAccount(s); }
- catch(err){ throw Error(err?.message||'Firebase 建立帳號失敗'); }
- // Firebase Auth signup has already succeeded: always retain this temporary credential/UID
- // so a failed Firestore write cannot strand the new account without recovery information.
- generatedAccounts.push({studentId:s.id,studentName:s.name,username:a.username,password:a.password});
- s.authUid=a.uid;s.loginName=a.username;s.accountSeq=before.accountSeq+1;
+ try{a=await window.DongmenCloud.createStudentAccount(s)}catch(err){throw Error(err?.message||'建立 Firebase 帳號失敗')}
+ // If saving fails, teacher still has the new credentials and UID to finish binding without a second signup.
+ generatedAccounts.push({studentId,studentName:s.name,username:a.username,password:a.password});
+ pendingAccountRecovery={studentId,uid:a.uid,username:a.username};
+ const current=S.students.find(x=>x.id===studentId);
+ if(!current)throw Error('Firebase 帳號已建立，但學生名單已變更。請先下載帳密表再重新對應 UID');
+ const backup={authUid:current.authUid||null,loginName:current.loginName||null,accountSeq:Number(current.accountSeq||0)};
+ current.authUid=a.uid;current.loginName=a.username;current.accountSeq=backup.accountSeq+1;
  try{
    await window.DongmenCloud.saveTeacher(JSON.parse(JSON.stringify(S)));
    const view=await window.DongmenCloud.checkStudentView(a.uid);
-   if(!view||view.student?.id!==s.id)throw Error('登入帳號已建立，但存摺綁定資料尚未確認成功');
+   if(!view||view.student?.id!==studentId)throw Error('Firestore 個人存摺沒有建立成功');
  }catch(err){
-   // Do not silently claim success or lose the newly created credentials.
-   s.authUid=before.authUid;s.loginName=before.loginName;s.accountSeq=before.accountSeq;
-   pendingAccountRecovery={studentId:s.id,uid:a.uid,username:a.username};
-   render();
-   throw Error('Firebase 已建立帳號，但存摺綁定失敗：'+(err?.message||'資料庫無法寫入')+'。請勿再次建立！本次帳密仍可下載；改用下方 UID 綁定新帳號。');
+   current.authUid=backup.authUid;current.loginName=backup.loginName;current.accountSeq=backup.accountSeq;
+   render();throw Error('Firebase 帳號已建立，但存摺同步失敗：'+(err?.message||err)+'。不要重複建立！請下載本次帳密，按「完成剛建立的存摺綁定」重試。');
  }
  pendingAccountRecovery=null;
- if(before.authUid&&before.authUid!==a.uid){
-   try{await window.DongmenCloud.revokeOldView(before.authUid)}
-   catch(err){setAccountNotice('新帳號已建立，但舊存摺檢視資料尚未刪除，請確認舊帳號後續無法看到資料。','error',s.id)}
- }
  render();return a;
 }
 function showAuth(){
@@ -632,11 +627,40 @@ document.addEventListener('click',async e=>{
  const action=b.dataset.action,val=b.dataset.value;
  if(session==='cloud-teacher'&&!cloudDataReady&& !['tab','selectStudent','export','fillNames'].includes(action)){notify('班級資料仍在雲端載入中，操作已暫停，請確認資料顯示完整後再使用');return;}
  if(action==='selectStudent'&&mode==='teacher'){chosen=val;tab='bank';render()}
+   if(action==='resetCloudClass'&&session==='cloud-teacher'){
+     if(!cloudDataReady)return setAccountNotice('雲端資料尚未載入，不能重設','error');
+     if(prompt('這會永久清除全班測試點數、兌換、交易與現有學生綁定（保留名單）。確定請輸入：清空測試資料')!=='清空測試資料')return;
+     b.disabled=true;
+     try{
+       await window.DongmenCloud.whenSaved();
+       const next={...fresh(),students:S.students.map(x=>({...studentSeed(Number(x.id)||1),id:x.id,name:x.name,balance:0,tickets:[]}))};
+       await window.DongmenCloud.saveTeacher(JSON.parse(JSON.stringify(next)));
+       S=next;generatedAccounts=[];pendingAccountRecovery=null;accountNotice=null;
+       chosen=S.students[0]?.id||'01';tab='overview';render();notify('已清空測試紀錄並保留名單；請先建立 1 位學生帳號測試');
+     }catch(err){setAccountNotice('重設失敗：'+(err?.message||err),'error');}
+     finally{b.disabled=false;}
+   }
+   if(action==='finishPendingBinding'&&session==='cloud-teacher'){
+     const recovery=pendingAccountRecovery,st=student();
+     if(!recovery||recovery.studentId!==st.id)return setAccountNotice('沒有待完成綁定的帳號','error',st.id);
+     if(st.authUid&&st.authUid!==recovery.uid)return setAccountNotice('這位學生已經綁定其他帳號，請先核對','error',st.id);
+     b.disabled=true;
+     try{
+       await window.DongmenCloud.whenSaved();
+       st.authUid=recovery.uid;st.loginName=recovery.username;
+       await window.DongmenCloud.saveTeacher(JSON.parse(JSON.stringify(S)));
+       const view=await window.DongmenCloud.checkStudentView(recovery.uid);
+       if(!view||view.student?.id!==st.id)throw Error('存摺仍未出現在 Firebase，請檢查 Firestore 規則');
+       pendingAccountRecovery=null;render();setAccountNotice('已恢復存摺綁定！請下載本次帳號密碼表，再讓學生登入測試。','success',st.id);
+     }catch(err){setAccountNotice('綁定仍失敗：'+(err?.message||err),'error',st.id)}
+     finally{b.disabled=false;}
+   }
  if(action==='cloudApprove'&&session==='cloud-teacher')await cloudApprove(val);
  if(action==='cloudReject'&&session==='cloud-teacher')await cloudReject(val);
  if(action==='createAccount'&&session==='cloud-teacher'){
    const st=student();
-   if(st.authUid&&!confirm('此學生已經有帳號。重新建立會讓舊帳號的存摺綁定失效，確定？'))return;
+   if(pendingAccountRecovery)return setAccountNotice('請先完成上一筆建立成功但尚未綁定的帳號，不能再重複建立。','error',st.id);
+   if(st.authUid)return setAccountNotice('此學生已綁定帳號。若無法登入，請先使用「修復此學生存摺綁定」，不要再次建立。','error',st.id);
    b.disabled=true;setAccountNotice('正在建立學生登入帳號、寫入存摺綁定……','info',st.id);
    try{
      await createAccountFor(st);
@@ -645,6 +669,7 @@ document.addEventListener('click',async e=>{
    finally{b.disabled=false}
  }
  if(action==='createAllAccounts'&&session==='cloud-teacher'){
+   if(pendingAccountRecovery)return setAccountNotice('上一位學生的帳號尚未完成存摺綁定。請先完成綁定，避免遺留無法登入的帳號。','error');
    const missing=S.students.filter(s=>!s.authUid);
    if(!missing.length)return setAccountNotice('全班學生已經有存摺綁定，無需重新建立。','success');
    if(!confirm(`將替 ${missing.length} 位學生建立登入帳號。建議先測試 1 位；完成後必須下載帳密表，確定？`))return;
@@ -674,7 +699,7 @@ document.addEventListener('click',async e=>{
    const uid=(document.querySelector('#existingStudentUid')?.value||'').trim();
    const username=(document.querySelector('#existingStudentLogin')?.value||'').trim().toLowerCase();
    if(!/^[A-Za-z0-9_-]{12,128}$/.test(uid))return notify('請輸入 Firebase Authentication 的完整學生 UID');
-   if(!(/^[a-z0-9_-]{3,64}$/.test(username)||/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(username)))return notify('請輸入學生登入帳號，例如 c506s01 或完整電子郵件');
+   if(!(/^[a-z0-9_-]{3,64}$/.test(username)||/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(username)))return notify('請輸入學生登入帳號，例如 c506s01abcde 或完整電子郵件');
    if(uid===window.DongmenCloud.getTeacherUid())return notify('不能將教師 UID 綁定為學生帳號');
    if(S.students.some(x=>x.id!==st.id&&x.authUid===uid))return notify('這個 UID 已綁定到班上其他學生，請核對座號');
    if(st.authUid&&st.authUid!==uid&&!confirm(`此學生已綁定另一個 UID，確定要改綁到新 UID？舊學生登入會失效。`))return;
@@ -710,7 +735,7 @@ showAuth();
 <!-- Firebase 只在真的填好設定後才載入。離線試用不會連結 Firebase CDN。 -->
 <script id="dongmen-firebase-source" type="text/plain">
 import { initializeApp } from 'https://www.gstatic.com/firebasejs/11.10.0/firebase-app.js';
-import { getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword, signOut, onAuthStateChanged } from 'https://www.gstatic.com/firebasejs/11.10.0/firebase-auth.js';
+import { getAuth, initializeAuth, inMemoryPersistence, createUserWithEmailAndPassword, signInWithEmailAndPassword, signOut, onAuthStateChanged } from 'https://www.gstatic.com/firebasejs/11.10.0/firebase-auth.js';
 import { getFirestore, doc, collection, getDoc, query, where, onSnapshot, setDoc, updateDoc, deleteDoc, addDoc, serverTimestamp, writeBatch } from 'https://www.gstatic.com/firebasejs/11.10.0/firebase-firestore.js';
 const setup=window.DONGMEN_CLOUD_SETUP||{};
 const cfg=setup.firebaseConfig||{};
@@ -731,13 +756,14 @@ function readableError(e){
  const code=e?.code||'';
  if(code==='auth/invalid-credential'||code==='auth/wrong-password'||code==='auth/user-not-found')return Error('帳號或密碼不正確');
  if(code==='auth/email-already-in-use')return Error('Firebase Authentication 已有相同學生帳號（auth/email-already-in-use）。請不要重新建立；到 Firebase → Authentication → Users 找到該帳號並複製 User UID，回教師後台使用「綁定既有帳號」');
- if(code==='auth/invalid-email')return Error('帳號電子郵件格式不被 Firebase 接受（auth/invalid-email），請保留這個錯誤並聯絡我修正帳號格式');
+ if(code==='auth/invalid-email')return Error('Firebase 拒絕學生帳號格式（auth/invalid-email），請將完整錯誤截圖；不要反覆建立');
  if(code==='auth/weak-password')return Error('密碼強度不足（auth/weak-password）');
  if(code==='auth/too-many-requests')return Error('Firebase 暫時限制短時間大量建立帳號（auth/too-many-requests）。請改為逐位建立，不要反覆點擊');
  if(code==='auth/network-request-failed')return Error('Firebase 網路連線失敗（auth/network-request-failed），請檢查學校網路');
  if(code==='auth/app-not-authorized'||code==='auth/unauthorized-domain')return Error('Firebase 尚未授權此 GitHub Pages 網域（'+code+'）');
  if(code==='permission-denied')return Error('Firestore 拒絕寫入（permission-denied）。請確認 teachers/教師UID 的 classId=506、enabled=true，且最新 Firestore 安全規則已發布');
- if(code==='auth/operation-not-allowed')return Error('請先在 Firebase Authentication 開啟電子郵件／密碼登入');
+ if(code==='auth/operation-not-allowed')return Error('請到 Firebase Authentication → Sign-in method 啟用電子郵件／密碼登入');
+ if(code==='auth/admin-restricted-operation')return Error('Firebase 已限制使用者在網站自行註冊（auth/admin-restricted-operation）。請在 Authentication → Settings → User actions 啟用建立帳號，或改由 Firebase 主控台建立學生帳號再回本頁綁定 UID');
  return e;
 }
 function startListening(role,user){
@@ -765,7 +791,7 @@ window.DongmenCloud={
  async login(role,username,password){
   if(!configured)throw Error('尚未設定 Firebase');
   signInType=role;
-  const email=role==='teacher'?username:(username.includes('@')?username.toLowerCase():username.toLowerCase()+'@schoolpassbook.invalid');
+  const email=role==='teacher'?username:(username.includes('@')?username.toLowerCase():username.toLowerCase()+'@'+cfg.projectId+'.firebaseapp.com');
   let user;
   try{user=(await signInWithEmailAndPassword(auth,email,password)).user} catch(e){throw readableError(e)}
   if(role==='teacher'){
@@ -797,15 +823,17 @@ window.DongmenCloud={
  whenSaved(){return writes;},
  async createStudentAccount(st){
   if(!cloudTeacher)throw Error('請先登入教師帳號');
-  const loginName=`c${code}s${st.id}${st.authUid?'r'+(Number(st.accountSeq||0)+1):''}`;
-  const alphabet='ABCDEFGHJKLMNPQRSTUVWXYZabcdefghijkmnopqrstuvwxyz23456789';
-  const bytes=new Uint32Array(12);crypto.getRandomValues(bytes);
-  const password=Array.from(bytes,n=>alphabet[n%alphabet.length]).join('');
+  const alphabet='abcdefghjkmnpqrstuvwxyz23456789';
+  const random=(count)=>{const bytes=new Uint32Array(count);crypto.getRandomValues(bytes);return Array.from(bytes,n=>alphabet[n%alphabet.length]).join('')};
+  const loginName=`c${code}s${st.id}${random(5)}`;
+  const password=random(12);
+  // The project Firebase domain is syntactically valid and unique to this school application.
+  const email=loginName+'@'+cfg.projectId+'.firebaseapp.com';
   let created;
-  try{created=await createUserWithEmailAndPassword(provisionAuth,loginName+'@schoolpassbook.invalid',password)}
+  try{created=await createUserWithEmailAndPassword(provisionAuth,email,password)}
   catch(e){throw readableError(e)}
-  await signOut(provisionAuth);
-  return {uid:created.user.uid,username:loginName,password};
+  try{await signOut(provisionAuth)}catch(e){};
+  return {uid:created.user.uid,username:loginName,password,email};
  },
  async checkStudentView(uid){
   if(!cloudTeacher)throw Error('僅教師可以檢查學生存摺');
@@ -835,7 +863,7 @@ window.DongmenCloud={
 if(configured){
  try{
   const app=initializeApp(cfg);const provisionApp=initializeApp(cfg,'student-account-provisioner');
-  auth=getAuth(app);provisionAuth=getAuth(provisionApp);db=getFirestore(app);
+  auth=getAuth(app);provisionAuth=initializeAuth(provisionApp,{persistence:inMemoryPersistence});db=getFirestore(app);
   window.DongmenV5.cloudReady(true);
   // Do not automatically select the teacher role from prior sign-in; explicit login avoids role confusion.
   onAuthStateChanged(auth,()=>{});
