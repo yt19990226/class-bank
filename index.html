@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>東門班級存摺 V6.1｜學生 QR 登入</title>
+<title>東門班級存摺 V6.3｜教師指定學生密碼</title>
 <style>
 :root{--ink:#33415b;--sub:#778298;--bg:#f6f8fd;--line:#e6eaf1;--white:#fff;--blue:#dfeeff;--pink:#ffebed;--mint:#dff5e9;--yellow:#fff3d3;--purple:#efe9ff;--strong:#556a99;--shadow:0 9px 30px #64748b15}
 *{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,"Noto Sans TC","Microsoft JhengHei",sans-serif;font-size:15px;line-height:1.55}button,input,select,textarea{font:inherit;color:inherit}button{cursor:pointer}button:disabled{cursor:not-allowed;opacity:.45}.app{max-width:1300px;margin:0 auto;padding:20px 24px 50px}.banner{background:linear-gradient(118deg,#e4f1ff,#f1eaff 60%,#fff3e8);border:1px solid #e5e6f0;border-radius:25px;padding:24px 28px;display:flex;justify-content:space-between;align-items:center;gap:20px}.banner h1{margin:3px 0 2px;font-size:30px;letter-spacing:1px}.banner p{margin:0;color:#667389}.eyebrow{font-size:12px;letter-spacing:2px;font-weight:800;color:#7289b6}.mode{display:flex;align-items:center;gap:8px;flex-wrap:wrap}.mode .small{font-size:12px;color:var(--sub)}.pill{border:1px solid #cfd9ed;background:#ffffffb6;border-radius:99px;padding:8px 14px;font-weight:700}.pill.active{background:#596f9d;color:white;border-color:#596f9d}.notice{background:#fff8e7;color:#75603a;border:1px solid #f3e3bf;border-radius:12px;padding:10px 14px;margin:14px 0;font-size:13px}.top{margin-top:15px;display:flex;gap:9px;flex-wrap:wrap}.tab{border:none;border-radius:12px;padding:12px 17px;background:#fff;color:#62718a;font-weight:750;box-shadow:0 2px 9px #5e71900a}.tab.active{background:#5c73a1;color:#fff}.tab:hover:not(.active){background:#e9effb}.grid{display:grid;grid-template-columns:290px minmax(0,1fr);gap:16px;margin-top:16px}.panel{background:white;border:1px solid #e9edf5;border-radius:19px;box-shadow:var(--shadow);padding:20px}.person{display:flex;align-items:center;justify-content:space-between;gap:12px}.person h2,.heading{margin:0;font-size:20px}.person .hint,.muted{font-size:12px;color:var(--sub)}.seatpick{width:100%;padding:11px 12px;border:1px solid #dce3ef;border-radius:11px;margin:13px 0;background:#fff;font-weight:700}.avatarbox{background:linear-gradient(160deg,#e6f5fa,#eff3ff 54%,#ffecf3);border:1px solid #e6ebfa;border-radius:18px;display:flex;justify-content:center;align-items:center;min-height:216px;margin-top:10px;position:relative;overflow:hidden}.avatarbox:after{content:"✦   ✧   ✦";font-size:26px;color:#fff;position:absolute;top:15px;right:15px;opacity:.7}.avatarbox svg{width:166px;height:183px;position:relative;z-index:1;filter:drop-shadow(0 6px 4px #5c69821c)}.namebadge{display:inline-block;background:#fff;color:#77829a;border-radius:99px;padding:4px 11px;font-size:12px;margin-top:11px;font-weight:700}.balanceline{margin-top:17px;display:flex;justify-content:space-between;align-items:end;border-bottom:1px dashed #e3e7f0;padding-bottom:14px}.number{font-size:35px;font-weight:850;letter-spacing:-1px}.unit{font-weight:700;font-size:14px;color:#a58a44}.softnote{font-size:12px;color:#8590a1;margin-top:10px}.statrow{display:flex;gap:10px;flex-wrap:wrap}.stat{background:#f6f8fc;border-radius:13px;padding:10px 13px;flex:1;min-width:100px}.stat label{color:#74819b;font-size:12px;display:block}.stat b{font-size:20px}.sectiontitle{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:15px}.sectiontitle h2{margin:0;font-size:20px}.sectiontitle span{font-size:12px;color:var(--sub)}.twocol{display:grid;grid-template-columns:1fr 1fr;gap:12px}.rewardgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(208px,1fr));gap:12px}.reward{border-radius:15px;border:1px solid #e7eaf1;background:#fff;padding:15px;display:flex;flex-direction:column;justify-content:space-between;gap:12px;min-height:144px}.reward h3{margin:0 0 5px;font-size:15px;line-height:1.4}.reward p{font-size:12px;color:#7c8797;margin:0}.price{font-size:14px;font-weight:800;color:#ad823a}.rewardfoot{display:flex;justify-content:space-between;gap:8px;align-items:center}.btn{border:0;background:#6179aa;color:#fff;padding:10px 14px;border-radius:11px;font-weight:750;white-space:nowrap}.btn:hover:not(:disabled){filter:brightness(.96)}.btn.secondary{background:#edf1fa;color:#5d7194}.btn.mint{background:#dff4e8;color:#3f8064}.btn.red{background:#ffe9e8;color:#a75555}.btn.small{font-size:12px;padding:7px 11px}.btn.ghost{background:#fff;color:#5e7090;border:1px solid #dce4f0}.quick{display:flex;flex-wrap:wrap;gap:8px}.quick .btn{flex:0 0 auto}.subhead{font-weight:800;font-size:14px;margin-bottom:10px}.formrow{display:flex;gap:9px;align-items:center;flex-wrap:wrap}.formrow input,.formrow textarea{border:1px solid #dfe4ed;border-radius:10px;padding:10px 11px;background:#fff}.formrow input[type=number]{width:140px}.formrow input[type=text]{flex:1;min-width:150px}.formrow select,.search{border:1px solid #dfe4ed;border-radius:10px;padding:10px 11px;background:#fff}.search{min-width:230px;width:100%;max-width:370px}.line{height:1px;background:#edf0f5;margin:16px 0}.history{display:flex;flex-direction:column;gap:8px}.historyitem{display:flex;justify-content:space-between;align-items:center;gap:10px;padding:10px 12px;background:#f8f9fc;border:1px solid #eef0f6;border-radius:11px;font-size:13px}.historyitem .small{color:#94a0b1;font-size:11px}.pos{color:#32966e;font-weight:800}.neg{color:#cf6b72;font-weight:800}.shopitem{display:flex;flex-direction:column;gap:10px;border:1px solid #e7eaf3;border-radius:15px;padding:13px;background:white}.shopitem .tryavatar{background:linear-gradient(140deg,#eff6fd,#fff1f5);border-radius:12px;display:flex;justify-content:center;height:142px;align-items:center}.shopitem svg{height:130px;width:122px}.shopgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(169px,1fr));gap:12px}.shopitem h3{margin:0;font-size:14px}.shopitem p{margin:1px 0;color:#718099;font-size:12px}.grouphead{font-weight:850;color:#6c7c98;margin:20px 0 12px}.chip{border-radius:99px;display:inline-block;padding:3px 9px;background:#e6f5ed;color:#5a9277;font-size:11px;font-weight:800}.chip.warn{background:#fff4dc;color:#a78346}.chip.gray{background:#f0f2f6;color:#8290a6}.center{text-align:center}.classbar{height:20px;background:#eef0fa;border-radius:12px;overflow:hidden}.classbar .fill{background:linear-gradient(90deg,#90c8a8,#66b4a0);height:100%;transition:width .3s ease}.hero{font-size:33px;font-weight:900;margin:8px 0}.classnote{color:#8390a3;font-size:13px}.empty{text-align:center;background:#f8f9fc;border-radius:13px;padding:24px;color:#8894a5}.settings textarea{width:100%;min-height:220px;padding:12px 14px;resize:vertical;border:1px solid #e0e6ee;border-radius:12px;line-height:1.7}.settings .row{display:flex;gap:9px;flex-wrap:wrap}.footer{margin-top:18px;font-size:12px;color:#8893a4;text-align:center}.toast{position:fixed;bottom:22px;right:22px;background:#42577d;color:#fff;box-shadow:0 15px 30px #42577d44;border-radius:12px;padding:12px 18px;z-index:9;max-width:90vw;font-weight:700;display:none}.toast.show{display:block}.tagline{background:#f2f7ff;border-radius:11px;padding:10px 13px;font-size:13px;color:#667c9c}.infocard{background:#f7fafc;border-radius:12px;padding:13px;font-size:13px}.right{margin-left:auto}.tally{font-variant-numeric:tabular-nums}.tabsRight{display:flex;flex-wrap:wrap;gap:8px;align-items:center}.check{font-size:12px;color:#8e9bad}.pending{display:flex;align-items:center;justify-content:space-between;gap:10px;border-radius:12px;border:1px solid #e7eaf2;background:#fffaf1;padding:10px 13px;margin-bottom:9px}.pending .action{display:flex;gap:6px}.pending .name{font-size:14px;font-weight:800}.pending small{font-size:12px;color:#8a8fa0}.dividerlabel{border-left:3px solid #abc5f1;padding-left:9px;font-weight:850;margin:6px 0 12px}.intro{font-size:14px;color:#78859c;max-width:630px}.danger{color:#ae5d65}.cardnum{font-size:12px;color:#8794a8} @media(max-width:840px){.app{padding:12px 12px 32px}.banner{padding:19px;flex-direction:column;align-items:flex-start}.banner h1{font-size:24px}.grid{grid-template-columns:1fr}.twocol{grid-template-columns:1fr}.avatarbox{min-height:145px}.avatarbox svg{height:135px;width:140px}.tab{flex:1;min-width:90px;padding:11px 10px;font-size:13px}.rewardgrid{grid-template-columns:repeat(auto-fill,minmax(158px,1fr))}.panel{padding:16px}.search{min-width:0}.shopgrid{grid-template-columns:repeat(2,minmax(0,1fr))}}
@@ -50,6 +50,15 @@
 .opening-alert{background:#fff6e7;border:1px solid #efd6a6;color:#7c5e30;padding:12px 14px;border-radius:11px;font-size:13px;margin-top:12px}
 .opening-actions{display:flex;gap:8px;align-items:center;flex-wrap:wrap}
 @media(max-width:700px){.opening-table{min-width:550px}.opening-table th,.opening-table td{padding:8px}}
+/* V6.3 教師指定學生密碼 */
+.password-create{margin:12px 0 9px;padding:14px;background:#f6f9ff;border:1px solid #dce8f7;border-radius:13px}
+.password-create label{display:block;font-size:13px;font-weight:800;margin-bottom:7px}
+.password-create input{flex:1;min-width:155px;max-width:350px;border:1px solid #d5dfed;border-radius:10px;padding:10px 12px}
+.password-create .pass-guide{margin:7px 0 0;color:#6d7d96;font-size:12px}
+.password-batch{margin-top:15px;border:1px solid #e2e8f4;border-radius:12px;padding:12px;background:#fff}
+.password-batch summary{cursor:pointer;font-weight:800}
+.password-batch textarea{width:100%;min-height:122px;resize:vertical;padding:10px 12px;border:1px solid #d8e2ef;border-radius:10px;line-height:1.7;font:inherit;font-size:13px;margin:9px 0}
+.password-create .formrow{gap:9px}
 </style>
 <script>
 /* 正式部署設定：從 Firebase 控制台「專案設定 → 你的應用程式」貼上網頁設定。
@@ -142,7 +151,7 @@ window.DONGMEN_CLOUD_SETUP = {
   
  </div>
 </div>
-<div class="app" id="appWrap" hidden><header class="banner"><div><span class="eyebrow">班級存摺 · V6.1</span><h1>🌷 東門班級存摺</h1></div><div class="mode"><span id="authStatus">尚未登入</span><button class="pill" id="logoutButton" type="button">登出</button></div></header><div id="loginNotice" class="cloudbar"></div><nav class="top" id="tabs"></nav><main class="grid"><aside id="sidebar"></aside><section id="main"></section></main></div><div id="toast" class="toast" role="status"></div><div id="qrOverlay" class="qr-overlay" hidden aria-label="QR 登入卡預覽"><div class="qr-preview-panel"><div class="qr-preview-toolbar"><b id="qrPreviewTitle">QR 登入卡</b><div class="quick"><button type="button" id="qrPrintNow" class="btn">🖨️ 列印／存 PDF</button><button type="button" id="qrPreviewClose" class="btn secondary">關閉</button></div></div><div id="qrPrintSheet" class="qr-print-sheet"></div></div></div>
+<div class="app" id="appWrap" hidden><header class="banner"><div><span class="eyebrow">班級存摺 · V6.3</span><h1>🌷 東門班級存摺</h1></div><div class="mode"><span id="authStatus">尚未登入</span><button class="pill" id="logoutButton" type="button">登出</button></div></header><div id="loginNotice" class="cloudbar"></div><nav class="top" id="tabs"></nav><main class="grid"><aside id="sidebar"></aside><section id="main"></section></main></div><div id="toast" class="toast" role="status"></div><div id="qrOverlay" class="qr-overlay" hidden aria-label="QR 登入卡預覽"><div class="qr-preview-panel"><div class="qr-preview-toolbar"><b id="qrPreviewTitle">QR 登入卡</b><div class="quick"><button type="button" id="qrPrintNow" class="btn">🖨️ 列印／存 PDF</button><button type="button" id="qrPreviewClose" class="btn secondary">關閉</button></div></div><div id="qrPrintSheet" class="qr-print-sheet"></div></div></div>
 <script>
 
 (()=>{'use strict';
@@ -529,9 +538,15 @@ function accountPanel(){
  const s=student();const isCloud=session==='cloud-teacher'&&cloudDataReady;
  const note=accountNotice?.studentId===s.id?accountNotice:null;
  return `<div class="teacher-tools"><div class="sectiontitle"><div><h2>🔐 學生帳號</h2></div></div>
- <div class="account-grid"><div><b>${svgEscape(s.id)}｜${svgEscape(s.name)}</b><div class="muted">${s.authUid?`目前帳號：${svgEscape(s.loginName||'已建立')}`:'尚未建立學生登入帳號'}</div></div>
- <button class="btn" data-action="createAccount" ${!isCloud||!!s.authUid?'disabled':''}>${s.authUid?'已建立':'建立此學生帳號'}</button></div>
- <div class="quick" style="margin-top:11px"><button class="btn secondary" data-action="createAllAccounts" ${!isCloud?'disabled':''}>一鍵建立所有尚未有帳號的學生</button><button class="btn mint" data-action="downloadCredentials" ${!generatedAccounts.length?'disabled':''}>下載本次帳號密碼表（${generatedAccounts.length} 筆）</button></div>
+ <div class="account-grid"><div><b>${svgEscape(s.id)}｜${svgEscape(s.name)}</b><div class="muted">${s.authUid?`目前帳號：${svgEscape(s.loginName||'已建立')}`:'尚未建立學生登入帳號'}</div></div></div>
+ ${s.authUid?'':`<div class="password-create"><label for="assignedStudentPassword">指定這位學生的登入密碼</label><div class="formrow"><input id="assignedStudentPassword" type="password" minlength="8" maxlength="30" placeholder="輸入 8～30 碼密碼" autocomplete="new-password" spellcheck="false" ${!isCloud?'disabled':''}/><button type="button" class="btn secondary" data-action="showAssignedPassword">顯示／隱藏</button><button class="btn" data-action="createAccount" ${!isCloud?'disabled':''}>建立此學生帳號</button></div><p class="pass-guide">建議每位學生使用不同密碼，至少 8 碼；請勿使用所有學生共用的密碼。</p></div>`}
+ <div class="quick" style="margin-top:11px"><button class="btn mint" data-action="downloadCredentials" ${!generatedAccounts.length?'disabled':''}>下載本次帳號密碼表（${generatedAccounts.length} 筆）</button></div>
+ <details class="password-batch"><summary>批次建立學生帳號（自行指定密碼）</summary>
+ <p class="softnote">從 Excel 複製兩欄：座號、密碼（也可用逗號分隔）。請為所有尚未有帳號的學生各填一組不同密碼。</p>
+ <textarea id="batchStudentPasswords" aria-label="批次座號與指定密碼" placeholder="01,GreenStar2026!&#10;02,BlueRiver2026!&#10;03,SunnyCloud2026!" spellcheck="false"></textarea>
+ <div class="quick"><button type="button" class="btn secondary" data-action="createAllAccounts" ${!isCloud?'disabled':''}>依指定密碼建立未有帳號的學生</button></div>
+ <p class="softnote">密碼不會寫入 Firestore、QR Code 或 GitHub；建立後請立即下載帳密表。已有帳號的學生不會被修改密碼。</p>
+ </details>
  <div id="accountFeedback" class="account-feedback ${note?.kind==='error'?'account-error':'account-success'}" ${note?'':'hidden'} role="alert">${note?svgEscape(note.message):''}</div>
  <p class="softnote"></p>${pendingAccountRecovery?.studentId===s.id?`<div class="opening-alert"><b>這個帳號在 Firebase 已建立，但還沒完成綁定。</b><div class="quick" style="margin-top:8px"><button class="btn mint" data-action="finishPendingBinding">完成剛建立的存摺綁定</button></div></div>`:''}
  <div class="line"></div>
@@ -550,7 +565,7 @@ function accountPanel(){
  <div class="quick"><button type="button" class="btn secondary" data-action="qrPrintOne" ${!isCloud||!s.authUid||!s.loginName?'disabled':''}>列印這位學生</button>
  <button type="button" class="btn mint" data-action="qrPrintAll" ${!isCloud||!S.students.some(x=>x.authUid&&x.loginName)?'disabled':''}>列印全班 QR 登入卡</button></div>
  <p class="softnote">掃碼自動帶入帳號，仍須輸入原本密碼。未建立帳號者不會列印。</p></div>
- ${generatedAccounts.length?`<div class="accountline" style="margin-top:13px"><b>本次新增帳號（請立刻下載並妥善保管）</b><div style="margin-top:6px">${generatedAccounts.slice(-4).map(a=>`${svgEscape(a.studentName)}：${svgEscape(a.username)}｜密碼 ${svgEscape(a.password)}`).join('<div></div>')}</div></div>`:''}
+ ${generatedAccounts.length?`<div class="accountline" style="margin-top:13px"><b>本次已建立 ${generatedAccounts.length} 個帳號</b><div class="softnote">請立即下載帳密表並安全保管；為保護學生，畫面不直接顯示密碼。</div></div>`:''}
  <p class="softnote"></p>
  ${!isCloud?'<p class="notice">目前無法建立帳號：請確認已正式登入教師帳號，且 Firebase 全班資料已完成載入。</p>':''}</div>`;
 }
@@ -611,17 +626,52 @@ async function cloudReject(id){
 }
 function accountCsv(){
  const rows=[['座號','姓名','學生帳號','初始密碼'],...generatedAccounts.map(x=>[x.studentId,x.studentName,x.username,x.password])];
- const csv='\ufeff'+rows.map(line=>line.map(x=>'"'+String(x).replaceAll('"','""')+'"').join(',')).join('\r\n');
+ const safeCsvValue=(value)=>{const text=String(value??'');return /^[=+@-]/.test(text)?"'"+text:text;};
+ const csv='\ufeff'+rows.map(line=>line.map(x=>'"'+safeCsvValue(x).replaceAll('"','""')+'"').join(',')).join('\r\n');
  const blob=new Blob([csv],{type:'text/csv;charset=utf-8'}),url=URL.createObjectURL(blob),a=document.createElement('a');
  a.href=url;a.download='東門學生帳號密碼_請妥善保管.csv';a.click();setTimeout(()=>URL.revokeObjectURL(url),2000);
 }
-async function createAccountFor(s){
+// 密碼由教師指定，只暫存在瀏覽器記憶體，不寫入班級存摺資料庫。
+function validateAssignedPassword(raw){
+ const pass=String(raw??'');
+ if(pass.length<8||pass.length>30)throw Error('指定密碼需為 8～30 碼');
+ if(!/^[\x21-\x7E]+$/.test(pass))throw Error('密碼請使用英文字母、數字或英文符號，不能包含空白或全形字元');
+ return pass;
+}
+function parseBatchPasswords(raw,missing){
+ const values=new Map(),seenPasswords=new Set();
+ const lines=String(raw||'').split(/\r?\n/).map(x=>x.trim()).filter(Boolean);
+ if(!lines.length)throw Error('請先從 Excel 貼上「座號、密碼」，每位學生一行');
+ for(let index=0;index<lines.length;index++){
+  const line=lines[index],separator=line.includes('\t')?'\t':(line.includes('，')?'，':',');
+  const cut=line.indexOf(separator);
+  if(cut<0)throw Error(`第 ${index+1} 行格式錯誤，應為「座號,密碼」`);
+  const rawId=line.slice(0,cut).trim(),rawPassword=line.slice(cut+1).trim();
+  if(index===0&&/^座號$/.test(rawId)&&/^密碼$/.test(rawPassword))continue;
+  if(!/^\d{1,3}$/.test(rawId))throw Error(`第 ${index+1} 行座號格式錯誤`);
+  const id=String(Number(rawId)).padStart(2,'0');
+  const pass=validateAssignedPassword(rawPassword);
+  if(values.has(id))throw Error(`${id} 號重複輸入，請保留一筆`);
+  if(seenPasswords.has(pass.toLowerCase()))throw Error(`有兩位以上學生使用同一組密碼（第 ${index+1} 行），請設定不同密碼`);
+  values.set(id,pass);seenPasswords.add(pass.toLowerCase());
+ }
+ const allowed=new Set(missing.map(s=>s.id));
+ const unknown=[...values.keys()].filter(id=>!allowed.has(id));
+ if(unknown.length)throw Error(`${unknown.join('、')} 號不在「尚未建立帳號」名單內，請移除後重試`);
+ const omitted=missing.filter(st=>!values.has(st.id)).map(st=>st.id);
+ if(omitted.length)throw Error(`尚未設定密碼的座號：${omitted.join('、')}`);
+ if(generatedAccounts.some(a=>seenPasswords.has(a.password.toLowerCase())))throw Error('指定密碼與本次已建立學生的密碼重複，請修改');
+ return values;
+}
+async function createAccountFor(s,assignedPassword){
+ const customPassword=validateAssignedPassword(assignedPassword);
+ if(generatedAccounts.some(x=>x.password.toLowerCase()===customPassword.toLowerCase()))throw Error('這組密碼與本次建立的其他學生相同，請換一組');
  if(session!=='cloud-teacher'||!cloudDataReady)throw Error('教師後台資料尚未載入完成');
  const studentId=s.id;
  if(S.students.find(x=>x.id===studentId)?.authUid)throw Error('學生已有帳號，請使用修復綁定');
  // One Firebase Auth signup on a separate auth instance; no teacher sign-out.
  let a;
- try{a=await window.DongmenCloud.createStudentAccount(s)}catch(err){throw Error(err?.message||'建立 Firebase 帳號失敗')}
+ try{a=await window.DongmenCloud.createStudentAccount(s,customPassword)}catch(err){throw Error(err?.message||'建立 Firebase 帳號失敗')}
  // If saving fails, teacher still has the new credentials and UID to finish binding without a second signup.
  generatedAccounts.push({studentId,studentName:s.name,username:a.username,password:a.password});
  pendingAccountRecovery={studentId,uid:a.uid,username:a.username};
@@ -699,14 +749,22 @@ document.addEventListener('click',async e=>{
    }
  if(action==='cloudApprove'&&session==='cloud-teacher')await cloudApprove(val);
  if(action==='cloudReject'&&session==='cloud-teacher')await cloudReject(val);
+ if(action==='showAssignedPassword'&&session==='cloud-teacher'){
+   const input=document.querySelector('#assignedStudentPassword');
+   if(input){input.type=input.type==='password'?'text':'password';input.focus();}
+ }
  if(action==='createAccount'&&session==='cloud-teacher'){
    const st=student();
    if(pendingAccountRecovery)return setAccountNotice('請先完成上一筆建立成功但尚未綁定的帳號，不能再重複建立。','error',st.id);
    if(st.authUid)return setAccountNotice('此學生已綁定帳號。若無法登入，請先使用「修復此學生存摺綁定」，不要再次建立。','error',st.id);
-   b.disabled=true;setAccountNotice('正在建立學生登入帳號、寫入存摺綁定……','info',st.id);
+   let assignedPassword;
+   try{assignedPassword=validateAssignedPassword(document.querySelector('#assignedStudentPassword')?.value)}
+   catch(err){return setAccountNotice(err.message,'error',st.id)}
+   if(!confirm(`為 ${st.id} 號 ${st.name} 建立帳號？\n密碼已由老師指定（確認視窗不顯示密碼）。`))return;
+   b.disabled=true;setAccountNotice('正在建立學生帳號與存摺綁定……','info',st.id);
    try{
-     await createAccountFor(st);
-     setAccountNotice(`${st.id} 號帳號已建立、存摺已綁定。請立即下載本次帳號密碼表。`,'success',st.id);
+     await createAccountFor(st,assignedPassword);
+     setAccountNotice(`${st.id} 號建立成功，請立即下載本次帳密表。`,'success',st.id);
    }catch(err){setAccountNotice('建立失敗：'+err.message,'error',st.id)}
    finally{b.disabled=false}
  }
@@ -714,11 +772,14 @@ document.addEventListener('click',async e=>{
    if(pendingAccountRecovery)return setAccountNotice('上一位學生的帳號尚未完成存摺綁定。請先完成綁定，避免遺留無法登入的帳號。','error');
    const missing=S.students.filter(s=>!s.authUid);
    if(!missing.length)return setAccountNotice('全班學生已經有存摺綁定，無需重新建立。','success');
-   if(!confirm(`將替 ${missing.length} 位學生建立登入帳號。建議先測試 1 位；完成後必須下載帳密表，確定？`))return;
+   let passwords;
+   try{passwords=parseBatchPasswords(document.querySelector('#batchStudentPasswords')?.value,missing)}
+   catch(err){return setAccountNotice('批次建立尚未開始：'+err.message,'error')}
+   if(!confirm(`已核對 ${missing.length} 位學生皆有不同的指定密碼。\n確定開始建立？完成後請立即下載帳號密碼表。`))return;
    b.disabled=true;let done=0,errorMessage='';
    for(const st of missing){
      setAccountNotice(`正在建立第 ${done+1}／${missing.length} 位（${st.id} 號）……`,'info',st.id);
-     try{await createAccountFor(st);done++}
+     try{await createAccountFor(st,passwords.get(st.id));done++}
      catch(err){errorMessage=`${st.id} 號 ${st.name}：${err.message}`;break}
    }
    b.disabled=false;render();
@@ -874,7 +935,7 @@ function readableError(e){
  if(code==='auth/invalid-credential'||code==='auth/wrong-password'||code==='auth/user-not-found')return Error('帳號或密碼不正確');
  if(code==='auth/email-already-in-use')return Error('Firebase Authentication 已有相同學生帳號（auth/email-already-in-use）。請不要重新建立；到 Firebase → Authentication → Users 找到該帳號並複製 User UID，回教師後台使用「綁定既有帳號」');
  if(code==='auth/invalid-email')return Error('Firebase 拒絕學生帳號格式（auth/invalid-email），請將完整錯誤截圖；不要反覆建立');
- if(code==='auth/weak-password')return Error('密碼強度不足（auth/weak-password）');
+ if(code==='auth/weak-password')return Error('Firebase 拒絕這組密碼，請改用更長、含英文字母及數字的密碼（auth/weak-password）');
  if(code==='auth/too-many-requests')return Error('Firebase 暫時限制短時間大量建立帳號（auth/too-many-requests）。請改為逐位建立，不要反覆點擊');
  if(code==='auth/network-request-failed')return Error('Firebase 網路連線失敗（auth/network-request-failed），請檢查學校網路');
  if(code==='auth/app-not-authorized'||code==='auth/unauthorized-domain')return Error('Firebase 尚未授權此 GitHub Pages 網域（'+code+'）');
@@ -938,12 +999,13 @@ window.DongmenCloud={
   return writes.catch(e=>{throw readableError(e)});
  },
  whenSaved(){return writes;},
- async createStudentAccount(st){
-  if(!cloudTeacher)throw Error('請先登入教師帳號');
+ async createStudentAccount(st,assignedPassword){
+  if(!cloudTeacher||!auth?.currentUser)throw Error('請先登入正式教師帳號');
+  const password=String(assignedPassword??'');
+  if(password.length<8||password.length>30||! /^[\x21-\x7E]+$/.test(password))throw Error('學生密碼需為 8～30 碼英數或英文符號');
   const alphabet='abcdefghjkmnpqrstuvwxyz23456789';
   const random=(count)=>{const bytes=new Uint32Array(count);crypto.getRandomValues(bytes);return Array.from(bytes,n=>alphabet[n%alphabet.length]).join('')};
   const loginName=`c${code}s${st.id}${random(5)}`;
-  const password=random(12);
   // The project Firebase domain is syntactically valid and unique to this school application.
   const email=loginName+'@'+cfg.projectId+'.firebaseapp.com';
   let created;
