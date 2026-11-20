@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>東門班級存摺 V6.3｜教師指定學生密碼</title>
+<title>東門班級存摺 V6.4｜批次扣分與每週遲到</title>
 <style>
 :root{--ink:#33415b;--sub:#778298;--bg:#f6f8fd;--line:#e6eaf1;--white:#fff;--blue:#dfeeff;--pink:#ffebed;--mint:#dff5e9;--yellow:#fff3d3;--purple:#efe9ff;--strong:#556a99;--shadow:0 9px 30px #64748b15}
 *{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,"Noto Sans TC","Microsoft JhengHei",sans-serif;font-size:15px;line-height:1.55}button,input,select,textarea{font:inherit;color:inherit}button{cursor:pointer}button:disabled{cursor:not-allowed;opacity:.45}.app{max-width:1300px;margin:0 auto;padding:20px 24px 50px}.banner{background:linear-gradient(118deg,#e4f1ff,#f1eaff 60%,#fff3e8);border:1px solid #e5e6f0;border-radius:25px;padding:24px 28px;display:flex;justify-content:space-between;align-items:center;gap:20px}.banner h1{margin:3px 0 2px;font-size:30px;letter-spacing:1px}.banner p{margin:0;color:#667389}.eyebrow{font-size:12px;letter-spacing:2px;font-weight:800;color:#7289b6}.mode{display:flex;align-items:center;gap:8px;flex-wrap:wrap}.mode .small{font-size:12px;color:var(--sub)}.pill{border:1px solid #cfd9ed;background:#ffffffb6;border-radius:99px;padding:8px 14px;font-weight:700}.pill.active{background:#596f9d;color:white;border-color:#596f9d}.notice{background:#fff8e7;color:#75603a;border:1px solid #f3e3bf;border-radius:12px;padding:10px 14px;margin:14px 0;font-size:13px}.top{margin-top:15px;display:flex;gap:9px;flex-wrap:wrap}.tab{border:none;border-radius:12px;padding:12px 17px;background:#fff;color:#62718a;font-weight:750;box-shadow:0 2px 9px #5e71900a}.tab.active{background:#5c73a1;color:#fff}.tab:hover:not(.active){background:#e9effb}.grid{display:grid;grid-template-columns:290px minmax(0,1fr);gap:16px;margin-top:16px}.panel{background:white;border:1px solid #e9edf5;border-radius:19px;box-shadow:var(--shadow);padding:20px}.person{display:flex;align-items:center;justify-content:space-between;gap:12px}.person h2,.heading{margin:0;font-size:20px}.person .hint,.muted{font-size:12px;color:var(--sub)}.seatpick{width:100%;padding:11px 12px;border:1px solid #dce3ef;border-radius:11px;margin:13px 0;background:#fff;font-weight:700}.avatarbox{background:linear-gradient(160deg,#e6f5fa,#eff3ff 54%,#ffecf3);border:1px solid #e6ebfa;border-radius:18px;display:flex;justify-content:center;align-items:center;min-height:216px;margin-top:10px;position:relative;overflow:hidden}.avatarbox:after{content:"✦   ✧   ✦";font-size:26px;color:#fff;position:absolute;top:15px;right:15px;opacity:.7}.avatarbox svg{width:166px;height:183px;position:relative;z-index:1;filter:drop-shadow(0 6px 4px #5c69821c)}.namebadge{display:inline-block;background:#fff;color:#77829a;border-radius:99px;padding:4px 11px;font-size:12px;margin-top:11px;font-weight:700}.balanceline{margin-top:17px;display:flex;justify-content:space-between;align-items:end;border-bottom:1px dashed #e3e7f0;padding-bottom:14px}.number{font-size:35px;font-weight:850;letter-spacing:-1px}.unit{font-weight:700;font-size:14px;color:#a58a44}.softnote{font-size:12px;color:#8590a1;margin-top:10px}.statrow{display:flex;gap:10px;flex-wrap:wrap}.stat{background:#f6f8fc;border-radius:13px;padding:10px 13px;flex:1;min-width:100px}.stat label{color:#74819b;font-size:12px;display:block}.stat b{font-size:20px}.sectiontitle{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:15px}.sectiontitle h2{margin:0;font-size:20px}.sectiontitle span{font-size:12px;color:var(--sub)}.twocol{display:grid;grid-template-columns:1fr 1fr;gap:12px}.rewardgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(208px,1fr));gap:12px}.reward{border-radius:15px;border:1px solid #e7eaf1;background:#fff;padding:15px;display:flex;flex-direction:column;justify-content:space-between;gap:12px;min-height:144px}.reward h3{margin:0 0 5px;font-size:15px;line-height:1.4}.reward p{font-size:12px;color:#7c8797;margin:0}.price{font-size:14px;font-weight:800;color:#ad823a}.rewardfoot{display:flex;justify-content:space-between;gap:8px;align-items:center}.btn{border:0;background:#6179aa;color:#fff;padding:10px 14px;border-radius:11px;font-weight:750;white-space:nowrap}.btn:hover:not(:disabled){filter:brightness(.96)}.btn.secondary{background:#edf1fa;color:#5d7194}.btn.mint{background:#dff4e8;color:#3f8064}.btn.red{background:#ffe9e8;color:#a75555}.btn.small{font-size:12px;padding:7px 11px}.btn.ghost{background:#fff;color:#5e7090;border:1px solid #dce4f0}.quick{display:flex;flex-wrap:wrap;gap:8px}.quick .btn{flex:0 0 auto}.subhead{font-weight:800;font-size:14px;margin-bottom:10px}.formrow{display:flex;gap:9px;align-items:center;flex-wrap:wrap}.formrow input,.formrow textarea{border:1px solid #dfe4ed;border-radius:10px;padding:10px 11px;background:#fff}.formrow input[type=number]{width:140px}.formrow input[type=text]{flex:1;min-width:150px}.formrow select,.search{border:1px solid #dfe4ed;border-radius:10px;padding:10px 11px;background:#fff}.search{min-width:230px;width:100%;max-width:370px}.line{height:1px;background:#edf0f5;margin:16px 0}.history{display:flex;flex-direction:column;gap:8px}.historyitem{display:flex;justify-content:space-between;align-items:center;gap:10px;padding:10px 12px;background:#f8f9fc;border:1px solid #eef0f6;border-radius:11px;font-size:13px}.historyitem .small{color:#94a0b1;font-size:11px}.pos{color:#32966e;font-weight:800}.neg{color:#cf6b72;font-weight:800}.shopitem{display:flex;flex-direction:column;gap:10px;border:1px solid #e7eaf3;border-radius:15px;padding:13px;background:white}.shopitem .tryavatar{background:linear-gradient(140deg,#eff6fd,#fff1f5);border-radius:12px;display:flex;justify-content:center;height:142px;align-items:center}.shopitem svg{height:130px;width:122px}.shopgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(169px,1fr));gap:12px}.shopitem h3{margin:0;font-size:14px}.shopitem p{margin:1px 0;color:#718099;font-size:12px}.grouphead{font-weight:850;color:#6c7c98;margin:20px 0 12px}.chip{border-radius:99px;display:inline-block;padding:3px 9px;background:#e6f5ed;color:#5a9277;font-size:11px;font-weight:800}.chip.warn{background:#fff4dc;color:#a78346}.chip.gray{background:#f0f2f6;color:#8290a6}.center{text-align:center}.classbar{height:20px;background:#eef0fa;border-radius:12px;overflow:hidden}.classbar .fill{background:linear-gradient(90deg,#90c8a8,#66b4a0);height:100%;transition:width .3s ease}.hero{font-size:33px;font-weight:900;margin:8px 0}.classnote{color:#8390a3;font-size:13px}.empty{text-align:center;background:#f8f9fc;border-radius:13px;padding:24px;color:#8894a5}.settings textarea{width:100%;min-height:220px;padding:12px 14px;resize:vertical;border:1px solid #e0e6ee;border-radius:12px;line-height:1.7}.settings .row{display:flex;gap:9px;flex-wrap:wrap}.footer{margin-top:18px;font-size:12px;color:#8893a4;text-align:center}.toast{position:fixed;bottom:22px;right:22px;background:#42577d;color:#fff;box-shadow:0 15px 30px #42577d44;border-radius:12px;padding:12px 18px;z-index:9;max-width:90vw;font-weight:700;display:none}.toast.show{display:block}.tagline{background:#f2f7ff;border-radius:11px;padding:10px 13px;font-size:13px;color:#667c9c}.infocard{background:#f7fafc;border-radius:12px;padding:13px;font-size:13px}.right{margin-left:auto}.tally{font-variant-numeric:tabular-nums}.tabsRight{display:flex;flex-wrap:wrap;gap:8px;align-items:center}.check{font-size:12px;color:#8e9bad}.pending{display:flex;align-items:center;justify-content:space-between;gap:10px;border-radius:12px;border:1px solid #e7eaf2;background:#fffaf1;padding:10px 13px;margin-bottom:9px}.pending .action{display:flex;gap:6px}.pending .name{font-size:14px;font-weight:800}.pending small{font-size:12px;color:#8a8fa0}.dividerlabel{border-left:3px solid #abc5f1;padding-left:9px;font-weight:850;margin:6px 0 12px}.intro{font-size:14px;color:#78859c;max-width:630px}.danger{color:#ae5d65}.cardnum{font-size:12px;color:#8794a8} @media(max-width:840px){.app{padding:12px 12px 32px}.banner{padding:19px;flex-direction:column;align-items:flex-start}.banner h1{font-size:24px}.grid{grid-template-columns:1fr}.twocol{grid-template-columns:1fr}.avatarbox{min-height:145px}.avatarbox svg{height:135px;width:140px}.tab{flex:1;min-width:90px;padding:11px 10px;font-size:13px}.rewardgrid{grid-template-columns:repeat(auto-fill,minmax(158px,1fr))}.panel{padding:16px}.search{min-width:0}.shopgrid{grid-template-columns:repeat(2,minmax(0,1fr))}}
@@ -59,6 +59,25 @@
 .password-batch summary{cursor:pointer;font-weight:800}
 .password-batch textarea{width:100%;min-height:122px;resize:vertical;padding:10px 12px;border:1px solid #d8e2ef;border-radius:10px;line-height:1.7;font:inherit;font-size:13px;margin:9px 0}
 .password-create .formrow{gap:9px}
+
+/* V6.4：多選學生、日期扣分、密碼顯示 */
+.show-password-toggle{display:flex!important;align-items:center;gap:7px;margin:1px 0 14px;font-size:13px;color:#52627e;font-weight:650;cursor:pointer}
+.show-password-toggle[hidden]{display:none!important}
+.show-password-toggle input{width:17px;height:17px;accent-color:#596f9d;cursor:pointer}
+.penalty-date-row{display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin:13px 0 8px}
+.penalty-date-row label{display:flex;align-items:center;gap:8px;font-weight:700}
+.penalty-date-row input{padding:9px 11px;border-radius:11px;border:1px solid #d5dfed;background:white;max-width:200px}
+.penalty-roster{margin:14px 0;border:1px solid #e0e8f6;background:#f8faff;border-radius:13px;padding:12px}
+.penalty-roster summary{cursor:pointer;font-weight:800;color:#3d547f}
+.penalty-roster-actions{display:flex;gap:8px;flex-wrap:wrap;margin:11px 0}
+.penalty-student-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(130px,1fr));gap:7px;max-height:200px;overflow-y:auto;padding-right:4px}
+.penalty-student{display:flex;align-items:center;gap:7px;padding:7px 9px;background:#fff;border:1px solid #e3eaf5;border-radius:10px;cursor:pointer;font-size:13px}
+.penalty-student:has(input:checked){background:#eaf2ff;border-color:#94afe1}
+.penalty-student input{accent-color:#596f9d;width:17px;height:17px;flex:none}
+.penalty-preview-list{max-height:160px;overflow-y:auto;margin-top:7px}
+.penalty-preview-list div{display:flex;justify-content:space-between;gap:12px;border-top:1px solid #e8ecf4;padding:4px 0}
+.penalty-preview-list .skip{color:#a54d58}
+@media(max-width:600px){.penalty-student-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.penalty-date-row input{max-width:170px}}
 </style>
 <script>
 /* 正式部署設定：從 Firebase 控制台「專案設定 → 你的應用程式」貼上網頁設定。
@@ -144,6 +163,7 @@ window.DONGMEN_CLOUD_SETUP = {
    <div id="studentLoginBlock"><div id="qrLoginHint" class="qr-login-hint" hidden>✅ 已帶入帳號，請輸入密碼</div><label for="loginUsername">學生帳號</label><input id="loginUsername" placeholder="學生帳號" autocomplete="username" /></div>
    <div id="teacherLoginBlock" hidden><label for="loginEmail">教師電子郵件</label><input id="loginEmail" type="email" placeholder="教師電子郵件" autocomplete="username" /></div>
    <label for="loginPassword">密碼</label><input id="loginPassword" type="password" autocomplete="current-password" minlength="6" placeholder="請輸入密碼" required />
+   <label id="studentPasswordToggleWrap" class="show-password-toggle" for="showLoginPassword"><input id="showLoginPassword" type="checkbox" />顯示密碼</label>
    <button type="submit" id="loginButton" class="btn">登入</button>
   </form>
   <div id="authError" class="auth-error" role="status"></div>
@@ -151,7 +171,7 @@ window.DONGMEN_CLOUD_SETUP = {
   
  </div>
 </div>
-<div class="app" id="appWrap" hidden><header class="banner"><div><span class="eyebrow">班級存摺 · V6.3</span><h1>🌷 東門班級存摺</h1></div><div class="mode"><span id="authStatus">尚未登入</span><button class="pill" id="logoutButton" type="button">登出</button></div></header><div id="loginNotice" class="cloudbar"></div><nav class="top" id="tabs"></nav><main class="grid"><aside id="sidebar"></aside><section id="main"></section></main></div><div id="toast" class="toast" role="status"></div><div id="qrOverlay" class="qr-overlay" hidden aria-label="QR 登入卡預覽"><div class="qr-preview-panel"><div class="qr-preview-toolbar"><b id="qrPreviewTitle">QR 登入卡</b><div class="quick"><button type="button" id="qrPrintNow" class="btn">🖨️ 列印／存 PDF</button><button type="button" id="qrPreviewClose" class="btn secondary">關閉</button></div></div><div id="qrPrintSheet" class="qr-print-sheet"></div></div></div>
+<div class="app" id="appWrap" hidden><header class="banner"><div><span class="eyebrow">班級存摺 · V6.4</span><h1>🌷 東門班級存摺</h1></div><div class="mode"><span id="authStatus">尚未登入</span><button class="pill" id="logoutButton" type="button">登出</button></div></header><div id="loginNotice" class="cloudbar"></div><nav class="top" id="tabs"></nav><main class="grid"><aside id="sidebar"></aside><section id="main"></section></main></div><div id="toast" class="toast" role="status"></div><div id="qrOverlay" class="qr-overlay" hidden aria-label="QR 登入卡預覽"><div class="qr-preview-panel"><div class="qr-preview-toolbar"><b id="qrPreviewTitle">QR 登入卡</b><div class="quick"><button type="button" id="qrPrintNow" class="btn">🖨️ 列印／存 PDF</button><button type="button" id="qrPreviewClose" class="btn secondary">關閉</button></div></div><div id="qrPrintSheet" class="qr-print-sheet"></div></div></div>
 <script>
 
 (()=>{'use strict';
@@ -160,7 +180,7 @@ const REWARDS=[
 ['r1','再睡五分鐘卡',2500,'班導課的上課開始或結束時使用'],['r2','能量補充卡',2500,'向老師兌換小點心'],['r3','點歌大師卡',2500,'午飯時間指定播放音樂'],['r4','請讓我下課卡',3000,'當天訂正延至隔天完成'],['r5','快速通關卡',3000,'午餐或改作業免排隊一天'],['r6','午休自由卡',3000,'午休可安靜自由活動'],['r7','自由穿搭卡',3000,'可依班級規定自由穿搭一次'],['r8','我要看動漫卡',3000,'午飯時間選擇適齡動畫'],['r9','一日特別座位卡',4000,'自行選擇一日座位'],['r10','3C 特權卡',5000,'指定下課時間於老師附近使用平板'],['r11','文具許願卡',5000,'許願一項約 50–100 元文具'],['r12','點數乘骰子倍卡',5000,'須由老師依原規則手動結算'],['r13','遲交特權卡',5000,'一項當日作業隔日繳交'],['r14','犧牲小我、完成大我卡',5000,'兌換加班分 10 分'],['r15','免打掃工作卡',6000,'依班級安排免打掃一天'],['r16','零食吃到飽卡',6000,'下課時間依班規享用零食'],['r17','懲罰但可下課卡',7000,'依老師判斷及班規使用'],['r18','作業減半卡',8000,'一項作業量減半；作文除外'],['r19','我想喝飲料卡',8000,'老師請喝約 50–80 元飲料'],['r20','位置自由選卡',9000,'下次換位時優先選座位'],['r21','分數升級卡',10000,'依老師及學校評量規定審核'],['r22','老師救救我卡',10000,'依評量規範與老師審核'],['r23','作業消失卡',10000,'一項作業免寫；作文除外'],['r24','手機自由卡',15000,'須先符合學校行動載具規範'],['r25','免死金牌卡',20000,'限於符合校規及教師判斷的情況'] ];
 const QUICK=[['+1000','參賽獎金',1000],['+500','全勤獎金',500],['+100','職務加給／公開表揚',100],['+50','加班費／幫忙',50],['−100','一般手動扣分（不累計）',-100]];
 const PENALTIES=[
-{id:"late",name:"遲到",base:100,repeat:false,detail:false,custom:false},
+{id:"late",name:"遲到",base:100,repeat:true,weekly:true,detail:false,custom:false},
 {id:"missing",name:"作業缺交",base:100,repeat:true,detail:true,custom:false},
 {id:"unsigned",name:"作業未簽",base:100,repeat:true,detail:true,custom:false},
 {id:"supply",name:"沒帶學用品",base:100,repeat:true,detail:true,custom:false},
@@ -183,6 +203,11 @@ const svgEscape=s=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':
 const money=n=>Number(n||0).toLocaleString('zh-TW');
 const stamp=()=>new Date().toISOString();
 const dtime=s=>new Date(s).toLocaleString('zh-TW',{timeZone:'Asia/Taipei',month:'numeric',day:'numeric',hour:'2-digit',minute:'2-digit'});
+function taipeiDate(value){const parts=Object.fromEntries(new Intl.DateTimeFormat('en-US',{timeZone:'Asia/Taipei',year:'numeric',month:'2-digit',day:'2-digit'}).formatToParts(new Date(value)).filter(p=>p.type!=='literal').map(p=>[p.type,p.value]));return `${parts.year}-${parts.month}-${parts.day}`;}
+const localDate=()=>taipeiDate(new Date());
+function isValidDate(v){if(!/^\d{4}-\d{2}-\d{2}$/.test(v||''))return false;const d=new Date(v+'T00:00:00Z');return !isNaN(d)&&d.toISOString().slice(0,10)===v;}
+function weekForLocalDate(v){if(!isValidDate(v))return '';const d=new Date(v+'T00:00:00Z');d.setUTCDate(d.getUTCDate()-(d.getUTCDay()+6)%7);return d.toISOString().slice(0,10);}
+function transactionDate(t){if(isValidDate(t.occurredOn))return t.occurredOn;const d=new Date(t.at);if(isNaN(d))return '';return taipeiDate(d);}
 const unique=()=>('id-'+Date.now().toString(36)+'-'+Math.random().toString(36).slice(2,8));
 const studentSeed=(i)=>({id:String(i).padStart(2,'0'),name:`${i}號同學`,balance:0,tickets:[]});
 const fresh=()=>({students:Array.from({length:29},(_,i)=>studentSeed(i+1)),tx:[],requests:[],classPoints:0,classHistory:[],classRewards:[],paidWeeks:[],ticketActions:[]});
@@ -203,7 +228,7 @@ function normalize(data){
 }
 function load(){try{const a=JSON.parse(localStorage.getItem(KEY));if(a&&Array.isArray(a.students)&&Array.isArray(a.tx))return normalize(a)}catch(e){}return fresh()}
 let session='locked', cloudRequests=[], generatedAccounts=[], authRole='student', cloudBusy=false, accountNotice=null, pendingAccountRecovery=null, cloudDataReady=false;
-let S=load(), tab='bank', mode='teacher', chosen=S.students[0]?.id||'01', rewardSearch='', wardrobeFilter='all', payrollWeekOffset=0, cardFilter='unused', selectedPenalty='late', selectedPenaltyDetail='', selectedPenaltyBase=100;
+let S=load(), tab='bank', mode='teacher', chosen=S.students[0]?.id||'01', rewardSearch='', wardrobeFilter='all', payrollWeekOffset=0, cardFilter='unused', selectedPenalty='late', selectedPenaltyDetail='', selectedPenaltyBase=100, selectedPenaltyDate=localDate(), selectedPenaltyStudents=new Set([chosen]);
 let openingDraft={}, openingPreview=null;
 function save(){
  if(session==='cloud-teacher'){
@@ -247,37 +272,58 @@ function issuePayroll(onlyStudentId=null){
 }
 function penaltyKey(p,detail){return p.id+(p.detail?'｜'+detail.trim().toLowerCase():'')}
 function penaltyCount(studentId,key){return S.tx.filter(t=>t.kind==='penalty'&&!t.undone&&t.studentId===studentId&&t.penaltyKey===key).length}
-function recalculatePenaltyChain(studentId,key){
- const s=student(studentId);
- const entries=S.tx.filter(t=>t.kind==='penalty'&&!t.undone&&t.studentId===studentId&&t.penaltyKey===key).reverse();
+function lateEntries(studentId,week){return S.tx.filter(t=>t.kind==='penalty'&&!t.undone&&t.studentId===studentId&&t.penaltyId==='late'&&weekForLocalDate(transactionDate(t))===week)}
+function hasLateOnDate(studentId,date){return S.tx.some(t=>t.kind==='penalty'&&!t.undone&&t.studentId===studentId&&t.penaltyId==='late'&&transactionDate(t)===date)}
+function penaltyTimes(p,id,date,key){
+ if(!p.weekly)return p.repeat?penaltyCount(id,key)+1:1;
+ return lateEntries(id,weekForLocalDate(date)).filter(t=>transactionDate(t)<=date).length+1;
+}
+function recalculatePenaltyChain(studentId,key,period=null){
+ const st=student(studentId);
+ const p=PENALTIES.find(x=>key===x.id||key.startsWith(x.id+'｜'));
+ if(!st||!p)return;
+ const entries=S.tx.filter(t=>t.kind==='penalty'&&!t.undone&&t.studentId===studentId&&t.penaltyKey===key&&(!p.weekly||weekForLocalDate(transactionDate(t))===period));
+ entries.sort((a,b)=>p.weekly?(transactionDate(a).localeCompare(transactionDate(b))||String(a.at).localeCompare(String(b.at))||String(a.id).localeCompare(String(b.id))):(String(a.at).localeCompare(String(b.at))||String(a.id).localeCompare(String(b.id))));
  entries.forEach((t,i)=>{
-   const kind=PENALTIES.find(p=>p.id===t.penaltyId), rank=kind?.repeat?i+1:1, desired=-(Math.abs(t.penaltyBase||100)*rank);
+   const rank=p.repeat?i+1:1,desired=-(Math.abs(t.penaltyBase||p.base)*rank);
    if(t.amount!==desired){
      const diff=desired-t.amount;
-     s.balance+=diff;
-     S.tx.unshift({id:unique(),studentId,amount:diff,kind:'recalc',reason:`撤銷後重算：${t.penaltyName||'累犯扣分'} 第${rank}次`,at:stamp(),refId:t.id,undone:false});
+     st.balance+=diff;
+     S.tx.unshift({id:unique(),studentId,amount:diff,kind:'recalc',reason:`重算：${t.penaltyName||p.name} 第${rank}次`,at:stamp(),refId:t.id,undone:false});
      t.amount=desired;
    }
    t.penaltyLevel=rank;
-   t.reason=(t.penaltyName||'扣分')+(kind?.repeat?`（第${rank}次 ×${rank}）`:'');
+   if(p.weekly)t.penaltyWeek=period;
+   t.reason=(t.penaltyName||p.name)+(p.weekly?`（${transactionDate(t)}・當週第${rank}次 ×${rank}）`:p.repeat?`（第${rank}次 ×${rank}）`:'');
  });
 }
+function penaltyTargets(){return S.students.filter(st=>selectedPenaltyStudents.has(st.id));}
 function addPenalty(){
  if(mode!=='teacher')return;
+ if(session==='cloud-teacher'&&!cloudDataReady)return notify('雲端資料載入中，請稍後再操作');
  const p=PENALTIES.find(x=>x.id===document.querySelector('#penaltyType')?.value);
  if(!p)return;
  const raw=document.querySelector('#penaltyDetail')?.value.trim()||'';
- if(p.detail&&!raw)return notify('請填寫具體作業／物品名稱（建議包含日期）');
+ if(p.detail&&!raw)return notify('請填寫具體作業／物品名稱');
  const rawBase=document.querySelector('#penaltyBase')?.value;
  const base=p.custom?Number(rawBase):p.base;
  if(!Number.isInteger(base)||base<50||base>1000)return notify('班規／校規基本扣分限 50～1,000');
- const key=penaltyKey(p,raw),times=p.repeat?penaltyCount(chosen,key)+1:1,amount=-(base*times);
- const s=student();
- const label=p.name+(raw?'：'+raw:'');
- // 按下確認扣分即直接入帳；不使用可能在嵌入瀏覽器被攔截的原生 confirm 對話框。
- s.balance+=amount;
- S.tx.unshift({id:unique(),studentId:s.id,amount,reason:label+(p.repeat?`（第${times}次 ×${times}）`:''),kind:'penalty',penaltyKey:key,penaltyId:p.id,penaltyName:label,penaltyBase:base,penaltyLevel:times,at:stamp(),undone:false});
- save();render();notify(`${s.name}｜${label}：−${money(-amount)} 班幣，餘額 ${money(s.balance)}`);
+ const date=document.querySelector('#penaltyDate')?.value||'';
+ if(!isValidDate(date)||date>localDate())return notify('請選擇正確、且不晚於今天的登記日期');
+ const targets=penaltyTargets();if(!targets.length)return notify('請先勾選至少一位學生');
+ const key=penaltyKey(p,raw),label=p.name+(raw?'：'+raw:''),at=stamp(),groupId=unique();
+ let done=0,skipped=[];
+ for(const st of targets){
+   if(p.weekly&&hasLateOnDate(st.id,date)){skipped.push(st.id+' 號');continue;}
+   const times=penaltyTimes(p,st.id,date,key);
+   const amount=-(base*(p.weekly?1:times));
+   st.balance+=amount;
+   S.tx.unshift({id:unique(),studentId:st.id,amount,reason:label+(p.weekly?`（${date}・當週第${times}次 ×${times}）`:p.repeat?`（第${times}次 ×${times}）`:''),kind:'penalty',penaltyKey:key,penaltyId:p.id,penaltyName:label,penaltyBase:base,penaltyLevel:p.weekly?1:times,penaltyWeek:p.weekly?weekForLocalDate(date):undefined,occurredOn:date,groupId,at,undone:false});
+   if(p.weekly)recalculatePenaltyChain(st.id,key,weekForLocalDate(date));
+   done++;
+ }
+ if(!done)return notify(`沒有新增紀錄：${skipped.join('、')}當天已登記遲到`);
+ save();render();notify(`已登記 ${done} 位學生（${date}）${skipped.length?'；略過重複 '+skipped.join('、'):''}`);
 }
 function updatePenaltyPreview(){
  const p=PENALTIES.find(x=>x.id===document.querySelector('#penaltyType')?.value),out=document.querySelector('#penaltyPreview');
@@ -286,23 +332,26 @@ function updatePenaltyPreview(){
  const detailEl=document.querySelector('#penaltyDetail'),baseEl=document.querySelector('#penaltyBase');
  if(detailEl){detailEl.closest('.penaltydetail').style.display=p.detail?'':'none';detailEl.required=p.detail}
  if(baseEl){baseEl.closest('.penaltybase').style.display=p.custom?'':'none';if(!p.custom)baseEl.value=String(p.base)}
- const detail=detailEl?.value.trim()||'';
- selectedPenaltyDetail=detail;
+ const detail=detailEl?.value.trim()||'';selectedPenaltyDetail=detail;
  const base=p.custom?Number(baseEl?.value):p.base;
  if(p.custom&&Number.isInteger(base))selectedPenaltyBase=base;
- const times=p.repeat?penaltyCount(chosen,penaltyKey(p,detail))+1:1;
- out.innerHTML=`${p.repeat?`同項目第 <b>${times}</b> 次（${times} 倍）`:'此項不累計倍數'}｜基本 <b>${money(base)}</b> × ${times} → 預計 <b class="neg">−${money(base*times)}</b> 班幣${p.detail&&!detail?'<div class="softnote">請先填作業或用品名稱，才能正確比對。</div>':''}`;
+ const date=document.querySelector('#penaltyDate')?.value||selectedPenaltyDate;
+ const targets=penaltyTargets(),key=penaltyKey(p,detail);
+ const summary=document.querySelector('#penaltyStudentCount');if(summary)summary.textContent=`已選 ${targets.length} 位`;
+ const valid=isValidDate(date)&&date<=localDate();
+ const previews=valid&&Number.isInteger(base)?targets.map(st=>({st,skip:p.weekly&&hasLateOnDate(st.id,date),times:penaltyTimes(p,st.id,date,key),later:p.weekly?lateEntries(st.id,weekForLocalDate(date)).filter(t=>transactionDate(t)>date).length:0})):[];
+ const total=previews.filter(x=>!x.skip).reduce((acc,x)=>acc+base*(x.times+x.later),0);
+ out.innerHTML=`<b>${p.weekly?'週一至週日各自累計':p.repeat?'同項目持續累計':'固定金額'}</b>｜${valid?svgEscape(date):'請選擇有效日期'}｜已選 <b>${targets.length}</b> 位｜${p.weekly?'含後續重算，合計影響':'預計扣'} <b class="neg">${money(total)}</b> 班幣${p.detail&&!detail?'<div class="softnote">請填寫作業／物品名稱。</div>':''}${previews.length?`<div class="penalty-preview-list">${previews.map(x=>`<div class="${x.skip?'skip':''}"><span>${svgEscape(x.st.id)} 號 ${svgEscape(x.st.name)}${x.skip?'（當天已登記）':p.repeat?`（第${x.times}次）`:''}</span><b>${x.skip?'略過':'−'+money(base*(x.times+x.later))+(x.later?'（含後續重算）':'')}</b></div>`).join('')}</div>`:''}`;
 }
 function undo(id){
  if(mode!=='teacher')return;
  const t=S.tx.find(x=>x.id===id);
  if(!t||t.undone||!['adjust','payroll','penalty'].includes(t.kind))return notify('這筆紀錄無法撤銷');
- // 撤銷直接生效，避免瀏覽器停用確認對話框時按鈕失效。
- const s=student(t.studentId);
+ const st=student(t.studentId);
  t.undone=true;
- s.balance-=t.amount;
+ st.balance-=t.amount;
  S.tx.unshift({id:unique(),studentId:t.studentId,amount:-t.amount,reason:'撤銷：'+t.reason,kind:'undo',refId:t.id,at:stamp(),undone:false});
- if(t.kind==='penalty'&&t.penaltyKey)recalculatePenaltyChain(t.studentId,t.penaltyKey);
+ if(t.kind==='penalty'&&t.penaltyKey){const p=PENALTIES.find(x=>x.id===t.penaltyId);recalculatePenaltyChain(t.studentId,t.penaltyKey,p?.weekly?weekForLocalDate(transactionDate(t)):null);}
  save();render();notify('已撤銷並更新餘額／累犯次數');
 }
 function requestReward(id){
@@ -343,7 +392,7 @@ function sidebar(){
 }
 function history(s){
  const list=S.tx.filter(x=>x.studentId===s.id).slice(0,25);
- return `<div class="history">${list.length?list.map(t=>`<div class="historyitem"><div><b>${svgEscape(t.reason)}</b>${t.undone?' <span class="chip gray">已撤銷</span>':''}<div class="small">${dtime(t.at)}${t.kind==='penalty'&&!t.undone?`｜目前第 ${t.penaltyLevel} 次`:''}</div></div><div class="right" style="display:flex;align-items:center;gap:9px"><span class="${t.amount>=0?'pos':'neg'} tally" ${t.undone?'style="text-decoration:line-through;opacity:.45"':''}>${t.amount>0?'+':''}${money(t.amount)}</span>${mode==='teacher'&&!t.undone&&['adjust','payroll','penalty'].includes(t.kind)?`<button class="btn ghost small" data-action="undo" data-value="${t.id}">撤銷</button>`:''}</div></div>`).join(''):'<div class="empty">目前還沒有異動紀錄</div>'}</div>`;
+ return `<div class="history">${list.length?list.map(t=>`<div class="historyitem"><div><b>${svgEscape(t.reason)}</b>${t.undone?' <span class="chip gray">已撤銷</span>':''}<div class="small">${t.kind==='penalty'&&t.occurredOn?'事件日期：'+svgEscape(t.occurredOn)+'｜':''}${dtime(t.at)}${t.kind==='penalty'&&!t.undone&&t.penaltyLevel?`｜第 ${t.penaltyLevel} 次`:''}</div></div><div class="right" style="display:flex;align-items:center;gap:9px"><span class="${t.amount>=0?'pos':'neg'} tally" ${t.undone?'style="text-decoration:line-through;opacity:.45"':''}>${t.amount>0?'+':''}${money(t.amount)}</span>${mode==='teacher'&&!t.undone&&['adjust','payroll','penalty'].includes(t.kind)?`<button class="btn ghost small" data-action="undo" data-value="${t.id}">撤銷</button>`:''}</div></div>`).join(''):'<div class="empty">目前還沒有異動紀錄</div>'}</div>`;
 }
 function bank(){
  const s=student();
@@ -357,7 +406,7 @@ function bank(){
  <div id="payrollResult" class="salary-success" role="status"></div>
  <p class="softnote">同一學生每週只發一次；誤發可撤銷。</p></div>
  <div class="selected-student-alert">目前操作：${svgEscape(s.id)} 號｜${svgEscape(s.name)}｜餘額 ${money(s.balance)} 班幣</div><div class="line"></div><div class="subhead">🌟 獎勵加分｜快速記點</div><div class="quick">${QUICK.filter(q=>q[2]>0).map(q=>`<button class="btn secondary" data-action="quick" data-value="${q[2]}" data-reason="${svgEscape(q[1])}">${q[0]} ${svgEscape(q[1])}</button>`).join('')}</div> <div class="line"></div><div class="subhead">🔻 快速扣分（不累計犯規次數）</div><div class="quick-deduct">${[100,300,500,1000].map(a=>`<button type="button" class="btn" data-action="quickDeduct" data-value="${a}">−${money(a)} 班幣</button>`).join('')}</div><p class="deduct-note">累犯請使用下方「違規扣分」。</p>
- <div class="line"></div><div class="subhead">🔻 違規扣分｜自動辨識累犯</div><div class="infocard"><form id="penaltyForm"><div class="formrow"><select id="penaltyType" class="search" aria-label="扣分項目">${PENALTIES.map(x=>`<option value="${x.id}" ${x.id===selectedPenalty?'selected':''}>${svgEscape(x.name)}｜${x.base} ${x.repeat?'（累計）':''}</option>`).join('')}</select><label class="penaltydetail" style="display:none;flex:1"><input id="penaltyDetail" type="text" style="width:100%" maxlength="80" placeholder="請寫作業／物品名稱（建議含日期）" value="${svgEscape(selectedPenaltyDetail)}" /></label><label class="penaltybase" style="display:none"><input id="penaltyBase" type="number" min="50" max="1000" step="1" value="${selectedPenaltyBase}" aria-label="班規或校規基本扣分" /></label></div><div class="tagline" id="penaltyPreview" style="margin-top:12px">首次基本扣分預覽</div><div class="formrow" style="margin-top:12px"><button class="btn red" type="submit">直接扣分並記錄</button><span class="muted">累犯自動 ×2、×3…</span></div></form></div>
+ <div class="line"></div><div class="subhead">🔻 違規扣分｜可一次登記多位</div><div class="infocard"><form id="penaltyForm"><div class="formrow"><select id="penaltyType" class="search" aria-label="扣分項目">${PENALTIES.map(x=>`<option value="${x.id}" ${x.id===selectedPenalty?'selected':''}>${svgEscape(x.name)}｜${x.base} ${x.weekly?'（每週累計）':x.repeat?'（累計）':''}</option>`).join('')}</select><label class="penaltydetail" style="display:none;flex:1"><input id="penaltyDetail" type="text" style="width:100%" maxlength="80" placeholder="作業／物品名稱" value="${svgEscape(selectedPenaltyDetail)}" /></label><label class="penaltybase" style="display:none"><input id="penaltyBase" type="number" min="50" max="1000" step="1" value="${selectedPenaltyBase}" aria-label="班規或校規基本扣分" /></label></div><div class="penalty-date-row"><label for="penaltyDate">登記日期 <input id="penaltyDate" type="date" required max="${localDate()}" value="${svgEscape(selectedPenaltyDate)}"/></label><span class="muted">遲到以週一～週日為一週</span></div><details class="penalty-roster"><summary>選擇要扣分的學生（<span id="penaltyStudentCount">已選 ${selectedPenaltyStudents.size} 位</span>）</summary><div class="penalty-roster-actions"><button type="button" class="btn small secondary" data-action="penaltySelectAll">全選</button><button type="button" class="btn small secondary" data-action="penaltySelectNone">清除</button><button type="button" class="btn small secondary" data-action="penaltySelectCurrent">只選目前學生</button></div><div class="penalty-student-grid">${S.students.map(st=>`<label class="penalty-student"><input type="checkbox" data-penalty-student="${svgEscape(st.id)}" ${selectedPenaltyStudents.has(st.id)?'checked':''}/><span>${svgEscape(st.id)} 號 ${svgEscape(st.name)}</span></label>`).join('')}</div></details><div class="tagline" id="penaltyPreview" style="margin-top:12px"></div><div class="formrow" style="margin-top:12px"><button class="btn red" type="submit">登記選取學生</button><span class="muted">同日遲到只計一次；撤銷可自動重算</span></div></form></div>
  <div class="line"></div><div class="subhead">✍️ 自訂加減金額（不列入自動累犯）</div><form id="manualForm" class="formrow"><input type="number" id="manualAmount" placeholder="例如 100 或 -150" step="1" required aria-label="加扣班幣"/><input type="text" id="manualReason" maxlength="60" placeholder="原因，例如：獲獎獎金" required aria-label="加扣原因"/><button class="btn" type="submit">確認記錄</button></form>`:
  ``}</div><div class="panel" style="margin-top:15px"><div class="sectiontitle"><h2>🧾 最近異動紀錄</h2><span>${svgEscape(s.name)}</span></div>${history(s)}</div>`;
 }
@@ -503,20 +552,20 @@ function render(){
  if(tab==='bank'&&mode==='teacher')updatePenaltyPreview();
  if(tab==='rewards'&&rewardSearch)document.querySelectorAll('[data-reward-name]').forEach(el=>el.style.display=el.dataset.rewardName.includes(rewardSearch.toLowerCase())?'':'none');
 }
-function importNames(){if(session==='cloud-teacher'&&S.students.some(s=>s.authUid)&&prompt('重新匯入會撤銷全部現有學生登入帳號，請輸入「確認重建」才可繼續')!=='確認重建')return;const raw=document.querySelector('#namesInput').value.trim();if(!raw)return alert('請先貼上學生名單');const lines=raw.split(/\r?\n/).map(x=>x.trim()).filter(Boolean);if(lines.length>60)return alert('一次最多匯入 60 位學生');const next=[],ids=new Set();for(let i=0;i<lines.length;i++){let input=lines[i].split(/[,，\t]/);let id,name;if(input.length>1&&/^\d+$/.test(input[0].trim())){id=String(Number(input[0].trim())).padStart(2,'0');name=input.slice(1).join(' ').trim()}else{id=String(i+1).padStart(2,'0');name=lines[i]}if(!name||ids.has(id))return alert('請確認每行都有姓名，且座號不能重複。');ids.add(id);const s=studentSeed(Number(id)||i+1);s.id=id;s.name=name.slice(0,40);s.balance=0;next.push(s)}if(!confirm(`要匯入 ${next.length} 位學生嗎？\n這會清空目前所有點數、兌換及班分紀錄。`))return;S={...fresh(),students:next};openingDraft={};openingPreview=null;chosen=next[0].id;save();tab='bank';render();notify('學生名單匯入完成，班幣從 0 開始')}
+function importNames(){if(session==='cloud-teacher'&&S.students.some(s=>s.authUid)&&prompt('重新匯入會撤銷全部現有學生登入帳號，請輸入「確認重建」才可繼續')!=='確認重建')return;const raw=document.querySelector('#namesInput').value.trim();if(!raw)return alert('請先貼上學生名單');const lines=raw.split(/\r?\n/).map(x=>x.trim()).filter(Boolean);if(lines.length>60)return alert('一次最多匯入 60 位學生');const next=[],ids=new Set();for(let i=0;i<lines.length;i++){let input=lines[i].split(/[,，\t]/);let id,name;if(input.length>1&&/^\d+$/.test(input[0].trim())){id=String(Number(input[0].trim())).padStart(2,'0');name=input.slice(1).join(' ').trim()}else{id=String(i+1).padStart(2,'0');name=lines[i]}if(!name||ids.has(id))return alert('請確認每行都有姓名，且座號不能重複。');ids.add(id);const s=studentSeed(Number(id)||i+1);s.id=id;s.name=name.slice(0,40);s.balance=0;next.push(s)}if(!confirm(`要匯入 ${next.length} 位學生嗎？\n這會清空目前所有點數、兌換及班分紀錄。`))return;S={...fresh(),students:next};openingDraft={};openingPreview=null;chosen=next[0].id;selectedPenaltyStudents=new Set([chosen]);save();tab='bank';render();notify('學生名單匯入完成，班幣從 0 開始')}
 function exportBackup(){const blob=new Blob([JSON.stringify({version:6,exportedAt:stamp(),data:S},null,2)],{type:'application/json;charset=utf-8'});const url=URL.createObjectURL(blob),a=document.createElement('a');a.href=url;a.download=`東門班幣備份_${new Date().toISOString().slice(0,10)}.json`;document.body.appendChild(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(url),3000);notify('已開始下載備份')}
 async function restoreBackup(file){try{const raw=JSON.parse(await file.text()),data=raw.data||raw;if(!Array.isArray(data.students)||!Array.isArray(data.tx)||!Array.isArray(data.requests)||typeof data.classPoints!=='number')throw Error('備份格式錯誤');if(!confirm('確定用這份備份覆蓋目前瀏覽器內的所有紀錄嗎？'))return;S=normalize(data);openingDraft={};openingPreview=null;chosen=S.students[0]?.id;save();tab='bank';render();notify('已還原備份')}catch(e){alert('無法還原：'+e.message)}}
 function undoClass(id){const t=S.classHistory.find(x=>x.id===id);if(mode!=='teacher'||!t||t.undone||t.kind==='undo')return;if(S.classPoints-t.amount<0)return notify('已有點數使用紀錄，撤銷這筆會使班分低於零；請先處理後續兌換');if(!confirm(`撤銷全班班分「${t.reason}」${t.amount>0?'+':''}${t.amount} 點？`))return;t.undone=true;S.classPoints-=t.amount;S.classHistory.unshift({id:unique(),amount:-t.amount,reason:'撤銷：'+t.reason,kind:'undo',at:stamp(),refId:t.id});save();render();notify('班分已撤銷')}
 function addClass(amount,reason){amount=Number(amount);if(!Number.isInteger(amount)||!amount)return;const next=S.classPoints+amount;if(next<0){notify('全班班分不能低於 0');return}S.classPoints=next;S.classHistory.unshift({id:unique(),amount,reason,at:stamp()});save();render();notify(`全班班分 ${amount>0?'+':''}${amount}`)}
 document.addEventListener('click',e=>{const b=e.target.closest('[data-action]');if(!b)return;const action=b.dataset.action,val=b.dataset.value;
-if(action==='mode'){return;}else if(action==='tab'){tab=val;render()}else if(action==='quick'&&mode==='teacher'){applyCoin(chosen,Number(val),b.dataset.reason);notify('已記錄班幣異動')}else if(action==='quickDeduct'&&mode==='teacher'){const amount=Number(val),s=student();if(!Number.isInteger(amount)||amount<=0)return;applyCoin(chosen,-amount,'快速扣分（不計入累犯）');notify(`${s.name}：−${money(amount)} 班幣，餘額 ${money(s.balance)}`)}else if(action==='payroll'&&mode==='teacher'){issuePayroll()}else if(action==='payrollOne'&&mode==='teacher'){issuePayroll(chosen)}else if(action==='undo'){undo(val)}else if(action==='undoClass'&&mode==='teacher'){undoClass(val)}else if(action==='redeem'){requestReward(val)}else if(action==='approve'&&mode==='teacher'){const req=S.requests.find(x=>x.id===val);if(req)approveReward(req.studentId,req.rewardId,req.id)}else if(action==='reject'&&mode==='teacher'){rejectRequest(val)}else if(['requestUse','cancelUse','confirmUse','rejectUse','restoreTicket'].includes(action)){ticketAction(action,val,b.dataset.student)}else if(action==='filterCard'){cardFilter=val;render()}else if(action==='classQuick'&&mode==='teacher'){addClass(Number(val),b.dataset.reason)}else if(action==='classRedeem'&&mode==='teacher'){if(S.classPoints<500)return;const choice=prompt('兌換哪一項全班獎勵？例如：桌遊時間');if(choice===null)return;const r=choice.trim()||'全班獎勵';addClass(-500,'兌換全班獎勵：'+r)}else if(action==='openingPaste'&&mode==='teacher'){fillOpeningPaste()}
+if(action==='mode'){return;}else if(action==='penaltySelectAll'&&mode==='teacher'){selectedPenaltyStudents=new Set(S.students.map(st=>st.id));document.querySelectorAll('[data-penalty-student]').forEach(el=>el.checked=true);updatePenaltyPreview()}else if(action==='penaltySelectNone'&&mode==='teacher'){selectedPenaltyStudents.clear();document.querySelectorAll('[data-penalty-student]').forEach(el=>el.checked=false);updatePenaltyPreview()}else if(action==='penaltySelectCurrent'&&mode==='teacher'){selectedPenaltyStudents=new Set([chosen]);document.querySelectorAll('[data-penalty-student]').forEach(el=>el.checked=el.dataset.penaltyStudent===chosen);updatePenaltyPreview()}else if(action==='tab'){tab=val;render()}else if(action==='quick'&&mode==='teacher'){applyCoin(chosen,Number(val),b.dataset.reason);notify('已記錄班幣異動')}else if(action==='quickDeduct'&&mode==='teacher'){const amount=Number(val),s=student();if(!Number.isInteger(amount)||amount<=0)return;applyCoin(chosen,-amount,'快速扣分（不計入累犯）');notify(`${s.name}：−${money(amount)} 班幣，餘額 ${money(s.balance)}`)}else if(action==='payroll'&&mode==='teacher'){issuePayroll()}else if(action==='payrollOne'&&mode==='teacher'){issuePayroll(chosen)}else if(action==='undo'){undo(val)}else if(action==='undoClass'&&mode==='teacher'){undoClass(val)}else if(action==='redeem'){requestReward(val)}else if(action==='approve'&&mode==='teacher'){const req=S.requests.find(x=>x.id===val);if(req)approveReward(req.studentId,req.rewardId,req.id)}else if(action==='reject'&&mode==='teacher'){rejectRequest(val)}else if(['requestUse','cancelUse','confirmUse','rejectUse','restoreTicket'].includes(action)){ticketAction(action,val,b.dataset.student)}else if(action==='filterCard'){cardFilter=val;render()}else if(action==='classQuick'&&mode==='teacher'){addClass(Number(val),b.dataset.reason)}else if(action==='classRedeem'&&mode==='teacher'){if(S.classPoints<500)return;const choice=prompt('兌換哪一項全班獎勵？例如：桌遊時間');if(choice===null)return;const r=choice.trim()||'全班獎勵';addClass(-500,'兌換全班獎勵：'+r)}else if(action==='openingPaste'&&mode==='teacher'){fillOpeningPaste()}
  else if(action==='openingCheck'&&mode==='teacher'){setOpeningPreview()}
  else if(action==='openingApply'&&mode==='teacher'){applyOpeningPreview()}
  else if(action==='openingCancel'&&mode==='teacher'){openingPreview=null;render()}
  else if(action==='openingClear'&&mode==='teacher'){openingDraft={};openingPreview=null;render();notify('已清除未送出的輸入')}
  else if(action==='importNames'&&mode==='teacher'){importNames()}else if(action==='fillNames'){document.querySelector('#namesInput').value=S.students.map(s=>`${Number(s.id)},${s.name}`).join('\n')}else if(action==='export'){exportBackup()}else if(action==='restore'){document.querySelector('#backupFile').click()}else if(action==='reset'&&mode==='teacher'){if(session==='cloud-teacher'){notify('正式雲端模式已停用示範資料重設，請先備份並使用匯入名單');return;}if(confirm('確定要刪除所有目前資料並恢復 29 位匿名示範學生嗎？')){S=fresh();openingDraft={};openingPreview=null;chosen='01';save();tab='bank';render();notify('已恢復示範資料')}}});
-document.addEventListener('change',e=>{if(e.target.id==='penaltyType')updatePenaltyPreview();if(e.target.id==='studentSelect'){chosen=e.target.value;render()}if(e.target.id==='payrollWeekSelect'){payrollWeekOffset=Math.max(0,Math.min(11,Number(e.target.value)||0));render()}if(e.target.id==='backupFile'&&e.target.files?.[0])restoreBackup(e.target.files[0])});
-document.addEventListener('input',e=>{if(e.target.classList?.contains('opening-input')){openingDraft[e.target.dataset.student]=e.target.value;openingPreview=null;const el=document.querySelector('.opening-preview');if(el)el.remove();}if(['penaltyType','penaltyDetail','penaltyBase'].includes(e.target.id))updatePenaltyPreview();if(e.target.id==='rewardSearch'){rewardSearch=e.target.value.trim();document.querySelectorAll('[data-reward-name]').forEach(el=>el.style.display=el.dataset.rewardName.includes(rewardSearch.toLowerCase())?'':'none')}});
+document.addEventListener('change',e=>{if(e.target.dataset?.penaltyStudent&&mode==='teacher'){const id=e.target.dataset.penaltyStudent;if(e.target.checked)selectedPenaltyStudents.add(id);else selectedPenaltyStudents.delete(id);updatePenaltyPreview();}if(e.target.id==='penaltyDate'){selectedPenaltyDate=e.target.value;updatePenaltyPreview()}if(e.target.id==='penaltyType')updatePenaltyPreview();if(e.target.id==='studentSelect'){chosen=e.target.value;selectedPenaltyStudents=new Set([chosen]);render()}if(e.target.id==='payrollWeekSelect'){payrollWeekOffset=Math.max(0,Math.min(11,Number(e.target.value)||0));render()}if(e.target.id==='backupFile'&&e.target.files?.[0])restoreBackup(e.target.files[0])});
+document.addEventListener('input',e=>{if(e.target.classList?.contains('opening-input')){openingDraft[e.target.dataset.student]=e.target.value;openingPreview=null;const el=document.querySelector('.opening-preview');if(el)el.remove();}if(e.target.id==='penaltyDate')selectedPenaltyDate=e.target.value;if(['penaltyType','penaltyDetail','penaltyBase','penaltyDate'].includes(e.target.id))updatePenaltyPreview();if(e.target.id==='rewardSearch'){rewardSearch=e.target.value.trim();document.querySelectorAll('[data-reward-name]').forEach(el=>el.style.display=el.dataset.rewardName.includes(rewardSearch.toLowerCase())?'':'none')}});
 document.addEventListener('submit',e=>{if(e.target.id==='penaltyForm'&&mode==='teacher'){e.preventDefault();addPenalty()}if(e.target.id==='manualForm'&&mode==='teacher'){e.preventDefault();const amt=Number(document.querySelector('#manualAmount').value),reason=document.querySelector('#manualReason').value.trim();if(!Number.isInteger(amt)||!amt||!reason)return notify('請輸入整數金額與原因');applyCoin(chosen,amt,reason);notify('已儲存班幣異動')}if(e.target.id==='classForm'&&mode==='teacher'){e.preventDefault();const amt=Number(document.querySelector('#classAmount').value),reason=document.querySelector('#classReason').value.trim();if(!Number.isInteger(amt)||!amt||!reason)return notify('請輸入整數班分與原因');addClass(amt,reason)}});
 window.addEventListener('storage',e=>{if(e.key===KEY&&session==='demo-teacher'){S=load();render();notify('資料已從本瀏覽器其他分頁更新')}});
 
@@ -584,7 +633,7 @@ function setAppVisible(role,label){
 function setTeacherCloudState(data){
  if(session!=='cloud-teacher')return;
  if(data){S=normalize(data);}else{S=fresh();S.students.forEach(x=>x.balance=0);}
- if(!S.students.find(x=>x.id===chosen))chosen=S.students[0]?.id||'01';render();
+ if(!S.students.find(x=>x.id===chosen))chosen=S.students[0]?.id||'01';selectedPenaltyStudents=new Set([...selectedPenaltyStudents].filter(id=>S.students.some(st=>st.id===id)));if(!selectedPenaltyStudents.size)selectedPenaltyStudents.add(chosen);render();
 }
 function setStudentCloudState(data){
  if(session!=='cloud-student')return;
@@ -692,7 +741,7 @@ async function createAccountFor(s,assignedPassword){
 }
 function showAuth(){
  session='locked';document.querySelector('#authScreen').hidden=false;document.querySelector('#appWrap').hidden=true;
- document.querySelector('#loginPassword').value='';authError('');
+ document.querySelector('#loginPassword').value='';document.querySelector('#loginPassword').type='password';document.querySelector('#showLoginPassword').checked=false;authError('');
 }
 document.querySelector('#logoutButton').addEventListener('click',async()=>{
  if(session.startsWith('cloud')&&window.DongmenCloud)await window.DongmenCloud.logout();
@@ -701,8 +750,9 @@ document.querySelector('#logoutButton').addEventListener('click',async()=>{
 document.querySelectorAll('[data-auth-tab]').forEach(btn=>btn.addEventListener('click',()=>{
  authRole=btn.dataset.authTab;document.querySelectorAll('[data-auth-tab]').forEach(b=>b.classList.toggle('active',b===btn));
  document.querySelector('#studentLoginBlock').hidden=authRole!=='student';document.querySelector('#teacherLoginBlock').hidden=authRole!=='teacher';
- document.querySelector('#loginButton').textContent=authRole==='student'?'登入存摺':'教師登入';authError('');
+ document.querySelector('#loginButton').textContent=authRole==='student'?'登入存摺':'教師登入';document.querySelector('#studentPasswordToggleWrap').hidden=authRole!=='student';document.querySelector('#showLoginPassword').checked=false;document.querySelector('#loginPassword').type='password';authError('');
 }));
+document.querySelector('#showLoginPassword').addEventListener('change',e=>{document.querySelector('#loginPassword').type=e.target.checked?'text':'password';});
 document.querySelector('#authForm').addEventListener('submit',async e=>{
  e.preventDefault();if(!window.DongmenCloud?.configured)return authError('目前尚未設定 Firebase，請先使用下方示範按鈕。');
  const button=document.querySelector('#loginButton'),password=document.querySelector('#loginPassword').value;
@@ -712,13 +762,13 @@ document.querySelector('#authForm').addEventListener('submit',async e=>{
  try{await window.DongmenCloud.login(authRole,user,password)}catch(err){authError('登入失敗：'+(err?.message||'請確認帳號及密碼'))}
  finally{button.disabled=false}
 });
-document.querySelector('#demoTeacher').addEventListener('click',()=>{session='demo-teacher';S=load();chosen=S.students[0]?.id||'01';setAppVisible('teacher','🧪 教師示範');});
+document.querySelector('#demoTeacher').addEventListener('click',()=>{session='demo-teacher';S=load();chosen=S.students[0]?.id||'01';selectedPenaltyStudents=new Set([chosen]);setAppVisible('teacher','🧪 教師示範');});
 document.querySelector('#demoStudent').addEventListener('click',()=>{session='demo-student';S=load();chosen=S.students[0]?.id||'01';setAppVisible('student','🧪 學生示範：01 號');});
 document.addEventListener('click',async e=>{
  const b=e.target.closest('[data-action]');if(!b)return;
  const action=b.dataset.action,val=b.dataset.value;
  if(session==='cloud-teacher'&&!cloudDataReady&& !['tab','selectStudent','export','fillNames'].includes(action)){notify('班級資料仍在雲端載入中，操作已暫停，請確認資料顯示完整後再使用');return;}
- if(action==='selectStudent'&&mode==='teacher'){chosen=val;tab='bank';render()}
+ if(action==='selectStudent'&&mode==='teacher'){chosen=val;selectedPenaltyStudents=new Set([chosen]);tab='bank';render()}
    if(action==='resetCloudClass'&&session==='cloud-teacher'){
      if(!cloudDataReady)return setAccountNotice('雲端資料尚未載入，不能重設','error');
      if(prompt('這會永久清除全班測試點數、兌換、交易與現有學生綁定（保留名單）。確定請輸入：清空測試資料')!=='清空測試資料')return;
@@ -728,7 +778,7 @@ document.addEventListener('click',async e=>{
        const next={...fresh(),students:S.students.map(x=>({...studentSeed(Number(x.id)||1),id:x.id,name:x.name,balance:0,tickets:[]}))};
        await window.DongmenCloud.saveTeacher(JSON.parse(JSON.stringify(next)));
        S=next;generatedAccounts=[];pendingAccountRecovery=null;accountNotice=null;
-       chosen=S.students[0]?.id||'01';tab='overview';render();notify('已清空測試紀錄並保留名單；請先建立 1 位學生帳號測試');
+       chosen=S.students[0]?.id||'01';selectedPenaltyStudents=new Set([chosen]);tab='overview';render();notify('已清空測試紀錄並保留名單；請先建立 1 位學生帳號測試');
      }catch(err){setAccountNotice('重設失敗：'+(err?.message||err),'error');}
      finally{b.disabled=false;}
    }
