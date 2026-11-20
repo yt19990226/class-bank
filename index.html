@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>東門班級存摺 V6｜GitHub 教師學生正式登入</title>
+<title>東門班級存摺 V6.1｜學生 QR 登入</title>
 <style>
 :root{--ink:#33415b;--sub:#778298;--bg:#f6f8fd;--line:#e6eaf1;--white:#fff;--blue:#dfeeff;--pink:#ffebed;--mint:#dff5e9;--yellow:#fff3d3;--purple:#efe9ff;--strong:#556a99;--shadow:0 9px 30px #64748b15}
 *{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,"Noto Sans TC","Microsoft JhengHei",sans-serif;font-size:15px;line-height:1.55}button,input,select,textarea{font:inherit;color:inherit}button{cursor:pointer}button:disabled{cursor:not-allowed;opacity:.45}.app{max-width:1300px;margin:0 auto;padding:20px 24px 50px}.banner{background:linear-gradient(118deg,#e4f1ff,#f1eaff 60%,#fff3e8);border:1px solid #e5e6f0;border-radius:25px;padding:24px 28px;display:flex;justify-content:space-between;align-items:center;gap:20px}.banner h1{margin:3px 0 2px;font-size:30px;letter-spacing:1px}.banner p{margin:0;color:#667389}.eyebrow{font-size:12px;letter-spacing:2px;font-weight:800;color:#7289b6}.mode{display:flex;align-items:center;gap:8px;flex-wrap:wrap}.mode .small{font-size:12px;color:var(--sub)}.pill{border:1px solid #cfd9ed;background:#ffffffb6;border-radius:99px;padding:8px 14px;font-weight:700}.pill.active{background:#596f9d;color:white;border-color:#596f9d}.notice{background:#fff8e7;color:#75603a;border:1px solid #f3e3bf;border-radius:12px;padding:10px 14px;margin:14px 0;font-size:13px}.top{margin-top:15px;display:flex;gap:9px;flex-wrap:wrap}.tab{border:none;border-radius:12px;padding:12px 17px;background:#fff;color:#62718a;font-weight:750;box-shadow:0 2px 9px #5e71900a}.tab.active{background:#5c73a1;color:#fff}.tab:hover:not(.active){background:#e9effb}.grid{display:grid;grid-template-columns:290px minmax(0,1fr);gap:16px;margin-top:16px}.panel{background:white;border:1px solid #e9edf5;border-radius:19px;box-shadow:var(--shadow);padding:20px}.person{display:flex;align-items:center;justify-content:space-between;gap:12px}.person h2,.heading{margin:0;font-size:20px}.person .hint,.muted{font-size:12px;color:var(--sub)}.seatpick{width:100%;padding:11px 12px;border:1px solid #dce3ef;border-radius:11px;margin:13px 0;background:#fff;font-weight:700}.avatarbox{background:linear-gradient(160deg,#e6f5fa,#eff3ff 54%,#ffecf3);border:1px solid #e6ebfa;border-radius:18px;display:flex;justify-content:center;align-items:center;min-height:216px;margin-top:10px;position:relative;overflow:hidden}.avatarbox:after{content:"✦   ✧   ✦";font-size:26px;color:#fff;position:absolute;top:15px;right:15px;opacity:.7}.avatarbox svg{width:166px;height:183px;position:relative;z-index:1;filter:drop-shadow(0 6px 4px #5c69821c)}.namebadge{display:inline-block;background:#fff;color:#77829a;border-radius:99px;padding:4px 11px;font-size:12px;margin-top:11px;font-weight:700}.balanceline{margin-top:17px;display:flex;justify-content:space-between;align-items:end;border-bottom:1px dashed #e3e7f0;padding-bottom:14px}.number{font-size:35px;font-weight:850;letter-spacing:-1px}.unit{font-weight:700;font-size:14px;color:#a58a44}.softnote{font-size:12px;color:#8590a1;margin-top:10px}.statrow{display:flex;gap:10px;flex-wrap:wrap}.stat{background:#f6f8fc;border-radius:13px;padding:10px 13px;flex:1;min-width:100px}.stat label{color:#74819b;font-size:12px;display:block}.stat b{font-size:20px}.sectiontitle{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:15px}.sectiontitle h2{margin:0;font-size:20px}.sectiontitle span{font-size:12px;color:var(--sub)}.twocol{display:grid;grid-template-columns:1fr 1fr;gap:12px}.rewardgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(208px,1fr));gap:12px}.reward{border-radius:15px;border:1px solid #e7eaf1;background:#fff;padding:15px;display:flex;flex-direction:column;justify-content:space-between;gap:12px;min-height:144px}.reward h3{margin:0 0 5px;font-size:15px;line-height:1.4}.reward p{font-size:12px;color:#7c8797;margin:0}.price{font-size:14px;font-weight:800;color:#ad823a}.rewardfoot{display:flex;justify-content:space-between;gap:8px;align-items:center}.btn{border:0;background:#6179aa;color:#fff;padding:10px 14px;border-radius:11px;font-weight:750;white-space:nowrap}.btn:hover:not(:disabled){filter:brightness(.96)}.btn.secondary{background:#edf1fa;color:#5d7194}.btn.mint{background:#dff4e8;color:#3f8064}.btn.red{background:#ffe9e8;color:#a75555}.btn.small{font-size:12px;padding:7px 11px}.btn.ghost{background:#fff;color:#5e7090;border:1px solid #dce4f0}.quick{display:flex;flex-wrap:wrap;gap:8px}.quick .btn{flex:0 0 auto}.subhead{font-weight:800;font-size:14px;margin-bottom:10px}.formrow{display:flex;gap:9px;align-items:center;flex-wrap:wrap}.formrow input,.formrow textarea{border:1px solid #dfe4ed;border-radius:10px;padding:10px 11px;background:#fff}.formrow input[type=number]{width:140px}.formrow input[type=text]{flex:1;min-width:150px}.formrow select,.search{border:1px solid #dfe4ed;border-radius:10px;padding:10px 11px;background:#fff}.search{min-width:230px;width:100%;max-width:370px}.line{height:1px;background:#edf0f5;margin:16px 0}.history{display:flex;flex-direction:column;gap:8px}.historyitem{display:flex;justify-content:space-between;align-items:center;gap:10px;padding:10px 12px;background:#f8f9fc;border:1px solid #eef0f6;border-radius:11px;font-size:13px}.historyitem .small{color:#94a0b1;font-size:11px}.pos{color:#32966e;font-weight:800}.neg{color:#cf6b72;font-weight:800}.shopitem{display:flex;flex-direction:column;gap:10px;border:1px solid #e7eaf3;border-radius:15px;padding:13px;background:white}.shopitem .tryavatar{background:linear-gradient(140deg,#eff6fd,#fff1f5);border-radius:12px;display:flex;justify-content:center;height:142px;align-items:center}.shopitem svg{height:130px;width:122px}.shopgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(169px,1fr));gap:12px}.shopitem h3{margin:0;font-size:14px}.shopitem p{margin:1px 0;color:#718099;font-size:12px}.grouphead{font-weight:850;color:#6c7c98;margin:20px 0 12px}.chip{border-radius:99px;display:inline-block;padding:3px 9px;background:#e6f5ed;color:#5a9277;font-size:11px;font-weight:800}.chip.warn{background:#fff4dc;color:#a78346}.chip.gray{background:#f0f2f6;color:#8290a6}.center{text-align:center}.classbar{height:20px;background:#eef0fa;border-radius:12px;overflow:hidden}.classbar .fill{background:linear-gradient(90deg,#90c8a8,#66b4a0);height:100%;transition:width .3s ease}.hero{font-size:33px;font-weight:900;margin:8px 0}.classnote{color:#8390a3;font-size:13px}.empty{text-align:center;background:#f8f9fc;border-radius:13px;padding:24px;color:#8894a5}.settings textarea{width:100%;min-height:220px;padding:12px 14px;resize:vertical;border:1px solid #e0e6ee;border-radius:12px;line-height:1.7}.settings .row{display:flex;gap:9px;flex-wrap:wrap}.footer{margin-top:18px;font-size:12px;color:#8893a4;text-align:center}.toast{position:fixed;bottom:22px;right:22px;background:#42577d;color:#fff;box-shadow:0 15px 30px #42577d44;border-radius:12px;padding:12px 18px;z-index:9;max-width:90vw;font-weight:700;display:none}.toast.show{display:block}.tagline{background:#f2f7ff;border-radius:11px;padding:10px 13px;font-size:13px;color:#667c9c}.infocard{background:#f7fafc;border-radius:12px;padding:13px;font-size:13px}.right{margin-left:auto}.tally{font-variant-numeric:tabular-nums}.tabsRight{display:flex;flex-wrap:wrap;gap:8px;align-items:center}.check{font-size:12px;color:#8e9bad}.pending{display:flex;align-items:center;justify-content:space-between;gap:10px;border-radius:12px;border:1px solid #e7eaf2;background:#fffaf1;padding:10px 13px;margin-bottom:9px}.pending .action{display:flex;gap:6px}.pending .name{font-size:14px;font-weight:800}.pending small{font-size:12px;color:#8a8fa0}.dividerlabel{border-left:3px solid #abc5f1;padding-left:9px;font-weight:850;margin:6px 0 12px}.intro{font-size:14px;color:#78859c;max-width:630px}.danger{color:#ae5d65}.cardnum{font-size:12px;color:#8794a8} @media(max-width:840px){.app{padding:12px 12px 32px}.banner{padding:19px;flex-direction:column;align-items:flex-start}.banner h1{font-size:24px}.grid{grid-template-columns:1fr}.twocol{grid-template-columns:1fr}.avatarbox{min-height:145px}.avatarbox svg{height:135px;width:140px}.tab{flex:1;min-width:90px;padding:11px 10px;font-size:13px}.rewardgrid{grid-template-columns:repeat(auto-fill,minmax(158px,1fr))}.panel{padding:16px}.search{min-width:0}.shopgrid{grid-template-columns:repeat(2,minmax(0,1fr))}}
@@ -87,26 +87,62 @@ window.DONGMEN_CLOUD_SETUP = {
 .account-success{color:#356c51;background:#ebf8f0;border:1px solid #bce6c9}
 .account-error{color:#874450;background:#fff0f0;border:1px solid #f1bcc4}
 </style>
+<style id="qr-styles">
+/* V6.1 / QR 登入卡：所有 QR 僅存放公開登入網址及學生帳號，不含密碼。 */
+.account-advanced{padding:10px 12px;background:#fff;border:1px solid #e5ebf4;border-radius:12px;margin:12px 0}
+.account-advanced summary{font-weight:750;cursor:pointer;color:#5d7192}
+.account-advanced p{font-size:12px}
+.qr-teacher{padding:15px;margin-top:14px;border:1px solid #dce9f1;border-radius:14px;background:#f3f9ff}
+.qr-login-hint{background:#e8f8ef;color:#28744c;padding:8px 11px;border-radius:10px;font-weight:750;font-size:13px;margin-top:9px}
+.qr-overlay{position:fixed;inset:0;overflow:auto;z-index:9000;background:#e8edf5;padding:24px 12px}
+.qr-preview-panel{max-width:960px;margin:auto}
+.qr-preview-toolbar{position:sticky;top:0;background:white;border-radius:14px;padding:12px 16px;margin-bottom:16px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:10px;box-shadow:0 6px 18px #0001;z-index:1}
+.qr-preview-toolbar .quick{justify-content:flex-end}
+.qr-print-sheet{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+.qr-card{background:white;border:1px solid #bdd4e8;border-radius:13px;display:grid;grid-template-columns:116px minmax(0,1fr);align-items:center;gap:10px;min-height:150px;padding:11px;break-inside:avoid;page-break-inside:avoid}
+.qr-art{display:grid;place-items:center;background:white;border-radius:6px;overflow:hidden;width:112px;height:112px}
+.qr-art svg{display:block;width:108px;height:108px}
+.qr-card-body{min-width:0;display:flex;flex-direction:column;align-items:flex-start;gap:5px}
+.qr-card-school{font-size:10px;letter-spacing:1px;color:#5d7aa0;font-weight:750}
+.qr-card-name{font-size:18px;line-height:1.3;font-weight:850;word-break:break-word}
+.qr-card-account{font-size:11px;overflow-wrap:anywhere;color:#5e6a7e}
+.qr-card-help{font-size:11px;color:#687a91}
+@media(max-width:620px){.qr-print-sheet{grid-template-columns:1fr}.qr-card{min-height:148px}}
+@media print{
+ @page{size:A4 portrait;margin:10mm}
+ html,body{background:#fff!important;padding:0!important;margin:0!important}
+ body > *:not(#qrOverlay){display:none!important}
+ #qrOverlay{position:static!important;overflow:visible!important;background:#fff!important;margin:0!important;padding:0!important;display:block!important}
+ .qr-preview-panel{max-width:none!important}
+ .qr-preview-toolbar{display:none!important}
+ .qr-print-sheet{display:grid!important;grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:4mm!important}
+ .qr-card{height:58mm!important;min-height:58mm!important;width:100%!important;grid-template-columns:35mm minmax(0,1fr)!important;gap:3mm!important;border:1px solid #b7c8da!important;border-radius:2mm!important;padding:3mm!important;box-shadow:none!important;break-inside:avoid!important;page-break-inside:avoid!important}
+ .qr-art{width:35mm!important;height:35mm!important}
+ .qr-art svg{width:35mm!important;height:35mm!important}
+ .qr-card-name{font-size:16pt!important}
+ .qr-card-account{font-size:9pt!important}
+ .qr-card-help{font-size:9pt!important}
+}
+</style>
 </head>
 <body>
 <div id="authScreen" class="auth-screen">
  <div class="auth-box">
   <span class="eyebrow">DONGMEN CLASS PASSBOOK</span>
   <h1>🌷 東門班級存摺</h1>
-  <p>學生查看自己的點數和卡包，教師管理全班點數與獎勵。</p>
   <div class="auth-menu"><button type="button" class="active" data-auth-tab="student">🧒 學生登入</button><button type="button" data-auth-tab="teacher">👩‍🏫 教師登入</button></div>
   <form id="authForm">
-   <div id="studentLoginBlock"><label for="loginUsername">學生帳號</label><input id="loginUsername" placeholder="例如 c506s01abcde（以老師發放帳號為準）" autocomplete="username" /></div>
-   <div id="teacherLoginBlock" hidden><label for="loginEmail">教師電子郵件</label><input id="loginEmail" type="email" placeholder="教師 Firebase 帳號" autocomplete="username" /></div>
+   <div id="studentLoginBlock"><div id="qrLoginHint" class="qr-login-hint" hidden>✅ 已帶入帳號，請輸入密碼</div><label for="loginUsername">學生帳號</label><input id="loginUsername" placeholder="學生帳號" autocomplete="username" /></div>
+   <div id="teacherLoginBlock" hidden><label for="loginEmail">教師電子郵件</label><input id="loginEmail" type="email" placeholder="教師電子郵件" autocomplete="username" /></div>
    <label for="loginPassword">密碼</label><input id="loginPassword" type="password" autocomplete="current-password" minlength="6" placeholder="請輸入密碼" required />
-   <button type="submit" id="loginButton" class="btn">登入個人存摺</button>
+   <button type="submit" id="loginButton" class="btn">登入</button>
   </form>
   <div id="authError" class="auth-error" role="status"></div>
   <div id="demoBlock" class="notice"><b>可離線試用教師與學生畫面</b><p class="smalltext">尚未填入 Firebase 連線設定，因此不能跨裝置同步，也不是真實的帳號驗證。請勿輸入真實學生資料；如已有舊版資料，請先從舊版下載 JSON 備份。</p><div class="demo-actions"><button class="btn secondary" type="button" id="demoTeacher">試用教師後台</button><button class="btn mint" type="button" id="demoStudent">試用 01 號學生</button></div></div>
-  <p class="smalltext">正式上線需先完成 Firebase Authentication、Firestore 和安全規則設定。</p>
+  
  </div>
 </div>
-<div class="app" id="appWrap" hidden><header class="banner"><div><span class="eyebrow">CLASS COIN · PASSBOOK v6.0</span><h1>🌷 東門班級存摺</h1><p>保留原本班幣與獎勵卡制度，專心管理點數，不再使用角色換裝。</p></div><div class="mode"><span id="authStatus">尚未登入</span><button class="pill" id="logoutButton" type="button">登出</button></div></header><div id="loginNotice" class="cloudbar">🔐 登入後才可操作。學生只能查看自己的紀錄並申請兌換；點數由教師管理。</div><nav class="top" id="tabs"></nav><main class="grid"><aside id="sidebar"></aside><section id="main"></section></main><footer class="footer">東門班級｜保留原本週薪、累犯扣分、獎勵卡及全班班分；請妥善保管學生登入資料。</footer></div><div id="toast" class="toast" role="status"></div>
+<div class="app" id="appWrap" hidden><header class="banner"><div><span class="eyebrow">班級存摺 · V6.1</span><h1>🌷 東門班級存摺</h1></div><div class="mode"><span id="authStatus">尚未登入</span><button class="pill" id="logoutButton" type="button">登出</button></div></header><div id="loginNotice" class="cloudbar"></div><nav class="top" id="tabs"></nav><main class="grid"><aside id="sidebar"></aside><section id="main"></section></main></div><div id="toast" class="toast" role="status"></div><div id="qrOverlay" class="qr-overlay" hidden aria-label="QR 登入卡預覽"><div class="qr-preview-panel"><div class="qr-preview-toolbar"><b id="qrPreviewTitle">QR 登入卡</b><div class="quick"><button type="button" id="qrPrintNow" class="btn">🖨️ 列印／存 PDF</button><button type="button" id="qrPreviewClose" class="btn secondary">關閉</button></div></div><div id="qrPrintSheet" class="qr-print-sheet"></div></div></div>
 <script>
 
 (()=>{'use strict';
@@ -280,14 +316,14 @@ function sidebar(){
  const totalIncome=S.tx.filter(x=>x.studentId===s.id&&!x.undone&&x.amount>0&&x.kind!=='undo'&&x.kind!=='recalc').reduce((sum,x)=>sum+x.amount,0);
  const usable=s.tickets.filter(x=>!x.used).length;
  document.querySelector('#sidebar').innerHTML=`<div class="panel bankpassbook">
- <div class="person"><h2>📖 個人點數存摺</h2><span class="hint">${mode==='teacher'?'教師管理':'學生查詢'}</span></div>
+ <div class="person"><h2>📖 個人點數存摺</h2></div>
  <label class="muted" for="studentSelect" style="display:block;margin-top:15px">選擇學生</label>
  <select class="seatpick" id="studentSelect" aria-label="選擇學生">${S.students.map(x=>`<option value="${svgEscape(x.id)}" ${x.id===chosen?'selected':''}>${svgEscape(x.id)}｜${svgEscape(x.name)}</option>`).join('')}</select>
  <div class="passbook-head"><span>💰 ${svgEscape(s.name)}的班幣</span><span>東門存摺</span></div>
  <div class="passbook-balance"><div class="muted">可使用餘額</div><div class="number tally">${money(s.balance)} <span class="unit">班幣</span></div></div>
- <div class="passbook-detail"><span>累計入帳紀錄</span><b>${money(totalIncome)}</b></div>
+ <div class="passbook-detail"><span>累計收入</span><b>${money(totalIncome)}</b></div>
  ${Number.isSafeInteger(s.openingBalance)?`<div class="softnote">📖 紙本起始額：${money(s.openingBalance)} 班幣（已納入餘額）</div>`:''}
- <div class="softnote">${s.balance<0?'目前班幣為負數，請依班規處理。':'每週薪資、表現獎勵和兌換都會記在存摺。'}</div>
+ ${s.balance<0?'<div class="softnote">餘額為負數，請洽老師</div>':''}
  <div class="line"></div><div class="statrow"><div class="stat"><label>未使用獎勵卡</label><b>${usable} 張</b></div><div class="stat"><label>全班班分</label><b>${money(S.classPoints)} 點</b></div></div>
  <button class="btn mint" style="margin-top:13px;width:100%" data-action="tab" data-value="wallet">🎒 開啟我的卡包 ${usable?`（${usable}）`:''}</button>
  ${mode==='teacher'&&pending?`<p class="tagline" style="margin-top:15px">⏳ 有 ${pending} 筆學生兌換申請，到「獎勵兌換」審核。</p>`:''}</div>`;
@@ -304,24 +340,24 @@ function bank(){
  const s=student();
  const week=payrollWeek(),paid=S.students.filter(x=>hasPayroll(x.id,week)).length,unpaid=S.students.length-paid;
  const p=PENALTIES[0];
- return `<div class="panel"><div class="sectiontitle"><div><h2>💰 ${mode==='teacher'?'班幣加扣分':'我的班幣存摺'}</h2><span>${mode==='teacher'?'對目前選取的學生記點；週薪依每位學生逐筆管理':'查看班幣、扣分及交易紀錄'}</span></div></div>${mode==='teacher'?`
+ return `<div class="panel"><div class="sectiontitle"><div><h2>💰 ${mode==='teacher'?'班幣加扣分':'我的班幣存摺'}</h2></div></div>${mode==='teacher'?`
  <div class="infocard"><div class="subhead">💵 週薪發放｜每人 +1,000 班幣</div>
- <div class="payroll-switch"><label for="payrollWeekSelect">選擇要發薪的週別（可以補發過去的週薪）</label><select id="payrollWeekSelect">${Array.from({length:12},(_,i)=>`<option value="${i}" ${payrollWeekOffset===i?'selected':''}>${weekLabel(i)}</option>`).join('')}</select></div>
+ <div class="payroll-switch"><label for="payrollWeekSelect">發薪週別</label><select id="payrollWeekSelect">${Array.from({length:12},(_,i)=>`<option value="${i}" ${payrollWeekOffset===i?'selected':''}>${weekLabel(i)}</option>`).join('')}</select></div>
  <div style="margin-bottom:10px">${week} 起的週薪｜已發 <b class="pos">${paid}</b>／${S.students.length} 人｜未領 <b>${unpaid}</b> 人 ${hasPayroll(s.id,week)?`<span class="chip">${svgEscape(s.name)}已領</span>`:`<span class="chip warn">${svgEscape(s.name)}未領</span>`}</div>
  <div class="quick"><button class="btn mint" data-action="payroll" ${unpaid===0?'disabled':''}>💵 一鍵發薪給未領學生（${unpaid} 人）</button><button class="btn secondary" data-action="payrollOne" ${hasPayroll(s.id,week)?'disabled':''}>只發 ${svgEscape(s.name)} +1,000</button></div>
  <div id="payrollResult" class="salary-success" role="status"></div>
- <p class="softnote">按鈕直接入帳，不需要額外跳出確認視窗。同一學生、同一週不會重複領薪；可選擇過去週補發。誤發請在下方交易紀錄按「撤銷」。</p></div>
- <div class="selected-student-alert">目前操作：${svgEscape(s.id)} 號｜${svgEscape(s.name)}｜餘額 ${money(s.balance)} 班幣</div><div class="line"></div><div class="subhead">🌟 獎勵加分｜快速記點</div><div class="quick">${QUICK.filter(q=>q[2]>0).map(q=>`<button class="btn secondary" data-action="quick" data-value="${q[2]}" data-reason="${svgEscape(q[1])}">${q[0]} ${svgEscape(q[1])}</button>`).join('')}</div> <div class="line"></div><div class="subhead">🔻 快速扣分（不累計犯規次數）</div><div class="quick-deduct">${[100,300,500,1000].map(a=>`<button type="button" class="btn" data-action="quickDeduct" data-value="${a}">−${money(a)} 班幣</button>`).join('')}</div><p class="deduct-note">點一下直接扣款並記錄；如果是有「累積扣分」規則的違規，請使用下面的分類扣分。</p>
- <div class="line"></div><div class="subhead">🔻 違規扣分｜自動辨識累犯</div><div class="infocard"><form id="penaltyForm"><div class="formrow"><select id="penaltyType" class="search" aria-label="扣分項目">${PENALTIES.map(x=>`<option value="${x.id}" ${x.id===selectedPenalty?'selected':''}>${svgEscape(x.name)}｜${x.base} ${x.repeat?'（累計）':''}</option>`).join('')}</select><label class="penaltydetail" style="display:none;flex:1"><input id="penaltyDetail" type="text" style="width:100%" maxlength="80" placeholder="請寫作業／物品名稱（建議含日期）" value="${svgEscape(selectedPenaltyDetail)}" /></label><label class="penaltybase" style="display:none"><input id="penaltyBase" type="number" min="50" max="1000" step="1" value="${selectedPenaltyBase}" aria-label="班規或校規基本扣分" /></label></div><div class="tagline" id="penaltyPreview" style="margin-top:12px">首次基本扣分預覽</div><div class="formrow" style="margin-top:12px"><button class="btn red" type="submit">直接扣分並記錄</button><span class="muted">只有原規則標示「累積」的項目才套用第 2 次 ×2、第 3 次 ×3。</span></div></form></div>
- <div class="line"></div><div class="subhead">✍️ 自訂加減金額（不列入自動累犯）</div><form id="manualForm" class="formrow"><input type="number" id="manualAmount" placeholder="例如 100 或 -150" step="1" required aria-label="加扣班幣"/><input type="text" id="manualReason" maxlength="60" placeholder="原因，例如：獲獎獎金" required aria-label="加扣原因"/><button class="btn" type="submit">確認記錄</button></form><p class="softnote">舊版手動輸入的扣分因缺乏違規分類，不會自動列入累犯。相同缺交作業請填完全相同的作業名稱與日期。</p>`:
- `<p class="tagline">每週五由老師發放基本週薪；學生只能查看點數並申請兌換獎勵。</p>`}</div><div class="panel" style="margin-top:15px"><div class="sectiontitle"><h2>🧾 最近異動紀錄</h2><span>${svgEscape(s.name)}</span></div>${history(s)}</div>`;
+ <p class="softnote">同一學生每週只發一次；誤發可撤銷。</p></div>
+ <div class="selected-student-alert">目前操作：${svgEscape(s.id)} 號｜${svgEscape(s.name)}｜餘額 ${money(s.balance)} 班幣</div><div class="line"></div><div class="subhead">🌟 獎勵加分｜快速記點</div><div class="quick">${QUICK.filter(q=>q[2]>0).map(q=>`<button class="btn secondary" data-action="quick" data-value="${q[2]}" data-reason="${svgEscape(q[1])}">${q[0]} ${svgEscape(q[1])}</button>`).join('')}</div> <div class="line"></div><div class="subhead">🔻 快速扣分（不累計犯規次數）</div><div class="quick-deduct">${[100,300,500,1000].map(a=>`<button type="button" class="btn" data-action="quickDeduct" data-value="${a}">−${money(a)} 班幣</button>`).join('')}</div><p class="deduct-note">累犯請使用下方「違規扣分」。</p>
+ <div class="line"></div><div class="subhead">🔻 違規扣分｜自動辨識累犯</div><div class="infocard"><form id="penaltyForm"><div class="formrow"><select id="penaltyType" class="search" aria-label="扣分項目">${PENALTIES.map(x=>`<option value="${x.id}" ${x.id===selectedPenalty?'selected':''}>${svgEscape(x.name)}｜${x.base} ${x.repeat?'（累計）':''}</option>`).join('')}</select><label class="penaltydetail" style="display:none;flex:1"><input id="penaltyDetail" type="text" style="width:100%" maxlength="80" placeholder="請寫作業／物品名稱（建議含日期）" value="${svgEscape(selectedPenaltyDetail)}" /></label><label class="penaltybase" style="display:none"><input id="penaltyBase" type="number" min="50" max="1000" step="1" value="${selectedPenaltyBase}" aria-label="班規或校規基本扣分" /></label></div><div class="tagline" id="penaltyPreview" style="margin-top:12px">首次基本扣分預覽</div><div class="formrow" style="margin-top:12px"><button class="btn red" type="submit">直接扣分並記錄</button><span class="muted">累犯自動 ×2、×3…</span></div></form></div>
+ <div class="line"></div><div class="subhead">✍️ 自訂加減金額（不列入自動累犯）</div><form id="manualForm" class="formrow"><input type="number" id="manualAmount" placeholder="例如 100 或 -150" step="1" required aria-label="加扣班幣"/><input type="text" id="manualReason" maxlength="60" placeholder="原因，例如：獲獎獎金" required aria-label="加扣原因"/><button class="btn" type="submit">確認記錄</button></form>`:
+ ``}</div><div class="panel" style="margin-top:15px"><div class="sectiontitle"><h2>🧾 最近異動紀錄</h2><span>${svgEscape(s.name)}</span></div>${history(s)}</div>`;
 }
-function rewards(){const s=student();const pending=S.requests.filter(x=>x.status==='pending');const tickets=s.tickets.filter(x=>!x.used);return `<div class="panel"><div class="sectiontitle"><div><h2>🎟️ 原本的班級獎勵卡</h2><span>沿用原本 25 張獎勵卡、兌換價格不變；老師核准後扣點，卡片存入「我的卡包」。</span></div></div>${mode==='teacher'&&pending.length?`<div class="dividerlabel">待審核申請（${pending.length} 筆）</div>${pending.map(req=>{const who=student(req.studentId),p=REWARDS.find(x=>x[0]===req.rewardId);return `<div class="pending"><div><span class="name">${svgEscape(who.name)}｜${svgEscape(p[1])}</span><div><small>${money(p[2])} 班幣 · ${dtime(req.at)}</small></div></div><div class="action"><button class="btn mint small" data-action="approve" data-value="${req.id}">核准</button><button class="btn red small" data-action="reject" data-value="${req.id}">拒絕</button></div></div>`}).join('')}<div class="line"></div>`:''}<div class="formrow" style="margin-bottom:15px"><input type="search" class="search" id="rewardSearch" placeholder="搜尋獎勵卡，例如：座位、作業、點歌" value="${svgEscape(rewardSearch)}" aria-label="搜尋獎勵卡"/><span class="muted">目前班幣：${money(s.balance)}</span></div><div class="rewardgrid">${REWARDS.map((r,i)=>`<div class="reward" data-reward-name="${svgEscape((r[1]+' '+r[3]).toLowerCase())}"><div><div class="cardnum">No. ${String(i+1).padStart(2,'0')}</div><h3>${svgEscape(r[1])}</h3><p>${svgEscape(r[3])}</p></div><div class="rewardfoot"><span class="price">🪙 ${money(r[2])}</span><button class="btn small" data-action="redeem" data-value="${r[0]}" ${s.balance<r[2]?'disabled':''}>${mode==='teacher'?'直接兌換':'申請兌換'}</button></div></div>`).join('')}</div></div><div class="panel" style="margin-top:15px"><div class="sectiontitle"><h2>🎒 兌換完成的卡片去哪裡？</h2></div><p class="intro">學生兌換後，獎勵卡會自動放進「我的卡包」；要使用時可以從卡包申請，老師確認後才會標記為已使用。</p><button class="btn mint" data-action="tab" data-value="wallet">開啟我的卡包（${tickets.length} 張未使用）</button></div>`}
+function rewards(){const s=student();const pending=S.requests.filter(x=>x.status==='pending');const tickets=s.tickets.filter(x=>!x.used);return `<div class="panel"><div class="sectiontitle"><div><h2>🎟️ 獎勵兌換</h2></div></div>${mode==='teacher'&&pending.length?`<div class="dividerlabel">待審核申請（${pending.length} 筆）</div>${pending.map(req=>{const who=student(req.studentId),p=REWARDS.find(x=>x[0]===req.rewardId);return `<div class="pending"><div><span class="name">${svgEscape(who.name)}｜${svgEscape(p[1])}</span><div><small>${money(p[2])} 班幣 · ${dtime(req.at)}</small></div></div><div class="action"><button class="btn mint small" data-action="approve" data-value="${req.id}">核准</button><button class="btn red small" data-action="reject" data-value="${req.id}">拒絕</button></div></div>`}).join('')}<div class="line"></div>`:''}<div class="formrow" style="margin-bottom:15px"><input type="search" class="search" id="rewardSearch" placeholder="搜尋獎勵卡，例如：座位、作業、點歌" value="${svgEscape(rewardSearch)}" aria-label="搜尋獎勵卡"/><span class="muted">目前班幣：${money(s.balance)}</span></div><div class="rewardgrid">${REWARDS.map((r,i)=>`<div class="reward" data-reward-name="${svgEscape((r[1]+' '+r[3]).toLowerCase())}"><div><div class="cardnum">No. ${String(i+1).padStart(2,'0')}</div><h3>${svgEscape(r[1])}</h3><p>${svgEscape(r[3])}</p></div><div class="rewardfoot"><span class="price">🪙 ${money(r[2])}</span><button class="btn small" data-action="redeem" data-value="${r[0]}" ${s.balance<r[2]?'disabled':''}>${mode==='teacher'?'直接兌換':'申請兌換'}</button></div></div>`).join('')}</div></div><div class="panel" style="margin-top:15px"><div class="sectiontitle"><h2>🎒 我的卡包</h2></div><button class="btn mint" data-action="tab" data-value="wallet">開啟我的卡包（${tickets.length} 張未使用）</button></div>`}
 function wallet(){
  const s=student();const pending=S.students.flatMap(st=>st.tickets.filter(t=>t.useRequested&&!t.used).map(t=>({st,t}))).sort((a,b)=>(b.t.requestedAt||'').localeCompare(a.t.requestedAt||''));
  const cards=s.tickets.filter(t=>cardFilter==='all'||(cardFilter==='unused'?!t.used:!!t.used));
- return `<div class="panel"><div class="sectiontitle"><div><h2>🎒 我的卡包｜${svgEscape(s.name)}</h2><span>兌換成功的獎勵卡會存放這裡，使用後保留歷史紀錄。</span></div><span class="chip">可使用 ${s.tickets.filter(t=>!t.used).length} 張</span></div>
- <p class="tagline">流程：到「獎勵兌換」購買 → 卡片自動進入這裡 → 學生按「申請使用」 → 老師核准並標記「已使用」。</p>
+ return `<div class="panel"><div class="sectiontitle"><div><h2>🎒 我的卡包｜${svgEscape(s.name)}</h2><span></span></div><span class="chip">可使用 ${s.tickets.filter(t=>!t.used).length} 張</span></div>
+ 
  ${mode==='teacher'&&pending.length?`<div class="line"></div><div class="subhead">🔔 全班等待使用的卡片（${pending.length} 張）</div>${pending.map(({st,t})=>{const p=REWARDS.find(r=>r[0]===t.rewardId);return `<div class="pending"><div><b>${svgEscape(st.name)}｜${svgEscape(p?.[1]||'獎勵卡')}</b><div><small>申請 ${dtime(t.requestedAt||t.at)}</small></div></div><div class="action"><button class="btn mint small" data-action="confirmUse" data-value="${t.id}" data-student="${st.id}">確認使用</button><button class="btn ghost small" data-action="rejectUse" data-value="${t.id}" data-student="${st.id}">取消申請</button></div></div>`}).join('')}<div class="line"></div>`:''}
  <div class="formrow" style="margin:13px 0 18px"><button class="pilltoggle ${cardFilter==='unused'?'active':''}" data-action="filterCard" data-value="unused">可使用（${s.tickets.filter(x=>!x.used).length}）</button><button class="pilltoggle ${cardFilter==='used'?'active':''}" data-action="filterCard" data-value="used">已使用（${s.tickets.filter(x=>x.used).length}）</button><button class="pilltoggle ${cardFilter==='all'?'active':''}" data-action="filterCard" data-value="all">全部（${s.tickets.length}）</button></div>
  ${cards.length?`<div class="walletcards">${cards.map(t=>{const p=REWARDS.find(r=>r[0]===t.rewardId);return `<div class="walletcard"><div><div class="cardnum">${t.used?'✅ 已使用':t.useRequested?'⏳ 等待老師確認':'🎫 可以使用'}</div><h3>${svgEscape(p?.[1]||'獎勵卡')}</h3><p>${svgEscape(p?.[3]||'')}</p><div class="small muted">兌換：${dtime(t.at)}${t.used&&t.usedAt?`｜使用：${dtime(t.usedAt)}`:''}</div></div><div class="action">${t.used?(mode==='teacher'?`<button class="btn ghost small" data-action="restoreTicket" data-value="${t.id}">恢復未使用</button>`:'<span class="chip gray">已核銷</span>'):(mode==='teacher'?`<button class="btn mint small" data-action="confirmUse" data-value="${t.id}" data-student="${s.id}">確認使用</button>`:t.useRequested?`<span class="chip warn">已送出使用申請</span><button class="btn ghost small" data-action="cancelUse" data-value="${t.id}">取消</button>`:`<button class="btn mint small" data-action="requestUse" data-value="${t.id}">申請使用</button>`)}</div></div>`}).join('')}</div>`:`<div class="empty">${cardFilter==='used'?'還沒有已使用的卡片':'還沒有卡片。請先到「獎勵兌換」購買，老師核准後就會出現。'}</div>`}
@@ -355,7 +391,7 @@ function ticketAction(action,id,studentId){
 }
 function classPage(){
  const points=S.classPoints,remain=Math.max(0,500-points);
- return `<div class="panel"><div class="sectiontitle"><div><h2>🏫 全班班分</h2><span>與個人班幣分開計算，累積 500 點兌換一次全班獎勵。</span></div></div><div class="twocol"><div class="infocard"><div class="muted">全班目前累積</div><div class="hero tally">${money(points)} <span style="font-size:18px;color:#8293ac">／500 點</span></div><div class="classbar"><div class="fill" style="width:${Math.min(100,Math.max(0,points/500*100))}%"></div></div><div class="classnote" style="margin-top:8px">${points>=500?'🎉 已達 500 點，可以兌換全班獎勵！':`再累積 ${money(remain)} 點，就能換一次全班獎勵。`}</div></div><div class="infocard"><div class="subhead">500 點班級獎勵</div><p style="margin:0 0 14px;color:#73819a;font-size:13px">老師請小點心、看影片、桌遊時間、戶外活動、班級同樂會、點心＋飲料小慶祝。</p>${mode==='teacher'?`<button class="btn" data-action="classRedeem" ${points<500?'disabled':''}>兌換一次全班獎勵（−500）</button>`:'<span class="chip">達標後由老師決定</span>'}</div></div>${mode==='teacher'?`<div class="line"></div><div class="subhead">快速增加全班班分</div><div class="quick">${CLASS_QUICK.map(([reason,amount])=>`<button class="btn secondary" data-action="classQuick" data-value="${amount}" data-reason="${svgEscape(reason)}">+${amount} ${svgEscape(reason)}</button>`).join('')}</div><div class="line"></div><form id="classForm" class="formrow"><input type="number" id="classAmount" step="1" placeholder="例如 5 或 -2" required aria-label="班分加減"/><input type="text" id="classReason" maxlength="60" placeholder="班分異動原因" required/><button class="btn" type="submit">確認班分</button></form>`:''}<div class="line"></div><div class="subhead">全班班分紀錄</div><div class="history">${S.classHistory.length?S.classHistory.slice(0,20).map(t=>`<div class="historyitem"><div><b>${svgEscape(t.reason)}</b>${t.undone?' <span class="chip gray">已撤銷</span>':''}<div class="small">${dtime(t.at)}</div></div><div class="right" style="display:flex;align-items:center;gap:9px"><span class="${t.amount>=0?'pos':'neg'}" ${t.undone?'style="text-decoration:line-through;opacity:.45"':''}>${t.amount>0?'+':''}${t.amount}</span>${mode==='teacher'&&!t.undone&&t.kind!=='undo'?`<button class="btn ghost small" data-action="undoClass" data-value="${t.id}">撤銷</button>`:''}</div></div>`).join(''):'<div class="empty">目前尚無全班班分紀錄</div>'}</div></div>`;
+ return `<div class="panel"><div class="sectiontitle"><div><h2>🏫 全班班分</h2><span>累積 500 點兌換全班獎勵。</span></div></div><div class="twocol"><div class="infocard"><div class="muted">全班目前累積</div><div class="hero tally">${money(points)} <span style="font-size:18px;color:#8293ac">／500 點</span></div><div class="classbar"><div class="fill" style="width:${Math.min(100,Math.max(0,points/500*100))}%"></div></div><div class="classnote" style="margin-top:8px">${points>=500?'🎉 已達 500 點，可以兌換全班獎勵！':`再累積 ${money(remain)} 點，就能換一次全班獎勵。`}</div></div><div class="infocard"><div class="subhead">500 點班級獎勵</div><p style="margin:0 0 14px;color:#73819a;font-size:13px">老師請小點心、看影片、桌遊時間、戶外活動、班級同樂會、點心＋飲料小慶祝。</p>${mode==='teacher'?`<button class="btn" data-action="classRedeem" ${points<500?'disabled':''}>兌換一次全班獎勵（−500）</button>`:'<span class="chip">達標後由老師決定</span>'}</div></div>${mode==='teacher'?`<div class="line"></div><div class="subhead">快速增加全班班分</div><div class="quick">${CLASS_QUICK.map(([reason,amount])=>`<button class="btn secondary" data-action="classQuick" data-value="${amount}" data-reason="${svgEscape(reason)}">+${amount} ${svgEscape(reason)}</button>`).join('')}</div><div class="line"></div><form id="classForm" class="formrow"><input type="number" id="classAmount" step="1" placeholder="例如 5 或 -2" required aria-label="班分加減"/><input type="text" id="classReason" maxlength="60" placeholder="班分異動原因" required/><button class="btn" type="submit">確認班分</button></form>`:''}<div class="line"></div><div class="subhead">全班班分紀錄</div><div class="history">${S.classHistory.length?S.classHistory.slice(0,20).map(t=>`<div class="historyitem"><div><b>${svgEscape(t.reason)}</b>${t.undone?' <span class="chip gray">已撤銷</span>':''}<div class="small">${dtime(t.at)}</div></div><div class="right" style="display:flex;align-items:center;gap:9px"><span class="${t.amount>=0?'pos':'neg'}" ${t.undone?'style="text-decoration:line-through;opacity:.45"':''}>${t.amount>0?'+':''}${t.amount}</span>${mode==='teacher'&&!t.undone&&t.kind!=='undo'?`<button class="btn ghost small" data-action="undoClass" data-value="${t.id}">撤銷</button>`:''}</div></div>`).join(''):'<div class="empty">目前尚無全班班分紀錄</div>'}</div></div>`;
 }
 // 「紙本起始班幣」：首次設定對齊目前餘額；後續修改僅調整起始額差值，保留後續數位交易。
 function openingPage(){
@@ -366,15 +402,15 @@ function openingPage(){
    return `<tr><td>${svgEscape(s.id)}</td><td><b>${svgEscape(s.name)}</b></td><td class="tally">${money(s.balance)}</td><td>${opening}</td><td><input class="opening-input" data-student="${svgEscape(s.id)}" type="number" min="-100000000" max="100000000" step="1" inputmode="numeric" placeholder="紙本結餘" value="${svgEscape(value)}" aria-label="${svgEscape(s.name)}紙本餘額" /></td></tr>`;
  }).join('');
  const preview=openingPreview?openingPreviewHtml():'';
- return `<div class="panel"><div class="sectiontitle"><div><h2>📥 紙本存摺 → 初始班幣</h2><span>將目前紙本存摺的最後結餘帶進系統，不必補登過去每一筆紀錄</span></div><span class="chip">已設定 ${setCount} / ${S.students.length} 人</span></div>
- <div class="tagline"><b>怎麼設定：</b>在表格填入每位學生的紙本餘額，或從 Excel 複製「座號、餘額」貼到下方。先預覽，再確認入帳。<b>可以只設定幾位學生</b>，空白會略過；也接受負數。</div>
- <div class="opening-alert"><b>請先確認：</b>第一次設定會把該學生<b>目前系統顯示的餘額</b>對齊你填入的紙本餘額，建議在正式開始線上記帳之前做。若之後只要更正起始金額，系統會保留已發生的線上加扣分。<b>不會改動全班班分或已兌換卡片。</b></div>
+ return `<div class="panel"><div class="sectiontitle"><div><h2>📥 紙本存摺 → 初始班幣</h2><span>輸入紙本餘額</span></div><span class="chip">已設定 ${setCount} / ${S.students.length} 人</span></div>
+ 
+ <div class="opening-alert">初次設定會對齊紙本餘額；後續更正只調整差額，保留線上紀錄。</div>
  <div class="line"></div><div class="subhead">✍️ 個別填寫（可一次設定全班）</div>
  <div class="opening-table-wrap"><table class="opening-table"><thead><tr><th>座號</th><th>學生</th><th>目前系統餘額</th><th>已設定起始額</th><th>要輸入的紙本餘額</th></tr></thead><tbody>${rows}</tbody></table></div>
- <div class="line"></div><div class="subhead">📋 批次貼上（選用）</div><p class="intro">每行一位：<code>1,3500</code> 或 <code>1,王同學,3500</code>。也可直接從試算表複製兩欄「座號／點數」，使用逗號或 Tab 分隔；不影響未貼上的學生。</p>
+ <div class="line"></div><div class="subhead">📋 批次貼上（選用）</div><p class="intro">格式：<code>1,3500</code>（座號,餘額）。</p>
  <textarea id="openingPaste" class="opening-import" placeholder="1,3500&#10;2,6200&#10;3,-200"></textarea>
  <div class="opening-actions" style="margin-top:10px"><button type="button" class="btn secondary" data-action="openingPaste">把貼上的點數填入表格</button><button type="button" class="btn" data-action="openingCheck">🔎 預覽要匯入的點數</button><button type="button" class="btn ghost" data-action="openingClear">清除未送出的輸入</button></div>
- <div id="openingFeedback" class="softnote" role="status">尚未寫入任何點數。請按「預覽」確認變動。</div>
+ <div id="openingFeedback" class="softnote" role="status">先預覽，再確認匯入。</div>
  ${preview}</div>`;
 }
 function previewOpeningRows(){
@@ -446,7 +482,7 @@ function applyOpeningPreview(){
  if(changed.length){save();render();notify(`✅ 已設定 ${changed.length} 位學生的紙本起始額`)}
  else{render();notify('輸入金額與原本相同，未重複記點')}
 }
-function settings(){if(mode!=='teacher')return bank();return `<div class="panel settings"><div class="sectiontitle"><div><h2>⚙️ 名單與備份</h2><span>請妥善保護學生資料與帳號，正式資料須使用 Firebase 並遵守校內個資管理規範。</span></div></div><div class="subhead">🧹 重新開始（可選）</div><p class="intro">若目前只是測試、還沒開始正式輸入紙本班幣，可按下方按鈕清空本班試用點數、卡片、交易紀錄與舊學生綁定。會保留現有座號和姓名、教師 Firebase 帳號與教師授權。舊 Firebase Authentication 學生帳號不會被刪除，但不會再連到新版個人存摺。</p><div class="row" style="margin-bottom:15px"><button class="btn red" data-action="resetCloudClass">清空測試班幣與學生綁定（保留名單）</button></div><div class="line"></div><div class="subhead">匯入正式名單</div><p class="intro">每行一位，可輸入「座號,姓名」，例如：1,王小明。也可以每行只輸入姓名，由系統依順序編座號。匯入會<b>清空目前全班點數、兌換及交易紀錄</b>，已建立的學生登入綁定也會失效；請先下載備份。</p><textarea id="namesInput" aria-label="學生名單" placeholder="1,學生甲\n2,學生乙\n3,學生丙"></textarea><div class="row" style="margin-top:12px"><button class="btn" data-action="importNames">匯入名單並重新開始</button><button class="btn secondary" data-action="fillNames">填入目前名單</button></div><div class="line"></div><div class="subhead">班級資料備份</div><p class="intro">下載 JSON 備份後，可在同一個示範版用「還原備份」匯入。正式雲端模式可跨裝置同步；仍建議定期下載備份。單機試用資料則留在此瀏覽器。</p><div class="row"><button class="btn mint" data-action="export">⬇️ 下載全班紀錄備份</button><button class="btn secondary" data-action="restore">📂 還原備份</button><button class="btn red" data-action="reset">重設所有示範資料</button></div><input type="file" id="backupFile" accept=".json,application/json" style="display:none"/><div class="line"></div><div class="tagline">🔐 <b>權限提醒：</b>試用模式沒有正式身份驗證；正式模式必須先設定 Firebase Authentication、Firestore 安全規則與授權教師帳號。</div></div>`}
+function settings(){if(mode!=='teacher')return bank();return `<div class="panel settings"><div class="sectiontitle"><div><h2>⚙️ 名單與備份</h2></div></div><details class="account-advanced"><summary>清空測試資料（慎用）</summary><p class="intro">此操作會清除班幣、紀錄與學生綁定；保留姓名和座號，不會刪除 Firebase 登入帳號。</p><div class="row" style="margin-bottom:15px"><button class="btn red" data-action="resetCloudClass">清空測試班幣與學生綁定（保留名單）</button></div></details><div class="line"></div><div class="subhead">匯入正式名單</div><p class="intro">每行「座號,姓名」。<b>重新匯入會清空班幣、卡片及學生綁定。</b></p><textarea id="namesInput" aria-label="學生名單" placeholder="1,學生甲\n2,學生乙\n3,學生丙"></textarea><div class="row" style="margin-top:12px"><button class="btn" data-action="importNames">匯入名單並重新開始</button><button class="btn secondary" data-action="fillNames">填入目前名單</button></div><div class="line"></div><div class="subhead">班級資料備份</div><div class="row"><button class="btn mint" data-action="export">⬇️ 下載全班紀錄備份</button><button class="btn secondary" data-action="restore">📂 還原備份</button><button class="btn red" data-action="reset">重設所有示範資料</button></div><input type="file" id="backupFile" accept=".json,application/json" style="display:none"/></div>`}
 function render(){
  if(!student()){S=fresh();chosen='01';}
  if(mode==='student'&&['settings','overview'].includes(tab))tab='bank';
@@ -478,7 +514,7 @@ window.addEventListener('storage',e=>{if(e.key===KEY&&session==='demo-teacher'){
 function overview(){
  const total=S.students.length, withLogin=S.students.filter(s=>!!s.authUid).length;
  const pending=cloudRequests.filter(r=>r.status==='pending').length+S.requests.filter(r=>r.status==='pending').length;
- return `<div class="panel"><div class="sectiontitle"><div><h2>👥 全班點數總覽</h2><span>老師可以查看每位學生的個人班幣、卡片數與帳號狀態</span></div><span class="chip">${total} 人</span></div>
+ return `<div class="panel"><div class="sectiontitle"><div><h2>👥 全班總覽</h2></div><span class="chip">${total} 人</span></div>
  <div class="statrow"><div class="stat"><label>已建立登入帳號</label><b>${withLogin}／${total}</b></div><div class="stat"><label>待處理申請</label><b>${pending}</b></div><div class="stat"><label>目前全班班分</label><b>${money(S.classPoints)}</b></div></div>
  <div style="margin-top:13px"><button type="button" class="btn secondary" data-action="tab" data-value="opening">📥 匯入紙本初始班幣</button></div>
  <div class="overviewwrap" style="margin-top:18px"><table class="overviewtable"><thead><tr><th>座號</th><th>學生</th><th>目前班幣</th><th>未使用獎勵卡</th><th>登入帳號</th><th>管理</th></tr></thead><tbody>
@@ -492,14 +528,15 @@ function setAccountNotice(message,kind='info',studentId=chosen){
 function accountPanel(){
  const s=student();const isCloud=session==='cloud-teacher'&&cloudDataReady;
  const note=accountNotice?.studentId===s.id?accountNotice:null;
- return `<div class="teacher-tools"><div class="sectiontitle"><div><h2>🔐 學生帳號管理</h2><span>學生只能看自己的存摺，教師才能改班幣、週薪與卡片狀態</span></div></div>
+ return `<div class="teacher-tools"><div class="sectiontitle"><div><h2>🔐 學生帳號</h2></div></div>
  <div class="account-grid"><div><b>${svgEscape(s.id)}｜${svgEscape(s.name)}</b><div class="muted">${s.authUid?`目前帳號：${svgEscape(s.loginName||'已建立')}`:'尚未建立學生登入帳號'}</div></div>
- <button class="btn" data-action="createAccount" ${!isCloud||!!s.authUid?'disabled':''}>${s.authUid?'已綁定（可使用下方修復功能）':'建立此學生帳號'}</button></div>
+ <button class="btn" data-action="createAccount" ${!isCloud||!!s.authUid?'disabled':''}>${s.authUid?'已建立':'建立此學生帳號'}</button></div>
  <div class="quick" style="margin-top:11px"><button class="btn secondary" data-action="createAllAccounts" ${!isCloud?'disabled':''}>一鍵建立所有尚未有帳號的學生</button><button class="btn mint" data-action="downloadCredentials" ${!generatedAccounts.length?'disabled':''}>下載本次帳號密碼表（${generatedAccounts.length} 筆）</button></div>
  <div id="accountFeedback" class="account-feedback ${note?.kind==='error'?'account-error':'account-success'}" ${note?'':'hidden'} role="alert">${note?svgEscape(note.message):''}</div>
- <p class="softnote">新建帳號會自動產生不重複的學生登入名稱與 12 位密碼，建立後立即同步個人存摺；若 Firebase 註冊失敗，會顯示真正的錯誤原因，已設定的餘額不會清空。</p>${pendingAccountRecovery?.studentId===s.id?`<div class="opening-alert"><b>這個帳號在 Firebase 已建立，但還沒完成綁定。</b><div class="quick" style="margin-top:8px"><button class="btn mint" data-action="finishPendingBinding">完成剛建立的存摺綁定</button></div></div>`:''}
+ <p class="softnote"></p>${pendingAccountRecovery?.studentId===s.id?`<div class="opening-alert"><b>這個帳號在 Firebase 已建立，但還沒完成綁定。</b><div class="quick" style="margin-top:8px"><button class="btn mint" data-action="finishPendingBinding">完成剛建立的存摺綁定</button></div></div>`:''}
  <div class="line"></div>
- <div class="subhead">🩺 登入成功卻顯示「尚未綁定存摺」？</div>
+ <details class="account-advanced"><summary>帳號修復／綁定既有帳號</summary>
+ <div class="subhead" style="margin-top:12px">帳號綁定</div>
  <p class="intro">姓名及初始班幣已設定不代表帳號已綁定。若這位學生在「全班總覽」顯示已有帳號，先點「修復存摺綁定」；不會更動現有班幣。若學生帳號是先在 Firebase Authentication 手動建立，請用下面的 UID 綁定，<b>不要重新匯入名單</b>。</p>
  <div class="quick"><button class="btn mint" data-action="repairStudentBinding" ${!isCloud||!s.authUid?'disabled':''}>🔄 修復此學生存摺綁定</button></div>
  <div class="formrow" style="margin-top:13px">
@@ -507,9 +544,14 @@ function accountPanel(){
    <input type="text" id="existingStudentLogin" autocomplete="off" spellcheck="false" placeholder="帳號，如 c506s01abcde 或電子郵件" value="${svgEscape(s.loginName||`c506s${s.id}`)}" style="flex:1;min-width:130px" aria-label="學生登入帳號" />
    <button type="button" class="btn secondary" data-action="bindExistingStudent" ${!isCloud?'disabled':''}>🔗 綁定既有帳號</button>
  </div>
- <p class="softnote">UID 請到 Firebase → Authentication → Users 複製相應學生的 User UID。若使用系統產生的帳號，填入 @ 前的文字（例如 c506s01abcde）；若是在 Firebase 手動建立的電子郵件帳號，請填入完整電子郵件。UID 不是密碼，請不要在此輸入學生密碼。此功能只建立對應關係，不會建立或重設 Authentication 密碼。</p>
+ <p class="softnote">請使用 Firebase Authentication 的學生 UID。此操作不會更改密碼或班幣。</p>
+ </details>
+ <div class="qr-teacher"><div class="subhead">📱 QR Code 登入卡</div>
+ <div class="quick"><button type="button" class="btn secondary" data-action="qrPrintOne" ${!isCloud||!s.authUid||!s.loginName?'disabled':''}>列印這位學生</button>
+ <button type="button" class="btn mint" data-action="qrPrintAll" ${!isCloud||!S.students.some(x=>x.authUid&&x.loginName)?'disabled':''}>列印全班 QR 登入卡</button></div>
+ <p class="softnote">掃碼自動帶入帳號，仍須輸入原本密碼。未建立帳號者不會列印。</p></div>
  ${generatedAccounts.length?`<div class="accountline" style="margin-top:13px"><b>本次新增帳號（請立刻下載並妥善保管）</b><div style="margin-top:6px">${generatedAccounts.slice(-4).map(a=>`${svgEscape(a.studentName)}：${svgEscape(a.username)}｜密碼 ${svgEscape(a.password)}`).join('<div></div>')}</div></div>`:''}
- <p class="softnote">密碼只在建立當次顯示，請立即下載帳密 CSV 並安全保存，勿上傳 GitHub。舊 Firebase Authentication 使用者不會因為更新網站而自動刪除。</p>
+ <p class="softnote"></p>
  ${!isCloud?'<p class="notice">目前無法建立帳號：請確認已正式登入教師帳號，且 Firebase 全班資料已完成載入。</p>':''}</div>`;
 }
 function requestPanel(kind){
@@ -521,7 +563,7 @@ function requestPanel(kind){
 function setAppVisible(role,label){
  mode=role;document.querySelector('#authScreen').hidden=true;document.querySelector('#appWrap').hidden=false;
  document.querySelector('#authStatus').textContent=label;
- document.querySelector('#loginNotice').textContent=session.startsWith('cloud')?'☁️ Firebase 已連線，資料依登入權限同步。':'🧪 本機示範模式：資料僅在此瀏覽器，學生登入權限只是畫面模擬，不可正式公開。';
+ document.querySelector('#loginNotice').textContent=session.startsWith('cloud')?'☁️ 已同步':'🧪 本機示範模式：資料僅在此瀏覽器，學生登入權限只是畫面模擬，不可正式公開。';
  tab=role==='teacher'?'overview':'bank';cardFilter='unused';render();
 }
 function setTeacherCloudState(data){
@@ -609,7 +651,7 @@ document.querySelector('#logoutButton').addEventListener('click',async()=>{
 document.querySelectorAll('[data-auth-tab]').forEach(btn=>btn.addEventListener('click',()=>{
  authRole=btn.dataset.authTab;document.querySelectorAll('[data-auth-tab]').forEach(b=>b.classList.toggle('active',b===btn));
  document.querySelector('#studentLoginBlock').hidden=authRole!=='student';document.querySelector('#teacherLoginBlock').hidden=authRole!=='teacher';
- document.querySelector('#loginButton').textContent=authRole==='student'?'登入個人存摺':'登入教師後台';authError('');
+ document.querySelector('#loginButton').textContent=authRole==='student'?'登入存摺':'教師登入';authError('');
 }));
 document.querySelector('#authForm').addEventListener('submit',async e=>{
  e.preventDefault();if(!window.DongmenCloud?.configured)return authError('目前尚未設定 Firebase，請先使用下方示範按鈕。');
@@ -726,12 +768,87 @@ window.DongmenV5={
  cloudReady(ready){document.querySelector('#demoBlock').hidden=!!ready;if(ready)authError('');},
  cloudTeacher(data){cloudDataReady=false;session='cloud-teacher';mode='teacher';setTeacherCloudState(data);setAppVisible('teacher','👩‍🏫 教師管理後台（資料載入中）');},
  cloudStudent(data){session='cloud-student';mode='student';setStudentCloudState(data);setAppVisible('student','🧒 學生個人存摺');},
- updateTeacher(data){cloudDataReady=true;setTeacherCloudState(data);document.querySelector('#authStatus').textContent='👩‍🏫 教師管理後台';},updateStudent:setStudentCloudState,updateRequests:setCloudRequests,authError,logout:showAuth
+ updateTeacher(data){cloudDataReady=true;setTeacherCloudState(data);document.querySelector('#authStatus').textContent='👩‍🏫 教師管理後台';},getQrStudents(){return {allowed:session==='cloud-teacher'&&cloudDataReady,classId:String(window.DONGMEN_CLOUD_SETUP?.classId||'506'),selected:chosen,students:S.students.map(s=>({id:s.id,name:s.name,authUid:s.authUid||'',loginName:s.loginName||''}))};},updateStudent:setStudentCloudState,updateRequests:setCloudRequests,authError,logout:showAuth
 };
 showAuth();
 
 })();
 </script>
+
+<script id="dongmen-qr-feature">
+(()=>{'use strict';
+// 只載入在瀏覽器本機製作 QR 碼的程式庫；不把帳密傳給外部 QR 產生網站。
+let qrLoadPromise;
+function loadScript(src){return new Promise((resolve,reject)=>{
+ const script=document.createElement('script');script.src=src;script.async=true;
+ const timer=setTimeout(()=>{script.remove();reject(Error('載入逾時'));},12000);
+ script.onload=()=>{clearTimeout(timer);resolve();};script.onerror=()=>{clearTimeout(timer);reject(Error('載入失敗'));};document.head.appendChild(script);
+});}
+async function ensureQR(){
+ if(typeof window.qrcode==='function')return;
+ if(!qrLoadPromise)qrLoadPromise=(async()=>{
+  try{await loadScript('https://cdn.jsdelivr.net/npm/qrcode-generator@1.4.4/qrcode.min.js');}
+  catch(err){await loadScript('https://cdnjs.cloudflare.com/ajax/libs/qrcode-generator/1.4.4/qrcode.min.js');}
+  if(typeof window.qrcode!=='function')throw Error('QR 產生工具未正確載入');
+ })();
+ try{await qrLoadPromise}catch(err){qrLoadPromise=null;throw err}
+}
+function qrUrl(loginName){
+ if(location.protocol!=='https:')throw Error('請先開啟 GitHub Pages 正式 HTTPS 網址再列印 QR 卡');
+ const url=new URL(location.origin+location.pathname);
+ url.searchParams.set('account',loginName);
+ return url.href;
+}
+function makeSVG(url){
+ const qr=window.qrcode(0,'M');qr.addData(url,'Byte');qr.make();return qr.createSvgTag(4,4);
+}
+function escapeText(v){return String(v??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]))}
+async function previewQrCards(onlyOne){
+ if(!window.DongmenV5?.getQrStudents)throw Error('教師資料尚未完成載入');
+ const info=window.DongmenV5.getQrStudents();
+ if(!info?.allowed)throw Error('請使用正式教師帳號登入');
+ const rows=onlyOne?info.students.filter(s=>s.id===info.selected):info.students;
+ const ready=rows.filter(s=>s.authUid&&s.loginName);
+ if(!ready.length)throw Error('目前沒有可列印的學生帳號，請先建立帳號');
+ await ensureQR();
+ const all=ready.map(s=>{
+  const svg=makeSVG(qrUrl(s.loginName));
+  return `<article class="qr-card"><div class="qr-art">${svg}</div><div class="qr-card-body"><div class="qr-card-school">東門班級存摺 · ${escapeText(info.classId)} 班 ${escapeText(s.id)} 號</div><div class="qr-card-name">${escapeText(s.name)}</div><div class="qr-card-account">帳號：${escapeText(s.loginName)}</div><div class="qr-card-help">掃 QR Code → 輸入個人密碼</div></div></article>`;
+ });
+ document.getElementById('qrPrintSheet').innerHTML=all.join('');
+ const skipped=rows.length-ready.length;
+ document.getElementById('qrPreviewTitle').textContent=`登入卡 ${ready.length} 張`+(skipped?`（${skipped} 位尚未建立帳號，已略過）`:'');
+ document.getElementById('qrOverlay').hidden=false;
+ document.body.style.overflow='hidden';
+}
+function closeCards(){document.getElementById('qrOverlay').hidden=true;document.body.style.overflow='';}
+document.addEventListener('click',async evt=>{
+ const action=evt.target.closest('[data-action]')?.dataset.action;
+ if(action!=='qrPrintAll'&&action!=='qrPrintOne')return;
+ const button=evt.target.closest('button');if(button?.disabled)return;
+ button.disabled=true;
+ try{await previewQrCards(action==='qrPrintOne')}
+ catch(err){alert('無法產生 QR 登入卡：'+(err?.message||err)+'。\n請確認網路可連接 QR 程式庫，或稍後重試。')}
+ finally{button.disabled=false;}
+});
+document.getElementById('qrPreviewClose').addEventListener('click',closeCards);
+document.getElementById('qrPrintNow').addEventListener('click',()=>window.print());
+document.addEventListener('keydown',e=>{if(e.key==='Escape'&&!document.getElementById('qrOverlay').hidden)closeCards()});
+function fillFromQR(){
+ const v=new URLSearchParams(location.search).get('account');
+ if(!v)return;
+ const username=v.trim();
+ if(!/^[a-z0-9_-]{3,64}$/i.test(username)&&!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(username))return;
+ document.querySelector('[data-auth-tab="student"]')?.click();
+ const input=document.getElementById('loginUsername');if(input)input.value=username;
+ const hint=document.getElementById('qrLoginHint');if(hint)hint.hidden=false;
+ document.getElementById('loginPassword')?.focus();
+ try{const clean=new URL(location.href);clean.searchParams.delete('account');history.replaceState(null,'',clean.pathname+clean.search+clean.hash);}catch(e){}
+}
+fillFromQR();
+})();
+</script>
+
 <!-- Firebase 只在真的填好設定後才載入。離線試用不會連結 Firebase CDN。 -->
 <script id="dongmen-firebase-source" type="text/plain">
 import { initializeApp } from 'https://www.gstatic.com/firebasejs/11.10.0/firebase-app.js';
