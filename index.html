@@ -4,7 +4,6 @@
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>東門班級存摺 V6.5｜教師快速加扣分</title>
-<link rel="icon" href="favicon.png" type="image/png" />
 <style>
 :root{--ink:#33415b;--sub:#778298;--bg:#f6f8fd;--line:#e6eaf1;--white:#fff;--blue:#dfeeff;--pink:#ffebed;--mint:#dff5e9;--yellow:#fff3d3;--purple:#efe9ff;--strong:#556a99;--shadow:0 9px 30px #64748b15}
 *{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,"Noto Sans TC","Microsoft JhengHei",sans-serif;font-size:15px;line-height:1.55}button,input,select,textarea{font:inherit;color:inherit}button{cursor:pointer}button:disabled{cursor:not-allowed;opacity:.45}.app{max-width:1300px;margin:0 auto;padding:20px 24px 50px}.banner{background:linear-gradient(118deg,#e4f1ff,#f1eaff 60%,#fff3e8);border:1px solid #e5e6f0;border-radius:25px;padding:24px 28px;display:flex;justify-content:space-between;align-items:center;gap:20px}.banner h1{margin:3px 0 2px;font-size:30px;letter-spacing:1px}.banner p{margin:0;color:#667389}.eyebrow{font-size:12px;letter-spacing:2px;font-weight:800;color:#7289b6}.mode{display:flex;align-items:center;gap:8px;flex-wrap:wrap}.mode .small{font-size:12px;color:var(--sub)}.pill{border:1px solid #cfd9ed;background:#ffffffb6;border-radius:99px;padding:8px 14px;font-weight:700}.pill.active{background:#596f9d;color:white;border-color:#596f9d}.notice{background:#fff8e7;color:#75603a;border:1px solid #f3e3bf;border-radius:12px;padding:10px 14px;margin:14px 0;font-size:13px}.top{margin-top:15px;display:flex;gap:9px;flex-wrap:wrap}.tab{border:none;border-radius:12px;padding:12px 17px;background:#fff;color:#62718a;font-weight:750;box-shadow:0 2px 9px #5e71900a}.tab.active{background:#5c73a1;color:#fff}.tab:hover:not(.active){background:#e9effb}.grid{display:grid;grid-template-columns:290px minmax(0,1fr);gap:16px;margin-top:16px}.panel{background:white;border:1px solid #e9edf5;border-radius:19px;box-shadow:var(--shadow);padding:20px}.person{display:flex;align-items:center;justify-content:space-between;gap:12px}.person h2,.heading{margin:0;font-size:20px}.person .hint,.muted{font-size:12px;color:var(--sub)}.seatpick{width:100%;padding:11px 12px;border:1px solid #dce3ef;border-radius:11px;margin:13px 0;background:#fff;font-weight:700}.avatarbox{background:linear-gradient(160deg,#e6f5fa,#eff3ff 54%,#ffecf3);border:1px solid #e6ebfa;border-radius:18px;display:flex;justify-content:center;align-items:center;min-height:216px;margin-top:10px;position:relative;overflow:hidden}.avatarbox:after{content:"✦   ✧   ✦";font-size:26px;color:#fff;position:absolute;top:15px;right:15px;opacity:.7}.avatarbox svg{width:166px;height:183px;position:relative;z-index:1;filter:drop-shadow(0 6px 4px #5c69821c)}.namebadge{display:inline-block;background:#fff;color:#77829a;border-radius:99px;padding:4px 11px;font-size:12px;margin-top:11px;font-weight:700}.balanceline{margin-top:17px;display:flex;justify-content:space-between;align-items:end;border-bottom:1px dashed #e3e7f0;padding-bottom:14px}.number{font-size:35px;font-weight:850;letter-spacing:-1px}.unit{font-weight:700;font-size:14px;color:#a58a44}.softnote{font-size:12px;color:#8590a1;margin-top:10px}.statrow{display:flex;gap:10px;flex-wrap:wrap}.stat{background:#f6f8fc;border-radius:13px;padding:10px 13px;flex:1;min-width:100px}.stat label{color:#74819b;font-size:12px;display:block}.stat b{font-size:20px}.sectiontitle{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:15px}.sectiontitle h2{margin:0;font-size:20px}.sectiontitle span{font-size:12px;color:var(--sub)}.twocol{display:grid;grid-template-columns:1fr 1fr;gap:12px}.rewardgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(208px,1fr));gap:12px}.reward{border-radius:15px;border:1px solid #e7eaf1;background:#fff;padding:15px;display:flex;flex-direction:column;justify-content:space-between;gap:12px;min-height:144px}.reward h3{margin:0 0 5px;font-size:15px;line-height:1.4}.reward p{font-size:12px;color:#7c8797;margin:0}.price{font-size:14px;font-weight:800;color:#ad823a}.rewardfoot{display:flex;justify-content:space-between;gap:8px;align-items:center}.btn{border:0;background:#6179aa;color:#fff;padding:10px 14px;border-radius:11px;font-weight:750;white-space:nowrap}.btn:hover:not(:disabled){filter:brightness(.96)}.btn.secondary{background:#edf1fa;color:#5d7194}.btn.mint{background:#dff4e8;color:#3f8064}.btn.red{background:#ffe9e8;color:#a75555}.btn.small{font-size:12px;padding:7px 11px}.btn.ghost{background:#fff;color:#5e7090;border:1px solid #dce4f0}.quick{display:flex;flex-wrap:wrap;gap:8px}.quick .btn{flex:0 0 auto}.subhead{font-weight:800;font-size:14px;margin-bottom:10px}.formrow{display:flex;gap:9px;align-items:center;flex-wrap:wrap}.formrow input,.formrow textarea{border:1px solid #dfe4ed;border-radius:10px;padding:10px 11px;background:#fff}.formrow input[type=number]{width:140px}.formrow input[type=text]{flex:1;min-width:150px}.formrow select,.search{border:1px solid #dfe4ed;border-radius:10px;padding:10px 11px;background:#fff}.search{min-width:230px;width:100%;max-width:370px}.line{height:1px;background:#edf0f5;margin:16px 0}.history{display:flex;flex-direction:column;gap:8px}.historyitem{display:flex;justify-content:space-between;align-items:center;gap:10px;padding:10px 12px;background:#f8f9fc;border:1px solid #eef0f6;border-radius:11px;font-size:13px}.historyitem .small{color:#94a0b1;font-size:11px}.pos{color:#32966e;font-weight:800}.neg{color:#cf6b72;font-weight:800}.shopitem{display:flex;flex-direction:column;gap:10px;border:1px solid #e7eaf3;border-radius:15px;padding:13px;background:white}.shopitem .tryavatar{background:linear-gradient(140deg,#eff6fd,#fff1f5);border-radius:12px;display:flex;justify-content:center;height:142px;align-items:center}.shopitem svg{height:130px;width:122px}.shopgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(169px,1fr));gap:12px}.shopitem h3{margin:0;font-size:14px}.shopitem p{margin:1px 0;color:#718099;font-size:12px}.grouphead{font-weight:850;color:#6c7c98;margin:20px 0 12px}.chip{border-radius:99px;display:inline-block;padding:3px 9px;background:#e6f5ed;color:#5a9277;font-size:11px;font-weight:800}.chip.warn{background:#fff4dc;color:#a78346}.chip.gray{background:#f0f2f6;color:#8290a6}.center{text-align:center}.classbar{height:20px;background:#eef0fa;border-radius:12px;overflow:hidden}.classbar .fill{background:linear-gradient(90deg,#90c8a8,#66b4a0);height:100%;transition:width .3s ease}.hero{font-size:33px;font-weight:900;margin:8px 0}.classnote{color:#8390a3;font-size:13px}.empty{text-align:center;background:#f8f9fc;border-radius:13px;padding:24px;color:#8894a5}.settings textarea{width:100%;min-height:220px;padding:12px 14px;resize:vertical;border:1px solid #e0e6ee;border-radius:12px;line-height:1.7}.settings .row{display:flex;gap:9px;flex-wrap:wrap}.footer{margin-top:18px;font-size:12px;color:#8893a4;text-align:center}.toast{position:fixed;bottom:22px;right:22px;background:#42577d;color:#fff;box-shadow:0 15px 30px #42577d44;border-radius:12px;padding:12px 18px;z-index:9;max-width:90vw;font-weight:700;display:none}.toast.show{display:block}.tagline{background:#f2f7ff;border-radius:11px;padding:10px 13px;font-size:13px;color:#667c9c}.infocard{background:#f7fafc;border-radius:12px;padding:13px;font-size:13px}.right{margin-left:auto}.tally{font-variant-numeric:tabular-nums}.tabsRight{display:flex;flex-wrap:wrap;gap:8px;align-items:center}.check{font-size:12px;color:#8e9bad}.pending{display:flex;align-items:center;justify-content:space-between;gap:10px;border-radius:12px;border:1px solid #e7eaf2;background:#fffaf1;padding:10px 13px;margin-bottom:9px}.pending .action{display:flex;gap:6px}.pending .name{font-size:14px;font-weight:800}.pending small{font-size:12px;color:#8a8fa0}.dividerlabel{border-left:3px solid #abc5f1;padding-left:9px;font-weight:850;margin:6px 0 12px}.intro{font-size:14px;color:#78859c;max-width:630px}.danger{color:#ae5d65}.cardnum{font-size:12px;color:#8794a8} @media(max-width:840px){.app{padding:12px 12px 32px}.banner{padding:19px;flex-direction:column;align-items:flex-start}.banner h1{font-size:24px}.grid{grid-template-columns:1fr}.twocol{grid-template-columns:1fr}.avatarbox{min-height:145px}.avatarbox svg{height:135px;width:140px}.tab{flex:1;min-width:90px;padding:11px 10px;font-size:13px}.rewardgrid{grid-template-columns:repeat(auto-fill,minmax(158px,1fr))}.panel{padding:16px}.search{min-width:0}.shopgrid{grid-template-columns:repeat(2,minmax(0,1fr))}}
@@ -167,6 +166,9 @@ main.grid.fast-layout > #main{width:100%}
 .fast-control{padding:15px;border:1px solid #dde8f6;background:#f8faff;border-radius:14px;margin-bottom:16px}
 .fast-control .search{max-width:620px}
 #fastRewardCustom[hidden],#fastWorkCustom[hidden]{display:none!important}
+.penaltyrepeat{display:flex;align-items:center;gap:9px;margin-top:11px;font-size:13px;font-weight:750;color:#536682;cursor:pointer}
+.penaltyrepeat[hidden]{display:none!important}
+.penaltyrepeat input{width:18px;height:18px;accent-color:#637bac}
 .attendance-card em{font-size:12px;color:#667d93;font-weight:650;font-style:normal;margin-top:3px}
 .attendance-card.is-disabled{background:#f5f6f9;opacity:.72;cursor:default;border-color:#e3e5ec}
 .attendance-summary{padding:10px 0;font-size:14px}
@@ -213,7 +215,7 @@ button.fast-student-card:hover{background:#ecf6ff;border-color:#91b8d7}
   
  </div>
 </div>
-<div class="app" id="appWrap" hidden><header class="banner"><div><span class="eyebrow">班級存摺 · V6.6</span><h1>🌷 東門班級存摺</h1></div><div class="mode"><span id="authStatus">尚未登入</span><button class="pill" id="logoutButton" type="button">登出</button></div></header><div id="loginNotice" class="cloudbar"></div><nav class="top" id="tabs"></nav><main class="grid"><aside id="sidebar"></aside><section id="main"></section></main></div><div id="toast" class="toast" role="status"></div><div id="qrOverlay" class="qr-overlay" hidden aria-label="QR 登入卡預覽"><div class="qr-preview-panel"><div class="qr-preview-toolbar"><b id="qrPreviewTitle">QR 登入卡</b><div class="quick"><button type="button" id="qrPrintNow" class="btn">🖨️ 列印／存 PDF</button><button type="button" id="qrPreviewClose" class="btn secondary">關閉</button></div></div><div id="qrPrintSheet" class="qr-print-sheet"></div></div></div>
+<div class="app" id="appWrap" hidden><header class="banner"><div><span class="eyebrow">班級存摺 · V6.7</span><h1>🌷 東門班級存摺</h1></div><div class="mode"><span id="authStatus">尚未登入</span><button class="pill" id="logoutButton" type="button">登出</button></div></header><div id="loginNotice" class="cloudbar"></div><nav class="top" id="tabs"></nav><main class="grid"><aside id="sidebar"></aside><section id="main"></section></main></div><div id="toast" class="toast" role="status"></div><div id="qrOverlay" class="qr-overlay" hidden aria-label="QR 登入卡預覽"><div class="qr-preview-panel"><div class="qr-preview-toolbar"><b id="qrPreviewTitle">QR 登入卡</b><div class="quick"><button type="button" id="qrPrintNow" class="btn">🖨️ 列印／存 PDF</button><button type="button" id="qrPreviewClose" class="btn secondary">關閉</button></div></div><div id="qrPrintSheet" class="qr-print-sheet"></div></div></div>
 <script>
 
 (()=>{'use strict';
@@ -256,7 +258,8 @@ const PENALTIES=[
 {id:"helper",name:"小衛生自己跑掉",base:100,repeat:true,detail:false,custom:false},
 {id:"talkback",name:"對老師不禮貌地回嘴",base:150,repeat:true,detail:false,custom:false},
 {id:"classrule",name:"違反班規",base:100,repeat:true,detail:false,custom:true},
-{id:"schoolrule",name:"違反校規",base:100,repeat:true,detail:false,custom:true}
+{id:"schoolrule",name:"違反校規",base:100,repeat:true,detail:false,custom:true},
+{id:"custom",name:"自訂違規",base:100,repeat:false,weekly:false,detail:true,custom:true,customPenalty:true}
 ];
 const CLASS_QUICK=[['科任老師簽名',1],['整隊表現',2],['打掃確實',2],['被其他老師稱讚',5],['班級共同目標',10],['班際競賽第三名',10],['班際競賽第二名',20],['班際競賽第一名',30]];
 const svgEscape=s=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
@@ -288,7 +291,7 @@ function normalize(data){
 }
 function load(){try{const a=JSON.parse(localStorage.getItem(KEY));if(a&&Array.isArray(a.students)&&Array.isArray(a.tx))return normalize(a)}catch(e){}return fresh()}
 let session='locked', cloudRequests=[], generatedAccounts=[], authRole='student', cloudBusy=false, accountNotice=null, pendingAccountRecovery=null, cloudDataReady=false;
-let S=load(), tab='bank', mode='teacher', chosen=S.students[0]?.id||'01', rewardSearch='', wardrobeFilter='all', payrollWeekOffset=0, cardFilter='unused', selectedPenalty='late', selectedPenaltyDetail='', selectedPenaltyBase=100, selectedPenaltyDate=localDate(), selectedPenaltyStudents=new Set(), fastKind='reward', fastFlow='tap', selectedRewardId='praise', selectedRewardReason='', selectedRewardAmount='100', selectedWorkId='tutor', selectedWorkReason='', selectedWorkAmount='50', selectedAttendanceStudents=new Set(), recentFastClicks=new Map(), fastLastStudent='';
+let S=load(), tab='bank', mode='teacher', chosen=S.students[0]?.id||'01', rewardSearch='', wardrobeFilter='all', payrollWeekOffset=0, cardFilter='unused', selectedPenalty='late', selectedPenaltyDetail='', selectedPenaltyBase=100, selectedPenaltyDate=localDate(), selectedPenaltyRepeat=false, selectedPenaltyStudents=new Set(), fastKind='reward', fastFlow='tap', selectedRewardId='praise', selectedRewardReason='', selectedRewardAmount='100', selectedWorkId='tutor', selectedWorkReason='', selectedWorkAmount='50', selectedAttendanceStudents=new Set(), recentFastClicks=new Map(), fastLastStudent='';
 let openingDraft={}, openingPreview=null;
 function save(){
  if(session==='cloud-teacher'){
@@ -414,7 +417,28 @@ function addWeeklyAttendance(){
  const done=targets.filter(st=>attendanceEntries(st.id,week).length).length;
  selectedAttendanceStudents.clear();save();render();notify(`已發放 ${done} 位學生全勤獎金（每人 +500）`);
 }
-function penaltyKey(p,detail){return p.id+(p.detail?'｜'+detail.trim().toLowerCase():'')}
+function penaltyKey(p,detail){
+ // 自訂名稱視為獨立違規項目；固定扣款與累犯加倍分開計數。
+ return p.id==='custom'?`custom｜${detail.trim().toLowerCase()}｜${p.repeat?'repeat':'fixed'}`:
+   p.id+(p.detail?'｜'+detail.trim().toLowerCase():'');
+}
+function selectedPenaltyRule(){
+ const p=PENALTIES.find(x=>x.id===document.querySelector('#penaltyType')?.value);
+ return p?.customPenalty?{...p,repeat:!!document.querySelector('#penaltyRepeat')?.checked}:p;
+}
+function readPenaltyInput(p){
+ if(!p)throw Error('請選擇違規項目');
+ const detail=document.querySelector('#penaltyDetail')?.value.trim()||'';
+ if(p.customPenalty&&!detail)throw Error('請輸入自訂違規名稱');
+ if(p.detail&&!detail)throw Error('請填寫作業／物品名稱');
+ if(p.customPenalty&&detail.length>60)throw Error('自訂違規名稱不可超過 60 字');
+ const rawBase=document.querySelector('#penaltyBase')?.value;
+ const base=p.custom?Number(rawBase):p.base;
+ const min=p.customPenalty?1:50,max=p.customPenalty?10000:1000;
+ if(!Number.isSafeInteger(base)||base<min||base>max)
+   throw Error(p.customPenalty?'自訂扣分限 1～10,000 整數班幣':'班規／校規基本扣分限 50～1,000');
+ return {detail,base};
+}
 function penaltyCount(studentId,key){return S.tx.filter(t=>t.kind==='penalty'&&!t.undone&&t.studentId===studentId&&t.penaltyKey===key).length}
 function lateEntries(studentId,week){return S.tx.filter(t=>t.kind==='penalty'&&!t.undone&&t.studentId===studentId&&t.penaltyId==='late'&&weekForLocalDate(transactionDate(t))===week)}
 function hasLateOnDate(studentId,date){return S.tx.some(t=>t.kind==='penalty'&&!t.undone&&t.studentId===studentId&&t.penaltyId==='late'&&transactionDate(t)===date)}
@@ -427,9 +451,10 @@ function recalculatePenaltyChain(studentId,key,period=null){
  const p=PENALTIES.find(x=>key===x.id||key.startsWith(x.id+'｜'));
  if(!st||!p)return;
  const entries=S.tx.filter(t=>t.kind==='penalty'&&!t.undone&&t.studentId===studentId&&t.penaltyKey===key&&(!p.weekly||weekForLocalDate(transactionDate(t))===period));
+ const repeat=p.customPenalty?!!entries[0]?.penaltyRepeat:p.repeat;
  entries.sort((a,b)=>p.weekly?(transactionDate(a).localeCompare(transactionDate(b))||String(a.at).localeCompare(String(b.at))||String(a.id).localeCompare(String(b.id))):(String(a.at).localeCompare(String(b.at))||String(a.id).localeCompare(String(b.id))));
  entries.forEach((t,i)=>{
-   const rank=p.repeat?i+1:1,desired=-(Math.abs(t.penaltyBase||p.base)*rank);
+   const rank=repeat?i+1:1,desired=-(Math.abs(t.penaltyBase||p.base)*rank);
    if(t.amount!==desired){
      const diff=desired-t.amount;
      st.balance+=diff;
@@ -438,31 +463,27 @@ function recalculatePenaltyChain(studentId,key,period=null){
    }
    t.penaltyLevel=rank;
    if(p.weekly)t.penaltyWeek=period;
-   t.reason=(t.penaltyName||p.name)+(p.weekly?`（${transactionDate(t)}・當週第${rank}次 ×${rank}）`:p.repeat?`（第${rank}次 ×${rank}）`:'');
+   t.reason=(t.penaltyName||p.name)+(p.weekly?`（${transactionDate(t)}・當週第${rank}次 ×${rank}）`:repeat?`（第${rank}次 ×${rank}）`:'');
  });
 }
 function penaltyTargets(){return S.students.filter(st=>selectedPenaltyStudents.has(st.id));}
 function addPenalty(onlyIds=null){
  if(mode!=='teacher')return;
  if(session==='cloud-teacher'&&!cloudDataReady)return notify('雲端資料載入中，請稍後再操作');
- const p=PENALTIES.find(x=>x.id===document.querySelector('#penaltyType')?.value);
- if(!p)return;
- const raw=document.querySelector('#penaltyDetail')?.value.trim()||'';
- if(p.detail&&!raw)return notify('請填寫具體作業／物品名稱');
- const rawBase=document.querySelector('#penaltyBase')?.value;
- const base=p.custom?Number(rawBase):p.base;
- if(!Number.isInteger(base)||base<50||base>1000)return notify('班規／校規基本扣分限 50～1,000');
+ const p=selectedPenaltyRule();
+ let raw,base;
+ try{({detail:raw,base}=readPenaltyInput(p));}catch(err){return notify(err.message)}
  const date=document.querySelector('#penaltyDate')?.value||'';
  if(!isValidDate(date)||date>localDate())return notify('請選擇正確、且不晚於今天的登記日期');
  const targets=onlyIds?S.students.filter(st=>onlyIds.includes(st.id)):penaltyTargets();if(!targets.length)return notify('請先選擇至少一位學生');
- const key=penaltyKey(p,raw),label=p.name+(raw?'：'+raw:''),at=stamp(),groupId=unique();
+ const key=penaltyKey(p,raw),label=p.customPenalty?'自訂違規：'+raw:p.name+(raw?'：'+raw:''),at=stamp(),groupId=unique();
  let done=0,skipped=[];
  for(const st of targets){
    if(p.weekly&&hasLateOnDate(st.id,date)){skipped.push(st.id+' 號');continue;}
    const times=penaltyTimes(p,st.id,date,key);
    const amount=-(base*(p.weekly?1:times));
    st.balance+=amount;
-   S.tx.unshift({id:unique(),studentId:st.id,amount,reason:label+(p.weekly?`（${date}・當週第${times}次 ×${times}）`:p.repeat?`（第${times}次 ×${times}）`:''),kind:'penalty',penaltyKey:key,penaltyId:p.id,penaltyName:label,penaltyBase:base,penaltyLevel:p.weekly?1:times,penaltyWeek:p.weekly?weekForLocalDate(date):undefined,occurredOn:date,groupId,at,undone:false});
+   S.tx.unshift({id:unique(),studentId:st.id,amount,reason:label+(p.weekly?`（${date}・當週第${times}次 ×${times}）`:p.repeat?`（第${times}次 ×${times}）`:''),kind:'penalty',penaltyKey:key,penaltyId:p.id,penaltyName:label,penaltyBase:base,penaltyRepeat:!!p.repeat,penaltyLevel:p.weekly?1:times,penaltyWeek:p.weekly?weekForLocalDate(date):undefined,occurredOn:date,groupId,at,undone:false});
    if(p.weekly){recalculatePenaltyChain(st.id,key,weekForLocalDate(date));revokeFullAttendanceOnLate(st.id,weekForLocalDate(date));}
    done++;
  }
@@ -527,23 +548,42 @@ function switchFastDate(date){
  notify('已切換日期，學生選取已清空');
 }
 function updatePenaltyPreview(){
- const p=PENALTIES.find(x=>x.id===document.querySelector('#penaltyType')?.value),out=document.querySelector('#penaltyPreview');
+ const p=selectedPenaltyRule(),out=document.querySelector('#penaltyPreview');
  if(!out||!p)return;
- if(p.id!==selectedPenalty){selectedPenalty=p.id;selectedPenaltyDetail='';const old=document.querySelector('#penaltyDetail');if(old)old.value='';}
+ if(p.id!==selectedPenalty){
+   selectedPenalty=p.id;selectedPenaltyDetail='';
+   const old=document.querySelector('#penaltyDetail');if(old)old.value='';
+ }
  const detailEl=document.querySelector('#penaltyDetail'),baseEl=document.querySelector('#penaltyBase');
- if(detailEl){detailEl.closest('.penaltydetail').style.display=p.detail?'':'none';detailEl.required=p.detail}
- if(baseEl){baseEl.closest('.penaltybase').style.display=p.custom?'':'none';if(!p.custom)baseEl.value=String(p.base)}
+ if(detailEl){
+   detailEl.closest('.penaltydetail').style.display=p.detail?'':'none';
+   detailEl.required=!!p.detail;
+   detailEl.placeholder=p.customPenalty?'自訂違規名稱（例如：走廊奔跑）':'作業／物品名稱';
+   detailEl.maxLength=p.customPenalty?60:80;
+ }
+ if(baseEl){
+   baseEl.closest('.penaltybase').style.display=p.custom?'':'none';
+   baseEl.min=p.customPenalty?'1':'50';baseEl.max=p.customPenalty?'10000':'1000';
+   baseEl.setAttribute('aria-label',p.customPenalty?'自訂違規基本扣點':'班規或校規基本扣分');
+   if(!p.custom)baseEl.value=String(p.base);
+ }
+ const repeatWrap=document.querySelector('.penaltyrepeat');
+ if(repeatWrap)repeatWrap.hidden=!p.customPenalty;
  const detail=detailEl?.value.trim()||'';selectedPenaltyDetail=detail;
- const base=p.custom?Number(baseEl?.value):p.base;
- if(p.custom&&Number.isInteger(base))selectedPenaltyBase=base;
+ if(p.custom&&baseEl&&Number.isSafeInteger(Number(baseEl.value)))selectedPenaltyBase=Number(baseEl.value);
+ if(p.customPenalty)selectedPenaltyRepeat=!!document.querySelector('#penaltyRepeat')?.checked;
  const date=document.querySelector('#penaltyDate')?.value||selectedPenaltyDate;
- const targets=penaltyTargets(),key=penaltyKey(p,detail);
+ const targets=penaltyTargets();
  const summary=document.querySelector('#penaltyStudentCount');if(summary)summary.textContent=`已選 ${targets.length} 位`;
+ let base,validation='';try{base=readPenaltyInput(p).base}catch(err){validation=err.message}
  const valid=isValidDate(date)&&date<=localDate();
- const previews=valid&&Number.isInteger(base)?targets.map(st=>({st,skip:p.weekly&&hasLateOnDate(st.id,date),times:penaltyTimes(p,st.id,date,key),later:p.weekly?lateEntries(st.id,weekForLocalDate(date)).filter(t=>transactionDate(t)>date).length:0})):[];
+ const previews=valid&&!validation?targets.map(st=>({st,skip:p.weekly&&hasLateOnDate(st.id,date),times:penaltyTimes(p,st.id,date,penaltyKey(p,detail)),later:p.weekly?lateEntries(st.id,weekForLocalDate(date)).filter(t=>transactionDate(t)>date).length:0})):[];
  const total=previews.filter(x=>!x.skip).reduce((acc,x)=>acc+base*(x.times+x.later),0);
- out.innerHTML=`<b>${p.weekly?'週一至週日各自累計':p.repeat?'同項目持續累計':'固定金額'}</b>｜${valid?svgEscape(date):'請選擇有效日期'}｜已選 <b>${targets.length}</b> 位｜${p.weekly?'含後續重算，合計影響':'預計扣'} <b class="neg">${money(total)}</b> 班幣${p.detail&&!detail?'<div class="softnote">請填寫作業／物品名稱。</div>':''}${previews.length?`<div class="penalty-preview-list">${previews.map(x=>`<div class="${x.skip?'skip':''}"><span>${svgEscape(x.st.id)} 號 ${svgEscape(x.st.name)}${x.skip?'（當天已登記）':p.repeat?`（第${x.times}次）`:''}</span><b>${x.skip?'略過':'−'+money(base*(x.times+x.later))+(x.later?'（含後續重算）':'')}</b></div>`).join('')}</div>`:''}`;
+ out.innerHTML=`<b>${p.weekly?'週一至週日各自累計':p.repeat?'同項目持續累計':'固定金額'}</b>｜${valid?svgEscape(date):'請選擇有效日期'}｜已選 <b>${targets.length}</b> 位｜${p.weekly?'含後續重算，合計影響':'預計扣'} <b class="neg">${money(total)}</b> 班幣${validation?'<div class="softnote">'+svgEscape(validation)+'</div>':''}${previews.length?`<div class="penalty-preview-list">${previews.map(x=>`<div class="${x.skip?'skip':''}"><span>${svgEscape(x.st.id)} 號 ${svgEscape(x.st.name)}${x.skip?'（當天已登記）':p.repeat?`（第${x.times}次）`:''}</span><b>${x.skip?'略過':'−'+money(base*(x.times+x.later))+(x.later?'（含後續重算）':'')}</b></div>`).join('')}</div>`:''}`;
+ const submit=document.querySelector('[data-action=fastPenaltySubmit]');
+ if(submit)submit.disabled=!targets.length||!!validation||!valid;
 }
+
 function undo(id){
  if(mode!=='teacher')return;
  const t=S.tx.find(x=>x.id===id);
@@ -600,7 +640,7 @@ function fastPage(){
  const roster=S.students.map(st=>tap?
    `<button type="button" class="fast-student-card ${st.id===fastLastStudent?'last-hit':''}" data-action="fastStudent" data-value="${svgEscape(st.id)}"><strong>${svgEscape(st.id)} 號</strong><span>${svgEscape(st.name)}</span>${st.id===fastLastStudent?'<small>✓ 已記錄</small>':''}</button>`:
    `<label class="fast-student-card selectable ${selectedPenaltyStudents.has(st.id)?'is-selected':''}"><input type="checkbox" data-fast-student="${svgEscape(st.id)}" ${selectedPenaltyStudents.has(st.id)?'checked':''}><strong>${svgEscape(st.id)} 號</strong><span>${svgEscape(st.name)}</span></label>`).join('');
- const kindControls=fastKind==='penalty'?`<form id="penaltyForm"><div class="fast-control"><div class="subhead">選擇違規項目</div><div class="formrow"><select id="penaltyType" class="search" aria-label="扣分項目">${PENALTIES.map(p=>`<option value="${p.id}" ${p.id===selectedPenalty?'selected':''}>${svgEscape(p.name)}｜${money(p.base)} ${p.weekly?'（每週累計）':p.repeat?'（累計）':''}</option>`).join('')}</select><label class="penaltydetail" style="display:none;flex:1"><input id="penaltyDetail" type="text" style="width:100%" maxlength="80" placeholder="作業／物品名稱" value="${svgEscape(selectedPenaltyDetail)}"></label><label class="penaltybase" style="display:none"><input id="penaltyBase" type="number" min="50" max="1000" step="1" value="${selectedPenaltyBase}" aria-label="班規或校規基本扣分"></label></div><div class="softnote">遲到：每週第 1 次 −100、第 2 次 −200、第 3 次 −300；同一天只計一次</div></div></form>`:
+ const kindControls=fastKind==='penalty'?`<form id="penaltyForm"><div class="fast-control"><div class="subhead">選擇違規項目</div><div class="formrow"><select id="penaltyType" class="search" aria-label="扣分項目">${PENALTIES.map(p=>`<option value="${p.id}" ${p.id===selectedPenalty?'selected':''}>${svgEscape(p.name)}${p.customPenalty?'（自訂名稱／金額）':'｜'+money(p.base)+(p.weekly?'（每週累計）':p.repeat?'（累計）':'')}</option>`).join('')}</select><label class="penaltydetail" style="display:none;flex:1"><input id="penaltyDetail" type="text" style="width:100%" maxlength="80" placeholder="作業／物品名稱" value="${svgEscape(selectedPenaltyDetail)}"></label><label class="penaltybase" style="display:none"><input id="penaltyBase" type="number" min="50" max="1000" step="1" value="${selectedPenaltyBase}" aria-label="基本扣分"></label></div><label class="penaltyrepeat" hidden><input id="penaltyRepeat" type="checkbox" ${selectedPenaltyRepeat?'checked':''}> 同項違規累犯加倍（第 2 次 ×2、第 3 次 ×3）</label><div class="softnote">遲到每週累計；自訂違規可選固定扣分或同項累犯加倍。</div></div></form>`:
  isWork?`<div class="fast-control"><div class="subhead">🧹 選擇工作項目</div><select id="fastWorkPreset" class="search" aria-label="工作加分項目">${FAST_WORK.map(r=>`<option value="${r.id}" ${r.id===selectedWorkId?'selected':''}>${svgEscape(r.name)}｜+${money(r.amount)}</option>`).join('')}</select><div id="fastWorkCustom" class="formrow" ${selectedWorkId==='custom'?'':'hidden'} style="margin-top:10px"><input id="fastWorkReason" type="text" maxlength="60" placeholder="工作名稱" value="${svgEscape(selectedWorkReason)}" aria-label="自訂工作名稱"><input id="fastWorkAmount" type="number" min="50" max="100" step="1" placeholder="50～100" value="${svgEscape(selectedWorkAmount)}" aria-label="工作加分金額"></div><div class="softnote">依原班幣制度，每次工作加分 50～100 班幣。</div></div>`:
  `<div class="fast-control"><div class="subhead">選擇獎勵項目</div><select id="fastRewardPreset" class="search" aria-label="獎勵加分項目">${FAST_REWARDS.map(r=>`<option value="${r.id}" ${r.id===selectedRewardId?'selected':''}>${svgEscape(r.name)}${r.amount?'｜+'+money(r.amount):''}</option>`).join('')}</select><div id="fastRewardCustom" class="formrow" ${selectedRewardId==='custom'?'':'hidden'} style="margin-top:10px"><input id="fastRewardReason" type="text" maxlength="60" placeholder="獎勵名稱" value="${svgEscape(selectedRewardReason)}" aria-label="自訂獎勵名稱"><input id="fastRewardAmount" type="number" min="1" max="100000" step="1" placeholder="加點金額" value="${svgEscape(selectedRewardAmount)}" aria-label="自訂加點金額"></div></div>`;
  return `<div class="panel fast-page"><div class="sectiontitle"><h2>⚡ 快速登記</h2><span>教師專用</span></div>
@@ -793,9 +833,11 @@ if(action==='fastKind'&&mode==='teacher'){fastKind=val;selectedPenaltyStudents.c
  else if(action==='fastStudent'&&mode==='teacher'&&fastFlow==='tap'){
   const date=document.querySelector('#penaltyDate')?.value||selectedPenaltyDate;
   const kind=fastKind==='reward'?(document.querySelector('#fastRewardPreset')?.value||selectedRewardId):fastKind==='work'?(document.querySelector('#fastWorkPreset')?.value||selectedWorkId):(document.querySelector('#penaltyType')?.value||selectedPenalty);
-  const clickKey=[val,date,fastKind,kind].join('|'),now=Date.now();
+  const penaltyRule=fastKind==='penalty'?selectedPenaltyRule():null;
+  const penaltyInput=fastKind==='penalty'?[document.querySelector('#penaltyDetail')?.value.trim()||'',document.querySelector('#penaltyBase')?.value||'',penaltyRule?.repeat?'repeat':'fixed']:[];
+  const clickKey=[val,date,fastKind,kind,...penaltyInput].join('|'),now=Date.now();
   if(now-(recentFastClicks.get(clickKey)||0)<900)return notify('已記錄這位學生，請勿連續重複點擊');
-  if(fastKind!=='penalty'){let valid=true;try{getFastReward()}catch(e){valid=false;notify(e.message)}if(!valid)return;}
+  try{if(fastKind==='penalty')readPenaltyInput(penaltyRule);else getFastReward()}catch(e){return notify(e.message)}
   if(!isValidDate(date)||date>localDate())return notify('請先選擇有效日期');
   // Only record the cooldown after a valid attempt. No extra confirmation for fast-tap mode.
   recentFastClicks.set(clickKey,now);
@@ -816,8 +858,8 @@ document.addEventListener('change',e=>{
    refreshAttendancePreview();
  }
  if(e.target.id==='attendanceTeacherConfirmed')refreshAttendancePreview();
- if(e.target.dataset?.fastStudent&&mode==='teacher'){const id=e.target.dataset.fastStudent;if(e.target.checked)selectedPenaltyStudents.add(id);else selectedPenaltyStudents.delete(id);e.target.closest('.fast-student-card')?.classList.toggle('is-selected',e.target.checked);refreshFastRewardPreview();updatePenaltyPreview();const b=document.querySelector('[data-action=fastPenaltySubmit]');if(b)b.disabled=!selectedPenaltyStudents.size;const r=document.querySelector('[data-action=fastRewardSubmit]');if(r)r.disabled=!selectedPenaltyStudents.size;}if(e.target.dataset?.penaltyStudent&&mode==='teacher'){const id=e.target.dataset.penaltyStudent;if(e.target.checked)selectedPenaltyStudents.add(id);else selectedPenaltyStudents.delete(id);updatePenaltyPreview();}if(e.target.id==='penaltyDate'){switchFastDate(e.target.value)}if(e.target.id==='penaltyType')updatePenaltyPreview();if(e.target.id==='fastRewardPreset'){selectedRewardId=e.target.value;refreshFastRewardPreview();}if(e.target.id==='fastWorkPreset'){selectedWorkId=e.target.value;refreshFastRewardPreview();}if(e.target.id==='studentSelect'){chosen=e.target.value;selectedPenaltyStudents=new Set();render()}if(e.target.id==='payrollWeekSelect'){payrollWeekOffset=Math.max(0,Math.min(11,Number(e.target.value)||0));render()}if(e.target.id==='backupFile'&&e.target.files?.[0])restoreBackup(e.target.files[0])});
-document.addEventListener('input',e=>{if(e.target.classList?.contains('opening-input')){openingDraft[e.target.dataset.student]=e.target.value;openingPreview=null;const el=document.querySelector('.opening-preview');if(el)el.remove();}if(e.target.id==='penaltyDate'&&e.target.value!==selectedPenaltyDate){switchFastDate(e.target.value)}if(['penaltyType','penaltyDetail','penaltyBase'].includes(e.target.id))updatePenaltyPreview();if(e.target.id==='fastRewardReason'){selectedRewardReason=e.target.value;refreshFastRewardPreview();}if(e.target.id==='fastWorkReason'){selectedWorkReason=e.target.value;refreshFastRewardPreview();}if(e.target.id==='fastRewardAmount'){selectedRewardAmount=e.target.value;refreshFastRewardPreview();}if(e.target.id==='fastWorkAmount'){selectedWorkAmount=e.target.value;refreshFastRewardPreview();}if(e.target.id==='rewardSearch'){rewardSearch=e.target.value.trim();document.querySelectorAll('[data-reward-name]').forEach(el=>el.style.display=el.dataset.rewardName.includes(rewardSearch.toLowerCase())?'':'none')}});
+ if(e.target.dataset?.fastStudent&&mode==='teacher'){const id=e.target.dataset.fastStudent;if(e.target.checked)selectedPenaltyStudents.add(id);else selectedPenaltyStudents.delete(id);e.target.closest('.fast-student-card')?.classList.toggle('is-selected',e.target.checked);refreshFastRewardPreview();updatePenaltyPreview();const b=document.querySelector('[data-action=fastPenaltySubmit]');if(b)b.disabled=!selectedPenaltyStudents.size;const r=document.querySelector('[data-action=fastRewardSubmit]');if(r)r.disabled=!selectedPenaltyStudents.size;}if(e.target.dataset?.penaltyStudent&&mode==='teacher'){const id=e.target.dataset.penaltyStudent;if(e.target.checked)selectedPenaltyStudents.add(id);else selectedPenaltyStudents.delete(id);updatePenaltyPreview();}if(e.target.id==='penaltyDate'){switchFastDate(e.target.value)}if(e.target.id==='penaltyType'||e.target.id==='penaltyRepeat')updatePenaltyPreview();if(e.target.id==='fastRewardPreset'){selectedRewardId=e.target.value;refreshFastRewardPreview();}if(e.target.id==='fastWorkPreset'){selectedWorkId=e.target.value;refreshFastRewardPreview();}if(e.target.id==='studentSelect'){chosen=e.target.value;selectedPenaltyStudents=new Set();render()}if(e.target.id==='payrollWeekSelect'){payrollWeekOffset=Math.max(0,Math.min(11,Number(e.target.value)||0));render()}if(e.target.id==='backupFile'&&e.target.files?.[0])restoreBackup(e.target.files[0])});
+document.addEventListener('input',e=>{if(e.target.classList?.contains('opening-input')){openingDraft[e.target.dataset.student]=e.target.value;openingPreview=null;const el=document.querySelector('.opening-preview');if(el)el.remove();}if(e.target.id==='penaltyDate'&&e.target.value!==selectedPenaltyDate){switchFastDate(e.target.value)}if(['penaltyType','penaltyDetail','penaltyBase','penaltyRepeat'].includes(e.target.id))updatePenaltyPreview();if(e.target.id==='fastRewardReason'){selectedRewardReason=e.target.value;refreshFastRewardPreview();}if(e.target.id==='fastWorkReason'){selectedWorkReason=e.target.value;refreshFastRewardPreview();}if(e.target.id==='fastRewardAmount'){selectedRewardAmount=e.target.value;refreshFastRewardPreview();}if(e.target.id==='fastWorkAmount'){selectedWorkAmount=e.target.value;refreshFastRewardPreview();}if(e.target.id==='rewardSearch'){rewardSearch=e.target.value.trim();document.querySelectorAll('[data-reward-name]').forEach(el=>el.style.display=el.dataset.rewardName.includes(rewardSearch.toLowerCase())?'':'none')}});
 document.addEventListener('submit',e=>{if(e.target.id==='penaltyForm'&&mode==='teacher'){e.preventDefault();addPenalty()}if(e.target.id==='manualForm'&&mode==='teacher'){e.preventDefault();const amt=Number(document.querySelector('#manualAmount').value),reason=document.querySelector('#manualReason').value.trim();if(!Number.isInteger(amt)||!amt||!reason)return notify('請輸入整數金額與原因');applyCoin(chosen,amt,reason);notify('已儲存班幣異動')}if(e.target.id==='classForm'&&mode==='teacher'){e.preventDefault();const amt=Number(document.querySelector('#classAmount').value),reason=document.querySelector('#classReason').value.trim();if(!Number.isInteger(amt)||!amt||!reason)return notify('請輸入整數班分與原因');addClass(amt,reason)}});
 window.addEventListener('storage',e=>{if(e.key===KEY&&session==='demo-teacher'){S=load();render();notify('資料已從本瀏覽器其他分頁更新')}});
 
